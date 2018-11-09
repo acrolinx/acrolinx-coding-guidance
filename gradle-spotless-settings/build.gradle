@@ -1,0 +1,32 @@
+
+plugins {
+	id 'com.diffplug.gradle.spotless' version '3.14.0'
+}
+
+////////////////
+// FORMATTING //
+////////////////
+spotless {
+	java {
+		target rootProject.fileTree('.') {
+			include '**/*.java'
+			exclude '**/*.license.java'
+		}
+		licenseHeaderFile	rootProject.file('spotless.license.java')
+		importOrderFile		rootProject.file('spotless.importorder')
+		eclipse().configFile rootProject.file('spotless.eclipseformat.xml')
+		custom 'Lambda fix', { it.replace('} )', '})').replace('} ,', '},') }
+		removeUnusedImports()
+	}
+	format 'misc', {
+		target rootProject.fileTree('.') {
+			include '**/*.gradle'
+			include '**/*.md'
+			include '**/*.gitignore'
+			'***//*.sh'
+		}
+		indentWithTabs()
+		trimTrailingWhitespace()
+		endWithNewline()
+	}
+}
