@@ -52,7 +52,7 @@ developers should keep in mind all the time while developing.
           ![Acrolinx Integration](images/acrolinx.png) ![Developer](images/developer.png)
 * [ ] Best [coding language / SDK](https://support.acrolinx.com/hc/en-us/articles/360000399289) has been chosen.
       ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png) ![Developer](images/developer.png)
-* An automatic build is in place
+* An automatic build is in place.
     + [ ] The job name matches the pattern `<products>-<classic?>-<os>-<platform>`.
           ![Acrolinx Integration](images/acrolinx.png)![Developer](images/developer.png)![QA](images/qa.png)
     + The job description contains:
@@ -187,7 +187,10 @@ developers should keep in mind all the time while developing.
       See: [Representations of paths by operating system and shell](https://en.wikipedia.org/wiki/Path_%28computing%29#Representations_of_paths_by_operating_system_and_shell)
       ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png)
       ![Developer](images/developer.png) ![QA](images/qa.png)
-* [ ] Drive letter and root directories
+* [ ] Drive letter, root directories, UNC, and network paths
+      ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png)
+      ![Developer](images/developer.png) ![QA](images/qa.png)
+* [ ] Interoperable command shell parameters
       ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png)
       ![Developer](images/developer.png) ![QA](images/qa.png)
 * [ ] New lines `\n`, `\r`, `\r\n` - if you can choose, use `\n`.
@@ -249,7 +252,7 @@ developers should keep in mind all the time while developing.
 
 ## [Libraries](libraries.md)
 
-* [ ] Ensure licensing of libraries that are used
+* [ ] Ensure licensing of libraries that are used.
       ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png) ![QA](images/qa.png)
     + Usually OK
         - Public Domain,
@@ -269,7 +272,7 @@ developers should keep in mind all the time while developing.
         - AGPL,
         - Creative Commons NC,
         - Proprietary licenses
-* [ ] Libraries of code that you create, which will be shared and reused in other projects
+* [ ] Libraries of code that you create, which will be shared and reused in other projects.
       ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png) ![Developer](images/developer.png)
 * [ ] Standard libraries and tools are used other libraries are carefully decided.
       ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png) ![Developer](images/developer.png)
@@ -283,7 +286,7 @@ developers should keep in mind all the time while developing.
       ![Developer](images/developer.png) ![QA](images/qa.png)
 * [ ] Start page shows logging information.
       ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png) ![QA](images/qa.png)
-* [ ] *Info level* logging is turned on by default
+* [ ] *Info level* logging is turned on by default.
       ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png) ![QA](images/qa.png)
 * [ ] Log format is: `<ISO-DATE-WITH-TIME> | [<LOG-LEVEL>] <CLASS-OR-MODULE>: <MESSAGE>`
       ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png) ![QA](images/qa.png)
@@ -437,7 +440,7 @@ developers should keep in mind all the time while developing.
 
 Make sure:
 
-* [ ] the right strategy for populating the server address is used.
+* [ ] the right strategy for populating the Acrolinx URL is used.
       ![Acrolinx Integration] (images/acrolinx.png)![Custom Integration](images/custom.png)
       ![Developer](images/developer.png) ![QA] (images/qa.png)
 * [ ] you implemented the best user authentication approach.
