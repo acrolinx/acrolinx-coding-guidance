@@ -7,20 +7,26 @@ The world as you're used to might be different in another country. Typical issue
 
 1. Path separation `/` and `\` and `:` and `¥` - in Java you often can just use the `/`.
    See: [Representations of paths by operating system and shell](https://en.wikipedia.org/wiki/Path_%28computing%29#Representations_of_paths_by_operating_system_and_shell)
-2. Drive letter and root directories
-3. On Windows, lower and uppercase paths are the same. Keep that in mind in case you compare strings containing paths.
-4. New lines `\n`, `\r`, `\r\n` - if you can choose use `\n`
-5. Calendar / Time format `2016-03-31 19:30` vs. `31.03.16 19:30` vs. `03/31/2016 01:31 a.m.`
+2. Drive letter, root directories, UNC, and network paths
+3. Command shell parameters: If your integration, or build script calls a shell command, escape the parameters correctly.
+   The parameter of `command **/*.xyz` will reach the command on Windows only.
+   Most Linux shells resolve the `*`, before it reaches the command. The command won't work properly.
+   If you escape the parameter using single quotes `'**/*.xyz`, it only works on Linux.
+   On Windows, the single quote will be treated as part of the file name and no file will be found.
+   Use the following interoperable form: `conmmand "**/*.xyz"`, where double quotes are used.
+4. On Windows, lower and uppercase paths are the same. Keep that in mind in case you compare strings containing paths.
+5. New lines `\n`, `\r`, `\r\n` - if you can choose use `\n`.
+6. Calendar / Time format `2016-03-31 19:30` vs. `31.03.16 19:30` vs. `03/31/2016 01:31 a.m.`
     1. Internal log files should use ISO date like `2016-03-30T11:54:33.986Z`.
     2. If displayed to the end user, the system locale should be used.
-6. Encoding UTF-8 is preferred. Use UTF-8 internally, the Acrolinx Platform requires it.
-7. Some languages typically don't have spaces as word boundaries, for example Japanese.
+7. Encoding UTF-8 is preferred. Use UTF-8 internally, the Acrolinx Platform requires it.
+8. Some languages typically don't have spaces as word boundaries, for example Japanese.
    Other languages have strange characters like German `äöü`,
    Spanish punctuation like `¡` and `¿`,
    or different behavior on upper/lower casing like Turkish `ı` → `I`, `i` → `İ` instead of `i` → `I`.
    Some languages have right-to-left writing.
-8. Encoding of entities `&`  and `&amp;` in HTML and XML
-9. Locale-aware collation order while sorting.
+9. Encoding of entities `&`  and `&amp;` in HTML and XML
+10. Locale-aware collation order while sorting.
    See: [Collation](https://en.wikipedia.org/wiki/Collation)
 
 There are good reasons to write specific code for something:
