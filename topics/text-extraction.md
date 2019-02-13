@@ -31,7 +31,8 @@ The Acrolinx Platform supports different check formats natively:
 | Java Source files         | `JAVA`       | `.java`           | Comments, Javadoc |
 | Base64 encoded binary PDF | `PDF`        | `.pdf`            | no offsets        |
 
-Check out the Acrolinx Documentation at the [Help Center](https://docs.acrolinx.com/coreplatform/latest/en/advanced/supported-input-types) for a complete list.
+Check out the [supported input types documentation](https://docs.acrolinx.com/coreplatform/latest/en/advanced/supported-input-types)
+for a complete list.
 
 The format for these types can be directly set when submitting a check using the API, or at the `sidebar.checkGlobal()` call.
 It's also possible to set the format to `AUTO`.
