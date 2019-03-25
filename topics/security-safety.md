@@ -32,3 +32,6 @@ for example:
     + The SSO token is kept secret between the system's backend and the Acrolinx Platform.
     + It's impossible to fake a request to the proxy and obtain an authentication token for a different user
       than the authenticated user.
+* If you open a URL, that potentially can be entered by a user, make sure that it starts with `https?://`.
+  Otherwise it might be feasible to execute programs.
+  Often an open URL method is internally mapped to `ShellExecute` and allows a remote code execution.

@@ -389,6 +389,7 @@ developers should keep in mind all the time while developing.
       make sure that the authentication is implemented securely in the proxy.
       ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png)
       ![Developer](images/developer.png) ![QA](images/qa.png)
+* [ ] If you open a URL, make sure that it starts with `https?://` (prevent remote code execution).
 
 ## [Initialization](initialization.md)
 
