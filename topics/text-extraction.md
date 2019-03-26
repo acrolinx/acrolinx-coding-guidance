@@ -42,8 +42,8 @@ Many formats, like DITA, or resx, are a subset of the supported formats with a d
 For multiformat editors, our recommendation is to let the Platform decide.
 If we don't support the format yet, an upcoming platform release might make it work without any integration change.
 
-*Note: A [mapping](https://support.acrolinx.com/hc/en-us/articles/115003464509-How-to-Configure-Acrolinx-to-Recognize-Your-File-Type)
-and a [Content Profile](https://support.acrolinx.com/hc/en-us/articles/115005590629-Content-Profiles-Tutorial)
+*Note: A [mapping](https://docs.acrolinx.com/coreplatform/latest/en/advanced/core-platform-configurations/configure-acrolinx-to-recognize-your-file-type)
+and a [Content Profile](https://docs.acrolinx.com/coreplatform/latest/en/guidance/content-profiles/get-started-with-content-profiles)
 might be already in place. Otherwise you need to create one. The Acrolinx Solutions Team can help you create one.*
 
 ## Host Application API with Object Model
@@ -128,7 +128,7 @@ The document needs to include information about the tags, styles, or, fonts in w
 Acrolinx decides filtering, segmentation, and which guidelines to apply based on this contextual information.
 The configuration can be done based on element names, attribute, or attribute values.
 
-See: [Content Profiles Reference Guide](https://support.acrolinx.com/hc/en-us/articles/115005616409)
+See: [Content Profiles Reference Guide](https://docs.acrolinx.com/coreplatform/latest/en/guidance/content-profiles/content-profiles-reference-guide)
     for a detailed description of the different filter and segmentation capabilities of Acrolinx.
 
 #### Filter

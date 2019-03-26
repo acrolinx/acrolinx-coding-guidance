@@ -53,7 +53,7 @@ Please try to include this information in all requests:
 
 Before you start an integration project, we like to give you some guidance in a so called kick-off meeting.
 To be aware of the process and the options have a look at
-[Getting Started with Custom Integrations](https://support.acrolinx.com/hc/en-us/articles/205687652-Getting-Started-with-Custom-Integrations).
+[Getting Started with Custom Integrations](https://docs.acrolinx.com/customintegrations).
 It will help you asking the right questions during the kick-off.
 Maybe you want to think about a [Proof of Concept](poc.md) already?
 

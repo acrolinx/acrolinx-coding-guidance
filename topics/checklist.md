@@ -50,7 +50,7 @@ developers should keep in mind all the time while developing.
           ![Acrolinx Integration](images/acrolinx.png) ![Developer](images/developer.png)
     + [ ] Transifex hooks are set up.
           ![Acrolinx Integration](images/acrolinx.png) ![Developer](images/developer.png)
-* [ ] Best [coding language / SDK](https://support.acrolinx.com/hc/en-us/articles/360000399289) has been chosen.
+* [ ] Best [coding language / SDK](https://docs.acrolinx.com/customintegrations/api-sdks-and-samples) has been chosen.
       ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png) ![Developer](images/developer.png)
 * An automatic build is in place.
     + [ ] The job name matches the pattern `<products>-<classic?>-<os>-<platform>`.
@@ -413,7 +413,7 @@ developers should keep in mind all the time while developing.
       ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png)
       ![Developer](images/developer.png) ![QA](images/qa.png)
 * Host Application API with Object Model:
-    + [ ] DOCTYPE is properly set so that a [Content Profile](https://support.acrolinx.com/hc/en-us/articles/115005590629-Content-Profiles-Tutorial)
+    + [ ] DOCTYPE is properly set so that a [Content Profile](https://docs.acrolinx.com/coreplatform/latest/en/guidance/content-profiles/get-started-with-content-profiles)
       can be selected on Acrolinx Platform side.
     + [ ] Keep the structure of the original object model.
           ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png)

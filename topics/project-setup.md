@@ -84,7 +84,7 @@ The integration must be created in the language that best suits the host editor 
 If the language for a component can be chosen without any restrictions, JavaScript-based is preferred because of its interoperability.
 TypeScript is preferred.
 
-See the [Developer Tools](https://support.acrolinx.com/hc/en-us/articles/360000399289)
+See the [Developer Tools](https://docs.acrolinx.com/customintegrations/api-sdks-and-samples)
 article for an overview of the supported technologies.
 
 ## Build System
