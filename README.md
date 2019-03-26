@@ -6,7 +6,7 @@ The goal of this document is to have some kind of standard for developing code a
 
 This document is a collection of answers to questions that popped up in previous projects.
 It's not complete. If you find something that should be added, please contribute. Please read this document carefully.
-Even if you're keen to [start your new project](https://support.acrolinx.com/hc/en-us/articles/205687652-Getting-Started-with-Custom-Integrations),
+Even if you're keen to [start your new project](https://docs.acrolinx.com/customintegrations),
 take the time to read it.
 The Coding Guidance might save you a lot of trouble and time later.
 That said, this document is no replacement for good education,
