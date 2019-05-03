@@ -31,7 +31,7 @@ The Acrolinx Platform supports different check formats natively:
 | Java Source files         | `JAVA`       | `.java`           | Comments, Javadoc |
 | Base64 encoded binary PDF | `PDF`        | `.pdf`            | no offsets        |
 
-Check out the [supported input types documentation](https://docs.acrolinx.com/coreplatform/latest/en/advanced/supported-input-types)
+Check out the [supported input types documentation](https://docs.acrolinx.com/coreplatform/latest/en/compatibility/supported-input-types)
 for a complete list.
 
 The format for these types can be directly set when submitting a check using the API, or at the `sidebar.checkGlobal()` call.
@@ -42,7 +42,7 @@ Many formats, like DITA, or resx, are a subset of the supported formats with a d
 For multiformat editors, our recommendation is to let the Platform decide.
 If we don't support the format yet, an upcoming platform release might make it work without any integration change.
 
-*Note: A [mapping](https://docs.acrolinx.com/coreplatform/latest/en/compatibility/supported-input-types)
+*Note: A [mapping](https://docs.acrolinx.com/coreplatform/latest/en/advanced/core-platform-configurations/configure-acrolinx-to-recognize-your-file-type)
 and a [Content Profile](https://docs.acrolinx.com/coreplatform/latest/en/guidance/content-profiles/get-started-with-content-profiles)
 might be already in place. Otherwise you need to create one. The Acrolinx Solutions Team can help you create one.*
 
