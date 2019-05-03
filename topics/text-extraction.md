@@ -42,7 +42,7 @@ Many formats, like DITA, or resx, are a subset of the supported formats with a d
 For multiformat editors, our recommendation is to let the Platform decide.
 If we don't support the format yet, an upcoming platform release might make it work without any integration change.
 
-*Note: A [mapping](https://docs.acrolinx.com/coreplatform/latest/en/advanced/core-platform-configurations/configure-acrolinx-to-recognize-your-file-type)
+*Note: A [mapping](https://docs.acrolinx.com/coreplatform/latest/en/compatibility/supported-input-types)
 and a [Content Profile](https://docs.acrolinx.com/coreplatform/latest/en/guidance/content-profiles/get-started-with-content-profiles)
 might be already in place. Otherwise you need to create one. The Acrolinx Solutions Team can help you create one.*
 
