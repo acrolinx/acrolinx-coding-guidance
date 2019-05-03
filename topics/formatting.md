@@ -12,10 +12,11 @@ The Acrolinx default settings can be found in this repository.
 Source files written by Acrolinx team member must contain the Acrolinx copyright header:
 
 ```java
-/* Copyright (c) 2015 Acrolinx GmbH */
-/* Copyright (c) 2015,2016,2018 Acrolinx GmbH */
-/* Copyright 2015-2018 Acrolinx GmbH */
-/* © 2015-present Acrolinx GmbH */
+/* © CreationYear - present Acrolinx GmbH */
+/* Copyright CreationYear - present Acrolinx GmbH */
+
+/* © 2015 - present Acrolinx GmbH */
+/* Copyright 2019 - present Acrolinx GmbH */
 ```
 
 * "2015" is the year when the file was created.
