@@ -1,7 +1,7 @@
 # Text Lookup
 
 To make use of all features of the Acrolinx Sidebar, an integration must implement a good solution for lookup.
-The lookup is used in the functions `selectRanges` and `replaceRanges` (See [Acrolinx Sidebar API Reference](https://acrolinx.github.io/sidebar-sdk-js/)).
+The lookup is used in the functions `selectRanges` and `replaceRanges` (See [Acrolinx Sidebar API Reference](https://acrolinx.github.io/sidebar-interface/)).
 The Sidebar will use these to highlight, focus, and replace the text surface related to the card the users clicks on.
 
 Not all lookup strategies will function for all kinds of editors.
