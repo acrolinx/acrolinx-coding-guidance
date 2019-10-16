@@ -343,7 +343,7 @@ developers should keep in mind all the time while developing.
           ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png) ![Developer](images/developer.png)
 * [ ] The tests of the [Test Sidebar](test-sidebar.md) must pass.
       ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png) ![QA](images/qa.png)
-* [ ] Use the [request validator](https://support.acrolinx.com/hc/en-us/articles/203405891-Using-the-Request-Validator)
+* [ ] Use the [request validator](https://docs.acrolinx.com/kb/en/how-to-use-the-request-validator-13730818.html)
       (`<ACROLINX_SERVER:PORT>/request-validator/`)
       to verify what is sent to the Acrolinx Platform and that all information is filled out properly.
       ![Acrolinx Integration](images/acrolinx.png) ![Custom Integration](images/custom.png) ![QA](images/qa.png)

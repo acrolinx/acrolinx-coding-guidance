@@ -62,6 +62,6 @@ Maybe you want to think about a [Proof of Concept](poc.md) already?
 * Have you really finished your integration work, or do you still have open technical questions?
 * Have you [ensured](checklist.md) that everything is fine?
 * Please share a Scorecard link. We look into the request and analyze in advance using the
-  [request validator](https://support.acrolinx.com/hc/en-us/articles/203405891-Using-the-Request-Validator),
+  [request validator](https://docs.acrolinx.com/kb/en/how-to-use-the-request-validator-13730818.html),
   if the most prominent mistakes aren't made.
 * Are you ready for a demo during the meeting?

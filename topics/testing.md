@@ -7,7 +7,7 @@
     3. no required libraries are missing.
     4. the [lookup](text-lookup.md) of issues within the original text works properly.
 3. The tests of the [Test Sidebar](test-sidebar.md) must pass.
-4. Use the [request validator](https://support.acrolinx.com/hc/en-us/articles/203405891-Using-the-Request-Validator) (`<ACROLINX_SERVER:PORT>/request-validator/`)
+4. Use the [request validator](https://docs.acrolinx.com/kb/en/how-to-use-the-request-validator-13730818.html) (`<ACROLINX_SERVER:PORT>/request-validator/`)
    to verify what is sent to the Acrolinx Platform and that all information is filled out properly.
 Manual testing is required for the cases that aren't covered by automated tests.
 
