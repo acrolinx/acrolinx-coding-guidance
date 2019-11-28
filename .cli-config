@@ -1,0 +1,14 @@
+{
+  "locale": "en",
+  "files": [
+    "**/*.md"
+  ],
+  "content-format": "AUTO",
+  "check-type": "baseline",
+  "max-concurrent": 3,
+  "result-json": "results/result.json",
+  "result-junit": "results/xunit.xml",
+  "report-type": [
+    "scorecard"
+  ]
+}
