@@ -1,20 +1,20 @@
 # Authentication and Server Configuration
 
-## Server Address
+## Acrolinx URL
 
 Typically one of the Acrolinx Sidebar SDK will take care to configure the Acrolinx URL.
-In some situations it might make sense that the server address is prepopulated in different ways:
+In some situations it might make sense that the Acrolinx URL is prepopulated in different ways:
 
-1. A CMS the administrator configures the server address for all users.
-   In this case, make sure that the server address is validated properly.
+1. A CMS the administrator configures the Acrolinx URL for all users.
+   In this case, make sure that the Acrolinx URL is validated properly.
    A good way to validate an Acrolinx Platform is to check if `<SERVER:PORT>/sidebar/v14/index.html`
    is present and contains a `meta` with the name `sidebar-version` like: `<meta name="sidebar-version" content="14.5.0">`.
    Keep in mind that the version differs in each Acrolinx Platform version.
-2. The integration is internally developed and only for your company: the server address can be hard-coded.
+2. The integration is internally developed and only for your company: the Acrolinx URL can be hard-coded.
 3. A web server delivers the integration. The web server also acts as proxy to the Acrolinx Platform.
-   In this case, a relative server address can be used, and the server configuration is done at server side.
+   In this case, a relative Acrolinx URL can be used, and the server configuration is done at server side.
 4. A software distribution system rolls out the integration.
-   In this case, the server address might be set by the roll-out mechanism.
+   In this case, the Acrolinx URL might be set by the roll-out mechanism.
 
 ## Authentication
 
@@ -25,8 +25,9 @@ Different possible configurations can be done with the Sidebar and Acrolinx Plat
    User configuration will be done in the Acrolinx Dashboard.
    The Sidebar will open a browser window where the user signs in to Acrolinx.
    Just configuration on Acrolinx Platform side is required: no coding effort on integration side required.
-   This option can't be used when traffic is tunneled though a [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy)
-   where the Acrolinx Platform is provided as a path like: `https://myserver/acrolinx/proxy/`.
+   If Acrolinx traffic is tunneled though a
+   [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy) and provided as a sub path like:
+   `https://myserver/acrolinx/proxy/`, this option can't be used.
    When the Acrolinx services are provided on top level, then a reverse proxy can be used like: `https://myserver/`.
 2. The Acrolinx Platform uses an **External Authentication** like LDAP.
    The user experience will be the same as in 1., but the users aren't configured in the Acrolinx Dashboard.
@@ -46,5 +47,8 @@ Different possible configurations can be done with the Sidebar and Acrolinx Plat
 5. In embedded integration, the same approach as in 4 can be used.
    Instead of tunneling all traffic through a proxy the secret can be used directly.
    Since no user will have access to the token on the embedded integration, this will be secure as well.
+6. In automated integrations sometimes it makes sense to use an API token created via the Acrolinx dashboard.
+   In that case you'll don't get proper user assignment and analytics might not work as expected.
+   You might have to talk to your CSM, if this kind of usage is covered by your license.
 
 Make sure that no hard-coded username is used for checks from different users.
