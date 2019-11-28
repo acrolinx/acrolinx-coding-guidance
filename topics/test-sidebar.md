@@ -2,7 +2,7 @@
 
 ## Connecting to the Test Sidebar
 
-Enter the Test Sidebar URL as server address in the start page:
+Enter the Test Sidebar URL as Acrolinx URL in the start page:
 
 ![Connecting to the test Sidebar](images/test-sidebar/connect_in_sidebar.png)
 
@@ -240,7 +240,7 @@ Should select parts of the test randomly. That's for smoke testing.
 
 #### Select All
 
-All text should be selected. Depending on the host app, it could be possible that it isn't possible.
+All text content should be selected. Depending on the host app, it could be possible that it isn't possible.
 After running this test: you know ;-).
 
 #### Acrolinx Storage
@@ -314,9 +314,9 @@ Shows another page with a back button.
 Emulates how the integration and host application behaves if the js hangs for several seconds.
 This can be used for testing if the host app redraws the dialogs or if the operating system tries to kill the app.
 
-#### Throw JS Error
+#### Throw Js Error
 
-Throws a JS error. Can be used to test if it reaches the integration log or if the app crashes.
+Throws a Js Error. Can be used to test if it reaches the integration log or if the app crashes.
 
 #### Refresh
 
