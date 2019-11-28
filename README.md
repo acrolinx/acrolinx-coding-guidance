@@ -73,7 +73,7 @@ Have a look at the [IDE Settings](ide-settings).
 
 ## [Lookup](topics/text-lookup.md)
 
-## [Authentication and Server Configuration](topics/configuration.md)
+## [Authentication and Acrolinx URL Configuration](topics/configuration.md)
 
 ## Checklist
 

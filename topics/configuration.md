@@ -1,4 +1,4 @@
-# Authentication and Server Configuration
+# Authentication and Acrolinx URL Configuration
 
 ## Acrolinx URL
 
