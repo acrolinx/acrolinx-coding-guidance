@@ -1,7 +1,8 @@
 # Logging
 
-All integrations should log messages in such a way that, in case of a crash or malfunction,
-Support is able to figure out what went wrong.
+In case of a crash or malfunction,
+all integrations must write log messages.
+The messages must enable support to figure out what went wrong.
 
 ## Types
 
@@ -97,14 +98,14 @@ Examples:
 * To a certain degree, also stack-traces should be considered
   sensitive as they tell something about how things work.
 
-Please use the following guides to decide what data to log on which levels.
+Please use the following guides to decide what data to log at which levels.
 
 ### Error
 
 Errors are rare, exceptional situations. These will usually not show
 up in log files. When they do, it may be hard to find out what
 happened. Therefore, information like IP-addresses and usernames can
-be logged. For example, when you can't reach a server-address.
+be logged. For example, when you can't reach an Acrolinx URL.
 
 ### Warn
 
@@ -114,7 +115,7 @@ logs. Thus, warning must never contain any sensitive data.
 
 ### Info
 
-Logs on Info level happen all the time.  Never log any sensitive data
+Logs at Info level happen all the time.  Never log any sensitive data
 here.
 
 * Log the ID of users instead of their names.

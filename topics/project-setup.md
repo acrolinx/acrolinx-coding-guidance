@@ -95,9 +95,9 @@ The name of the job in the build system should almost be the same as the lowerca
 in:
 
 * Use `<products>-<classic?>-<os>-<platform>` for the job that builds the integration, like:
-    + Use `word-win-x86` for Word for Windows Sidebar edition x86 version.
-    + Use `word-win-classic-x86` for Word for Windows Classic edition x86 version.
-    + Use `word-mac` for Word for Mac Sidebar edition all platforms.
+    + Use `word-win-x86` for Word for Windows Sidebar Integration x86 version.
+    + Use `word-win-classic-x86` for Word for Windows Classic Integration x86 version.
+    + Use `word-mac` for Word for Mac Sidebar Integration all platforms.
     + Use `vscode` for a multiplatform version of an integration for Microsoft Visual Studio Code.
     + Use `word_powerpoint-win` in case you have one job creating several installers for Word and for PowerPoint.
     + Use `office-win` in case you create a bundled package that installs multiple Microsoft Office integrations at once.
