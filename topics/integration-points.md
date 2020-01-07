@@ -94,8 +94,7 @@ influences the recommendation for the [check type](check-types.md).
   Normally it's just entered by the user.
 * The check type is interactive.
 
-
-[Desktop Checker](https://docs.acrolinx.com/desktopchecker/latest/en)
+Hint: A lightweight alternative to code a full integration is the [Acrolinx Desktop Checker](https://docs.acrolinx.com/desktopchecker/latest/en).
 
 ## Batch Integration
 
@@ -115,9 +114,6 @@ influences the recommendation for the [check type](check-types.md).
     + Batch (default), if the user owns the files,
     + Baseline, if other users files are checked.
 
-Instead of an SDK the CLI could be used in scripts for an easy integration.
-
-See:
-
-* [Acrolinx Command Line Interface](https://docs.acrolinx.com/cli/latest/en), and
-* [Content Analyzer 2019](https://docs.acrolinx.com/ca/latest/en)
+Instead of an Acrolinx SDK the [Acrolinx Command Line Interface](https://docs.acrolinx.com/cli/latest/en)
+could be used in an automated way. It's designed to be highly scriptable.
+The [Content Analyzer 2019](https://docs.acrolinx.com/ca/latest/en) could be used for manual checking a set of files.
