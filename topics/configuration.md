@@ -18,7 +18,8 @@ In some situations it might make sense that the Acrolinx URL is prepopulated in 
 
 ## Authentication
 
-By default the authentication takes place in the Sidebar. The Sidebar will open a browser page for sign-in.
+By default the authentication takes place in the Sidebar. The Sidebar will open a browser page for sign-in, if required.
+If users are already authenticated in some CMS context, ideally the Acrolinx single sign-on (SSO) is used. See: 4 and 5.
 Different possible configurations can be done with the Sidebar and Acrolinx Platform:
 
 1. The build-in **Acrolinx authentication** is used with an embedded user database.
@@ -47,8 +48,10 @@ Different possible configurations can be done with the Sidebar and Acrolinx Plat
 5. In embedded integration, the same approach as in 4 can be used.
    Instead of tunneling all traffic through a proxy the secret can be used directly.
    Since no user will have access to the token on the embedded integration, this will be secure as well.
-6. In automated integrations sometimes it makes sense to use an API token created via the Acrolinx dashboard.
+6. In automated integrations sometimes it makes sense to use an **API token** created via the Acrolinx dashboard.
    In that case you'll don't get proper user assignment and analytics might not work as expected.
    You might have to talk to your CSM, if this kind of usage is covered by your license.
 
 Make sure that no hard-coded username is used for checks from different users.
+
+Often the used authentication influences the preferred [check type](check-types.md). See: [integration points](integration-points.md)

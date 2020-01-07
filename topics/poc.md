@@ -11,6 +11,7 @@ Typically it's a good idea to start a new project doing a PoC.
 * Which technologies can be used?
 * What's the best technologies for the environment?
 * What's the minimum viable product?
+* Where and how to integrate?
 
 ## Essence of a PoC
 

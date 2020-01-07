@@ -4,14 +4,12 @@
 
 Before implementing the extraction, it makes sense to understand how Acrolinx reads your content.
 
-![How Acrolinx Reads Your Content With Content Profiles](https://writers.acrolinx.com/images/how-acrolinx-reads-your-content-profiles.png)
+![How Acrolinx Reads Your Content With Content Profiles](images/how-acrolinx-read-content.png)
 
 The idea of this diagram is to provide a complete example starting at the extraction.
 It demonstrates almost all feasible extraction settings.
 Sorry, the diagram got a bit huge.
-Try to zoom in and out and follow the lines and the numbers from 1 to 4.
-
-*Note: The diagram shows the processing of Acrolinx version 5.3 or later.*
+Try to zoom in and out and follow the lines and the numbers from 1 to 5.
 
 ## Check Format and Supporting Multiformat Editors
 
@@ -179,6 +177,7 @@ Normal text must be written in lowercase:
    It helps Acrolinx to identify the document later.
    It'll also help Acrolinx users finding the content later inside the CMS, on hard drive, or where ever it came from.
 2. Set a DOCTYPE and/or root element so that Acrolinx is able to choose the right extraction.
+3. Make sure that the recommended [check type](check-types.md) is used.
 
 ## What's a Document
 

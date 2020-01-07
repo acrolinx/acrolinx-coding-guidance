@@ -37,6 +37,8 @@ Have a look at the [IDE Settings](ide-settings).
 
 ## [Proof of Concept](topics/poc.md)
 
+## [Integration Points](topics/integration-points.md)
+
 ## [Project Setup](topics/project-setup.md)
 
 ## [Packaging](topics/packaging.md)

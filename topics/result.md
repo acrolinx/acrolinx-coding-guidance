@@ -7,6 +7,9 @@ You might only have to implement the [lookup](text-lookup.md) and the Embed Chec
 
 ## Embed Check Data
 
+Note: *Only use Embed Check Data in case an [automated integration](integration-points.md) isn't feasible.*
+*In all other cases we highly recommend building an automated integration.*
+
 If enabled on server side then the Sidebar will tell the Acrolinx Integration to Embed Check Data.
 The idea of embedded check data is to enable easy integration or CMS side reporting.
 Use, if you want to know:
@@ -33,7 +36,7 @@ If yes, do it the same way, they do.
 
 Make sure that:
 
-* A new check overrides the last embedded check data, to be always up-to-date.
+* A new check overrides the last embedded check data, to be always up to date.
 * You don't use a fixed list of keys and values. The Acrolinx Platform decides which keys should be embedded.
 * In case Embed Check Data is turned off, don't touch existing embedded check data.
 

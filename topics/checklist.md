@@ -7,6 +7,10 @@ Some functional requirements are implemented without any additional work if you 
 Other items on this checklist are nonfunctional requirements that
 developers should keep in mind all the time while developing.
 
+## Certification
+
+In case of certification make sure to minimally fulfill the [minimal certification requirements](sdk-support.md#minimal-certification-requirements).
+
 ## How to Work with the Checklist
 
 1. Copy this checklist to your source code repository of the integration you're currently working on.
@@ -34,6 +38,11 @@ developers should keep in mind all the time while developing.
 ![Developer](images/developer.png) A **developer** reviews the code.
 
 ![QA](images/qa.png) A **QA** person validates the functionality.
+
+## [Integration Points](integration-points.md)
+
+* [ ] The integration integrates at the correct points.
+* [ ] The correct [check type](check-types.md) is used.
 
 ## [Project Setup](project-setup.md)
 
@@ -121,6 +130,9 @@ developers should keep in mind all the time while developing.
     + [ ] The signature is hard-coded and set correctly according to the integration.
           ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png)
           ![Developer](images/developer.png) ![QA](images/qa.png)
+    + [ ] The signature is the same for all parts of the integration, automated as well as interactive.
+      ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png)
+          ![Developer](images/developer.png) ![QA](images/qa.png)
     + [ ] Code is minified and obfuscated - or we explicitly decided not to do that.
           ![Acrolinx Integration](images/acrolinx.png) ![QA](images/qa.png)
     + [ ] Referenced libraries are included - don't reference external pages, like [CDNs](https://en.wikipedia.org/wiki/Content_delivery_network).
@@ -165,7 +177,7 @@ developers should keep in mind all the time while developing.
       ![Acrolinx Integration](images/acrolinx.png) ![Developer](images/developer.png)
 * [ ] Try to write object-oriented code or [functional programming.](https://en.wikipedia.org/wiki/Functional_programming)
       ![Acrolinx Integration](images/acrolinx.png) ![Developer](images/developer.png)
-* [ ] Comments are often a hint that your code isn't self-documenting - maybe you have to rename your method or variable.
+* [ ] Comments are often a hint that your code isn't self-documenting, maybe you have to rename your method or variable.
       ![Acrolinx Integration](images/acrolinx.png) ![Developer](images/developer.png)
 * [ ] Minimal documentations are mandatory:
       What does the class do, which exceptions will it throw, which values does the method accept.
@@ -211,7 +223,7 @@ developers should keep in mind all the time while developing.
       Some languages have right-to-left writing.
       ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png)
       ![Developer](images/developer.png) ![QA](images/qa.png)
-* [ ] Encoding of entities `&`  and `&amp;` in HTML and XML
+* [ ] Encoding of entities `&` and `&amp;` in HTML and XML
       ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png)
       ![Developer](images/developer.png) ![QA](images/qa.png)
 * [ ] Locale-aware collation order while sorting. See: [Collation](https://en.wikipedia.org/wiki/Collation)

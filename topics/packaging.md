@@ -3,19 +3,20 @@
 A build script must be provided that creates a ready-to-install artifact.
 Make sure that:
 
-1. the package has a name matching the pattern:
+1. The package has a name matching the pattern:
     * `<product>V<version>_B<build>.<platform>.<extension>` like
         + `WordV4.6_B15.32_bit.msi`, or
         + `AEMV4.5_B25.zip`.
-2. version and build information are set correctly.
+2. The version and build information are set correctly.
    (Version must be configured in one place and checked in, build comes from Jenkins.)
-3. the signature is hard-coded and set correctly according to the integration.
-4. code is minified and obfuscated - or we explicitly decided not to do that.
-5. referenced libraries are included - don't reference external pages, like [CDNs](https://en.wikipedia.org/wiki/Content_delivery_network).
-6. license files of referenced libraries are included.
-7. the package is signed. Acrolinx has a valid certificate that should be used on Jenkins.
+3. The signature is hard-coded and set correctly according to the integration.
+4. The signature is the same for all parts of the integration, automated as well as interactive.
+5. The code is minified and obfuscated - or we explicitly decided not to do that.
+6. The referenced libraries are included - don't reference external pages, like [CDNs](https://en.wikipedia.org/wiki/Content_delivery_network).
+7. The license files of referenced libraries are included.
+8. The package is signed. Acrolinx has a valid certificate that should be used on Jenkins.
    Don't use it on developer computers and don't be checked into the project's version control.
-8. the package is ready to install.
+9. The package is ready to install.
 
 ## Host Editor with Update Site
 
