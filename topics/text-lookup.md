@@ -39,4 +39,4 @@ A **range** contains a start and an end offset. A range could refer to the **ori
 
 ## Strategies
 
-Please contact [Acrolinx SDK support](topics/sdk-support.md) to sign an NDA and get access the list of strategies for lookup.
+Please contact [Acrolinx SDK support](sdk-support.md) to sign an NDA and get access the list of strategies for lookup.
