@@ -1,44 +1,42 @@
 # Integration Points
 
-Before integrating Acrolinx into a system it makes sense to decide on the best places to integrate.
-Ideally all content that is produced is checked in an automated way to ensure certain quality standards.
-For a good user experience integrate the Sidebar where the content gets created.
+Before integrating Acrolinx into a system it makes sense to decide on the best places to integrate. There are two ways to check the produced content by
+* an automated way to ensure certain quality standards.
+* integrating Sidebar in the editor to enable interactive user experience where content gets created.
 
 ![Overview of the different integration types](images/integration-types.png)
 
-The way you [authenticate](configuration.md#Authentication) users in an integration,
-influences the recommendation for the [check type](check-types.md).
+Also consider, how to [authenticate](configuration.md#Authentication) users in an integration? Authentication will influence the recommendation for the [check type](check-types.md).
 
 ## Interactive Direct (Sidebar)
 
 * Purpose:
     + That's the simplest way to integrate Acrolinx. It might be used for a proof of concept.
+    + Check content at the creation time
     + It could also be the only solution in case the CMS can't connect to the Acrolinx Platform.
-    For example the CMS is hosted in the cloud, but the Acrolinx Platform runs inside the companies network.
+    For example the CMS is hosted inside the companies network, but the Acrolinx Platform runs in the cloud.
 * Connection: Direct, the web browser must be able to reach the Acrolinx Platform.
-* Authentication (No special handling is required on integration side):
+* Authentication (No special handling is required on the integration side):
     + Acrolinx authentication,
     + External Authentication,
     + Federate Authentication
-* The [Acrolinx URL](configuration.md#Acrolinx-URL) could be prepopulated by administrator.
-* The check type is interactive.
+* The [Acrolinx URL](configuration.md#Acrolinx-URL) could be prepopulated by the administrator.
 
 ## Interactive SSO (Sidebar)
 
 * Purpose:
-    + That's the preferred way and most convenient for the users.
+    + That's the preferred way and most convenient for the writers who are using Web CMS.
 * Connection: Through a reverse proxy on the CMS backend.
 * Authentication:
     + SSO
 * The [Acrolinx URL](configuration.md#Acrolinx-URL) is configured in the backend of the CMS.
-* The check type is interactive.
 
 ## Trigger (Automated)
 
 * Purpose:
     + Every file that is checked in, or saved will be checked automatically.
       The data in the Acrolinx Analytics is always up to date without manual action.
-* Connection: The CMS backend connects directly to the Acrolinx Platform. On of the Acrolinx Platform SDKs can be used.
+* Connection: The CMS backend connects directly to the Acrolinx Platform. One of the Acrolinx Platform SDKs can be used.
 * Authentication:
     + SSO: Use either the signed in user, or the last editor of the content. Typically these are identically. (recommended)
     + API token
@@ -51,11 +49,10 @@ influences the recommendation for the [check type](check-types.md).
 
 * Purpose:
     + Sometimes it's not feasible to set up a trigger-based approach.
-    + Often that's the easiest solution for an automated integration.
     + Even if other integration points are used it makes sense to check the whole content from time to time.
       It will catch up with changes in terminology or configuration.
     + The data in the Acrolinx Analytics is always up to date without manual action.
-* Connection: The CMS backend connects directly to the Acrolinx Platform. On of the Acrolinx Platform SDKs can be used.
+* Connection: The CMS backend connects directly to the Acrolinx Platform. One of the Acrolinx Platform SDKs can be used.
 * Authentication:
     + SSO (recommended)
     + API token
@@ -85,7 +82,7 @@ influences the recommendation for the [check type](check-types.md).
     + That's the standard for all integrations in stand-alone application.
       Technically it's quite similar to [Interactive Direct (Sidebar)](#interactive-direct-sidebar).
 * Connection: Direct, the integration must be able to reach the Acrolinx Platform.
-* Authentication (No special handling is required on integration side):
+* Authentication (No special handling is required on the integration side):
     + Acrolinx authentication,
     + External Authentication,
     + Federate Authentication
@@ -114,6 +111,4 @@ Hint: A lightweight alternative to code a full integration is the [Acrolinx Desk
     + Batch (default), if the user owns the files,
     + Baseline, if other users files are checked.
 
-Instead of an Acrolinx SDK the [Acrolinx Command Line Interface](https://docs.acrolinx.com/cli/latest/en)
-could be used in an automated way. It's designed to be highly scriptable.
-The [Content Analyzer 2019](https://docs.acrolinx.com/ca/latest/en) could be used for manual checking a set of files.
+Instead of an Acrolinx SDK use [Acrolinx Command Line Interface](https://docs.acrolinx.com/cli/latest/en), a highly scriptable solution designed for the batch integration. The [Content Analyzer 2019](https://docs.acrolinx.com/ca/latest/en) could also be used for manual checking a set of files.
