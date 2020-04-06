@@ -90,7 +90,7 @@ Check if a simple text extraction is faster than 500ms.
 ##### (8) Input Format Looks Valid for Content
 
 This test performs some rough tests. For example,
-if the text starts with < and ends with > it assumes that the format might be XML or HTML.
+if the text starts with < and ends with > it assumes that the format might be AUTO, XML or HTML.
 If the format is HTML, it assumes that it finds at least one recognized HTML tag like div p or so.
 
 ##### (9) Prepare for Later Checks
