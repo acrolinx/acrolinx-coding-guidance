@@ -1,12 +1,15 @@
 # Integration Points
 
-Before integrating Acrolinx into a system it makes sense to decide on the best places to integrate. There are two ways to check the produced content by
+Before integrating Acrolinx into a system it makes sense to decide on the best places to integrate.
+There are two ways to check the produced content by:
+
 * an automated way to ensure certain quality standards.
 * integrating Sidebar in the editor to enable interactive user experience where content gets created.
 
 ![Overview of the different integration types](images/integration-types.png)
 
-Also consider, how to [authenticate](configuration.md#Authentication) users in an integration? Authentication will influence the recommendation for the [check type](check-types.md).
+Also consider, how to [authenticate](configuration.md#Authentication) users in an integration?
+Authentication will influence the recommendation for the [check type](check-types.md).
 
 ## Interactive Direct (Sidebar)
 
@@ -111,4 +114,6 @@ Hint: A lightweight alternative to code a full integration is the [Acrolinx Desk
     + Batch (default), if the user owns the files,
     + Baseline, if other users files are checked.
 
-Instead of an Acrolinx SDK use [Acrolinx Command Line Interface](https://docs.acrolinx.com/cli/latest/en), a highly scriptable solution designed for the batch integration. The [Content Analyzer 2019](https://docs.acrolinx.com/ca/latest/en) could also be used for manual checking a set of files.
+Instead of an Acrolinx SDK, use the [Acrolinx Command Line Interface](https://docs.acrolinx.com/cli/latest/en),
+a highly scriptable solution designed for the batch integration.
+The [Content Analyzer 2019](https://docs.acrolinx.com/ca/latest/en) could also be used for manual checking a set of files.

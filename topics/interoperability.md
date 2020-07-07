@@ -23,9 +23,9 @@ The world as you're used to might be different in another country. Typical issue
 8. Some languages typically don't have spaces as word boundaries, for example Japanese.
    Other languages have strange characters like German `äöü`,
    Spanish punctuation like `¡` and `¿`,
-   or different behavior on upper/lower casing like Turkish `ı` → `I`, `i` → `İ` instead of `i` → `I`.
+   or different behavior on the upper/lower casing like Turkish `ı` → `I`, `i` → `İ` instead of `i` → `I`.
    Some languages have right-to-left writing.
-9. Encoding of entities `&`  and `&amp;` in HTML and XML
+9. Encoding of entities `&` and `&amp;` in HTML and XML
 10. Locale-aware collation order while sorting.
    See: [Collation](https://en.wikipedia.org/wiki/Collation)
 

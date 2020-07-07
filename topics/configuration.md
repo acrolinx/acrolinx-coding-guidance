@@ -12,7 +12,7 @@ In some situations it might make sense that the Acrolinx URL is prepopulated in 
    Keep in mind that the version differs in each Acrolinx Platform version.
 2. The integration is internally developed and only for your company: the Acrolinx URL can be hard-coded.
 3. A web server delivers the integration. The web server also acts as proxy to the Acrolinx Platform.
-   In this case, a relative Acrolinx URL can be used, and the server configuration is done at server side.
+   In this case, a relative Acrolinx URL can be used, and the server configuration is done at the server side.
 4. A software distribution system rolls out the integration.
    In this case, the Acrolinx URL might be set by the roll-out mechanism.
 
@@ -25,20 +25,20 @@ Different possible configurations can be done with the Sidebar and Acrolinx Plat
 1. The build-in **Acrolinx authentication** is used with an embedded user database.
    User configuration will be done in the Acrolinx Dashboard.
    The Sidebar will open a browser window where the user signs in to Acrolinx.
-   Just configuration on Acrolinx Platform side is required: no coding effort on integration side required.
-   If Acrolinx traffic is tunneled though a
+   Just configuration on the Acrolinx Platform side is required: no coding effort on the integration side required.
+   If Acrolinx traffic is tunneled through a
    [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy) and provided as a sub path like:
    `https://myserver/acrolinx/proxy/`, this option can't be used.
-   When the Acrolinx services are provided on top level, then a reverse proxy can be used like: `https://myserver/`.
+   When the Acrolinx services are provided on the top level, then a reverse proxy can be used like: `https://myserver/`.
 2. The Acrolinx Platform uses an **External Authentication** like LDAP.
    The user experience will be the same as in 1., but the users aren't configured in the Acrolinx Dashboard.
    Instead the users will be configured on the **LDAP-Server**.
-   Just configuration on Acrolinx Platform side is required: no coding effort on integration side required.
+   Just configuration on the Acrolinx Platform side is required: no coding effort on the integration side required.
 3. The Acrolinx Platform uses a **Federate Authentication**.
    The user experience will be similar to one, as well as two.
    Instead of signing in at the Acrolinx Platform the user will see a Sign-in page of a **3rd-party system**.
-   This option can also be used when traffic is tunneled though a reverse proxy.
-   Just configuration on Acrolinx Platform side is required: no coding effort on integration side required.
+   This option can also be used when traffic is tunneled through a reverse proxy.
+   Just a configuration on the Acrolinx Platform side is required: no coding effort on the integration side required.
 4. The communication is tunneled through an [Acrolinx single sign-on reverse proxy (SSO)](https://github.com/acrolinx/acrolinx-proxy-sample)
    using, and a shared secret. The user is already authenticated in a CMS.
    A proxy build into the CMS system knows the username of the current session.

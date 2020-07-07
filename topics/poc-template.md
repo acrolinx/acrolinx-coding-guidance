@@ -1,6 +1,6 @@
 # Template
 
-This document can be used as template to provide proper documentation and reference for decisions.
+This document can be used as a template to provide proper documentation and reference for decisions.
 It turned out,
 that the following sections make sense for getting the most benefit out of the effort spend into making a proof of concept.
 
@@ -55,7 +55,13 @@ that the following sections make sense for getting the most benefit out of the e
 * What is the best lookup strategy?
 * How will the integration be deployed / shipped / packaged?
 * How does the [authentication and server configuration](configuration.md) be?
-* Which [platforms, SDKs, browsers, host editor versions, and operating systems will be supported](interoperability.md)?
+* Which
+    + platforms,
+    + SDKs,
+    + browsers,
+    + host editor versions, and
+    + operating systems
+  [will be supported](interoperability.md)?
 * Which file formats does the host editor support?
 * Will it be easy to [build, debug](project-setup.md#build-system), and [test automatically](testing.md)?
 * Any infrastructure missing?

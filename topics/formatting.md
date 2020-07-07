@@ -9,7 +9,7 @@ The Acrolinx default settings can be found in this repository.
 
 ### Header
 
-Source files written by Acrolinx team member must contain the Acrolinx copyright header:
+Source files written by an Acrolinx team member must contain the Acrolinx copyright header:
 
 ```java
 /* © CreationYear - present Acrolinx GmbH */
@@ -22,9 +22,9 @@ Source files written by Acrolinx team member must contain the Acrolinx copyright
 * "2015" is the year when the file was created.
 * Use it in open source as well as closed source files.
 * Obviously only for files that allow comments or another suitable construct to add a copyright header.
-* Whenever you make significant changes to a file, you _can_ add the year to this line either with comma or as a range.
+* Whenever you make significant changes to a file, you _can_ add the year to this line either with a comma or as a range.
 * The form using '-present' is most convenient as it 'updates' automatically. It's unclear if this hold up in court.
-* Don't put too much effort into maintenance of the latest year!
+* Don't put too much effort into the maintenance of the latest year!
   It determines the end of the copyright claim and we'll hardly use those files more than 50 years from now.
 * This is mainly interesting for files that have 'significant' content.
   It doesn't hurt to put the copyright header into insignificant files. Examples:

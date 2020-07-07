@@ -13,7 +13,10 @@ Try to zoom in and out and follow the lines and the numbers from 1 to 5.
 
 ## Check Format and Supporting Multiformat Editors
 
-If the host application provides a format that is natively supported by Acrolinx, like XML, or HTML format,
+If the host application provides a format that is natively supported by Acrolinx, like:
+
+* XML, or
+* HTML format,
 then you should send the entire content to the Acrolinx Platform.
 
 The Acrolinx Platform supports different check formats natively:
@@ -103,7 +106,7 @@ Acrolinx relies on this structural and contextual information to know which part
 
 #### Example
 
-Depending on the structural information included with content, a sentence like "This is a text." may be correct or incorrect:
+Depending on the structural information included with the content, a sentence like "This is a text." may be correct or incorrect:
 
 Incorrect:
 
@@ -175,7 +178,7 @@ Normal text must be written in lowercase:
 
 1. Make sure that you send the file name, URI, or a unique reference to your source document.
    It helps Acrolinx to identify the document later.
-   It'll also help Acrolinx users finding the content later inside the CMS, on hard drive, or where ever it came from.
+   It'll also help Acrolinx users finding the content later inside the CMS, on the hard drive, or where ever it came from.
 2. Set a DOCTYPE and/or root element so that Acrolinx is able to choose the right extraction.
 3. Make sure that the recommended [check type](check-types.md) is used.
 

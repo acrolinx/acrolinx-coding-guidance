@@ -4,7 +4,7 @@
 
 This Objective-C guide aims to keep the code across all Objective-C files or projects consistent.
 It extends or emphasizes with examples some of the conventions mentioned in Apple's Cocoa Coding guidelines.
-Prerequisite for this guide is [Cocoa Coding Guidelines from Apple](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html).
+Prerequisite for this guide is the [Cocoa Coding Guidelines from Apple](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html).
 
 ## Coding Conventions
 
@@ -66,7 +66,7 @@ Add a prefix `ACRO` to all the class names (except framework class names).
 
 * Use "{" in the same line with one space for all (method/conditions and so on)
 * Use pragma mark to group related methods.
-* Proper format to use pragma mark is:
+* Proper format to use the pragma mark is:
 
 ```objectiveC
 #pragma mark - <group description>
@@ -74,7 +74,7 @@ Add a prefix `ACRO` to all the class names (except framework class names).
 
 ### Enumerations
 
-* Always add prefix to your enumeration and to enumeration's keys
+* Always add prefix to your enumeration and to the enumeration's keys
 * Start enumeration items with the same name as your enumeration name.
 
 ### Literals
@@ -113,7 +113,7 @@ To avoid crashes, ensure that null values aren't passed into `NSArray` and `NSDi
 * Folders must reflect any XCode groups created in the file system.
 * The code must be grouped not only by type but also by feature for greater Clarity.
 * Example Folders and file placements
-    + Application: specific app-related stuff like `Appdelegate`, `Main.m`, `.pch` and so on.
+    + Application: specific app-related stuff like `Appdelegate`, `Main.m`, `.pch`, and so on.
     + Controllers: view (`.xib`) and view controller stuff.
     + Library: Specific application classes like helpers, services, base classes.
     + Models: Application domain models and entities. Core Data Model.

@@ -13,7 +13,7 @@ That said, this document is no replacement for good education,
 a stack of [good coding books](topics/coding-style.md),
 or the experience and intuition that a good developer has.
 
-You don't need to agree with all points in this document,
+You don't need to agree with all the points in this document,
 and you might find exceptions where it makes sense to implement something differently.
 Remember: There are good reasons to not do good things.
 Make sure that your reasons are good enough. You're able to explain them, and

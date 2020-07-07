@@ -2,7 +2,7 @@
 
 ## Connecting to the Test Sidebar
 
-Enter the Test Sidebar URL as Acrolinx URL in the start page:
+Enter the Test Sidebar URL as the Acrolinx URL in the start page:
 
 ![Connecting to the test Sidebar](images/test-sidebar/connect_in_sidebar.png)
 
@@ -16,7 +16,7 @@ Enter the Test Sidebar URL as Acrolinx URL in the start page:
 
 ### Direct Reference
 
-In some cases, it might be necessary to reference the Sidebar directly in code. That should be the exception.
+In some cases, it might be necessary to reference the Sidebar directly in the code. That should be the exception.
 In case you need to do, here is the URL:
 `https://acrolinx-sidebar-mock.s3.amazonaws.com/sidebar/v14/index.html`
 
@@ -31,7 +31,7 @@ In case you need to do, here is the URL:
 In this section you can:
 
 * See if the Acrolinx Integration has connected to the Sidebar.
-* Check and see the extracted text in raw format (only if checkbox is switched on).
+* Check and see the extracted text in raw format (only if the checkbox is switched on).
 * Select text inside the text field and a JSON for selection and replacement is generated.
 * Send the command for select or replace to the integration.
 
@@ -53,16 +53,16 @@ For example, the test for the components (info dialog) shows what was set.
 
 ##### (0) Sidebar Has Correct Dimensions - Width = 300, Height >= 300 Width: 314, Height: 501
 
-Test if size of container is correct.
+Test if the size of container is correct.
 
 ##### (1) Initialized
 
-Test if Sidebar was initialized correctly - if initialization is implemented wrongly,
+Test if the Sidebar was initialized correctly - if initialization is implemented wrongly,
 it could vary the test becomes green depending on timing. If it's done correctly, the test should be green each time.
 
 ##### (2) `requestGlobalCheck` Returns Text
 
-Test if at least something is returned if "check" button is pressed.
+Test if at least something is returned if the "check" button is pressed.
 
 ##### (3) Check Selection Is Enabled
 
@@ -105,11 +105,11 @@ This test checks that the ranges of the selected content are correct.
 
 ##### (11) Replace Leaves Surrounding Words as They're
 
-This test checks if a replacement doesn't replace text that is around the text that has been replaced.
+This test checks if a replacement doesn't replace the text that is around the text that has been replaced.
 
 ##### (12) Replace second Then First Word
 
-A simple replacement from end to start (simple because on second replacement the first offsets are still valid).
+A simple replacement from end to start (simple because on the second replacement the first offsets are still valid).
 
 ##### (13) Replace First and Then second Word
 
@@ -136,7 +136,7 @@ Replaces a " " by ""
 
 Replaces parts in a sentence like: `word1 word2 word3 word4` with `word1 replacement1 replacement2 word4`.
 
-The replacement is done at once but with three ranges "word2" " " "word3"
+The replacement is done at once but with three ranges "word2" " " "word3".
 
 ##### (19) Replace Single Chars
 
@@ -204,7 +204,7 @@ This test just sends some invalid offsets to select so that the integrator can e
 
 #### What the Automated Tests Don't Cover
 
-The tests don't cover changes made manually by user.
+The tests don't cover changes made manually by the user.
 If the integration tracks all actions the Sidebar does, then it can achieve 100%.
 If the user changes one char by hand, all offsets are shifted.
 
@@ -226,7 +226,7 @@ In that window you should be able to hit the TESTJS button and get the message t
 #### Open Log Location
 
 This test is intended for desktop application integration.
-If this test succeeds, then it will open integration's log location.
+If this test succeeds, then it will open the integration's log location.
 
 #### (Intelligent) Select from Start to End
 
@@ -257,8 +257,8 @@ If you want to stop, you've to quickly enter a `0` in the field ;-).
 #### Remote File Execution Check
 
 This is an important test to make sure that integration isn't allowing any unexpected executable to run under its privileges.
-After click, if you observe new native processes (notepad, TextEdit, shell) in process monitor
-then it's the time to revisit `acrolinxPlugin.openWindow` implementation.
+After click, if you observe new native processes (notepad, TextEdit, shell) in the process monitor
+then it's the time to revisit the `acrolinxPlugin.openWindow` implementation.
 
 ### Dangerous Acceptance Tests
 
@@ -275,14 +275,14 @@ The tester should see the selection running from start to end.
 
 #### Replace Each Char from Start to End Including Tags with One Char
 
-Does the same as select but this time it replaces the char by number between 0 and 9. At the end,
+Does the same as select but this time it replaces the char by a number between 0 and 9. At the end,
 the whole document should consist only of numbers and the application shouldn't be crashed ;-).
 
 If the tester sees text that wasn't replaced then either the lookup or the replacement hasn't worked properly.
 
 #### Replace Each Char from Start to End Including Tags with Number of Chars
 
-Same as test before, but this time it replaces the chars by _number_ where number is a growing number for each replacement.
+Same as the test before, but this time it replaces the chars by _number_ where the number is a growing number for each replacement.
 This test can be used to see if the replacements have been made in the correct order.
 
 ### Log
@@ -297,7 +297,7 @@ Some of the log messages contain java script and can be clicked. The js code wil
 ![Java script console](images/test-sidebar/js.png)
 
 This filed can be used to execute any java script code.
-You can try out new features in integration interface as well as rerun previous logged js commands.
+You can try out new features in the integration interface as well as rerun previous logged js commands.
 
 ### Test Functions
 

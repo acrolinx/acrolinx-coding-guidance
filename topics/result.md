@@ -10,7 +10,7 @@ You might only have to implement the [lookup](text-lookup.md) and the Embed Chec
 Note: *Only use Embed Check Data in case an [automated integration](integration-points.md) isn't feasible.*
 *In all other cases we highly recommend building an automated integration.*
 
-If enabled on server side then the Sidebar will tell the Acrolinx Integration to Embed Check Data.
+If enabled on the server side then the Sidebar will tell the Acrolinx Integration to Embed Check Data.
 The idea of embedded check data is to enable easy integration or CMS side reporting.
 Use, if you want to know:
 

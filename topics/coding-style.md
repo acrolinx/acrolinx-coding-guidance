@@ -7,7 +7,7 @@ Ordered by priority:
 3. Make decisions and if you can't, keep asking questions until you can.
 4. Avoid abstractions you don't need immediately.
 5. Packages / namespaces / classes / functions should have names that explain what they do.
-6. Stateless, try to avoid having (mutable) state in your objects
+6. Stateless, try to avoid having a (mutable) state in your objects
 7. Use immutable objects
 8. Don't repeat yourself - avoid code duplication
 9. Try to write object-oriented code or [functional programming](https://en.wikipedia.org/wiki/Functional_programming)
@@ -37,7 +37,7 @@ Robert C. Martin: Clean Code - A Handbook of Agile Software Craftsmanship
   If you want to refer to "this" inside a function, you might be able to use a variable pointing to the object instead.
 * Don't perform sync AJAX calls.
 
-If you aren't sure how to write good JavaScript code, have a look at [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+If you aren't sure how to write good JavaScript code, have a look at the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript).
 
 ## C++
 

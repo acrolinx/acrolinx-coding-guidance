@@ -146,7 +146,7 @@ A recommended toolbox is:
 The project should contain configured tasks to compile, run tests,
 run the application (if possible) and release/deploy the artifacts.
 
-For example in case of Grunt the following tasks should be available:
+For example in the case of Grunt the following tasks should be available:
 
 * `grunt dist:release` should compile, run tests and package a release-ready artifact of the integration.
 * `grunt deploy:dev` should deploy to an internal repo or update site.
@@ -169,7 +169,7 @@ For example in case of Grunt the following tasks should be available:
 * XCode 7 compatible
 * Create Specific Workspace: Don't let XCode do it for you.
 * Set up projects with correct names and prefix: Use simple words and the prefix `ACRO`.
-* Create Ad hoc and App Store build configuration so that you can handle configuration for different destinations.
+* Create an Ad hoc and App Store build configuration so that you can handle configuration for different destinations.
 * Configure build setting to improve quality.
 
 ### Naming of the Integration

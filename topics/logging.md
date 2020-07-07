@@ -111,7 +111,7 @@ be logged. For example, when you can't reach an Acrolinx URL.
 
 Warnings can appear from time to time and aren't critical for the
 general function of the program. They can appear in day-to-day
-logs. Thus, warning must never contain any sensitive data.
+logs. Thus, any warning must never contain any sensitive data.
 
 ### Info
 

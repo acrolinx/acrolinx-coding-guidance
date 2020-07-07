@@ -20,12 +20,12 @@ Typically it's a good idea to start a new project doing a PoC.
   You need a place to store your code? [Create a repo.](project-setup.md#git) You have to build a package?
   [Create a proper package.](packaging.md) You've figured out how to build, debug, or install? [Document it in the Readme.md.](project-setup.md#readme)
 * The goal of a PoC isn't to finish the integration. Don't focus and get suck on solving problems.
-  The main goal is to identify problems, solutions, and the feasibility at all. Recognize when you PoC is finished.
+  The main goal is to identify problems, solutions, and the feasibility at all. Recognize when your PoC is finished.
 * Once you reach this point, create separate tickets. It makes it easier to track and QA the work.
   It also simplifies the life of the project management, and developers starting and driving the project later on.
 * It's OK to have a lower [code quality](coding-style.md) while developing a PoC.
   Don't forget to document your technical debt and nice it up, once you start the project.
-  Again, using ticket might be a good idea.
+  Again, using a ticket might be a good idea.
 * Sometimes it's already enough to look at the APIs.
   In this case, you don't have to try things out, if you're 100% sure it'll work.
 
