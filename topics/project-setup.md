@@ -21,7 +21,7 @@ Other branches can be used for feature development. Feature branches must be mer
 ### Push to `master` Branch
 
 The branch `master` must always be clean.
-The source must compile and the test must pass before a commit to the master branch is allowed.
+The source must compile and the test must pass before a commit to the `master` branch is allowed.
 If you want to share nonworking code, use another branch.
 
 ### Checked-In Files
