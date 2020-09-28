@@ -8,7 +8,7 @@ the choice of check type might differ because of different [authentication](conf
 
 For integrative integrations with UI.
 
-* Document Custom Fields: User gets prompted to fill them out, if mendentory
+* Document Custom Fields: User gets prompted to fill them out, if mandatory
 * Priority: High
 * Analytics Document Assignment: Assign
 
