@@ -68,23 +68,4 @@ Maybe you want to think about a [Proof of Concept](poc.md) already?
 
 ### Minimal Certification Requirements
 
-1) The **partner contract** was **signed**. See: [Steps for Building an Integration](https://docs.acrolinx.com/customintegrations/steps-for-building-an-integration)
-2) The integration doesn't violate the **Acrolinx license model**. (Demo / Questions)
-3) The correct **signature** is **hard-coded**. (Demo / Source)
-4) The correct **Acrolinx branding** is used. (Demo)
-5) The integration seems to be **usable**. (Demo / Questions)
-6) To fulfill the use case the best [points for integrating](integration-points.md) are used. (Demo / Questions)
-7) The [version information](project-setup.md#version-information) is set to enable support. (Demo / Source)
-8) No obvious [security issues](security-safety.md) are present. (Demo / Questions)
-9) The right [authentication mode](configuration.md#authentication) is used. (Demo / Source / Questions)
-10) The [Acrolinx URL](configuration.md#acrolinx-url) isn't hardcoded and not defaulting to the test URL.
-  The URL is ideally configured globally by an admin.
-11) The [content](text-extraction.md#structure) is well structured and all required content is sent.
-  Typically everything that is displayed in the UI. Sometimes additional custom fields. (Demo / Source / Questions)
-12) The correct [format](text-extraction.md#check-format-and-supporting-multiformat-editors) is used.
-  Ideally it's set to `auto`.
-  Typically everything that is displayed in the UI.
-  Sometimes additional custom fields. (Demo / Source / Questions)
-13) A good [reference](text-extraction.md#Enable-Acrolinx-Providing-Guidance-and-Analytics) is provided.
-    (Demo / Source / Questions)
-14) The correct [check type](check-types.md) is set. (Demo / Source / Questions)
+See the [Minimal Certification Requirements](minimal-requirements.md)
