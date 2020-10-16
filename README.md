@@ -81,6 +81,8 @@ Have a look at the [IDE Settings](ide-settings).
 
 You may want to use the [Review Checklist for Acrolinx Integrations](topics/checklist.md) to ensure the standards.
 
+## [Minimal Certification Requirements](topics/minimal-requirements.md)
+
 ## License
 
 Copyright 2016-present Acrolinx GmbH

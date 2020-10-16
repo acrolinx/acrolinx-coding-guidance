@@ -141,8 +141,9 @@
       [.NET](https://github.com/acrolinx/sdk-dotnet/blob/20ca7d1e7d58caf5f60cba33dbca72d7700e39ae/Acrolinx.Net/Acrolinx.Net/Check/CheckOptions.cs#L30),
       [PHP](https://github.com/acrolinx/sdk-php/blob/21d976471d389f3ea8b9175ce70b26b3588fa4b3/tests/AcrolinxEndpointTest.php#L274)
 
-## Related
+## See Also
 
 * [Certification Meeting](sdk-support.md#Certification-Meeting)
-* [Full Check List](checklist.md)
+* [Full Review Checklist for Acrolinx Integrations](checklist.md)
 * [Request Validator](https://docs.acrolinx.com/kb/en/how-to-use-the-request-validator-13730818.html)
+* [Test Sidebar for Developers](test-sidebar.md)

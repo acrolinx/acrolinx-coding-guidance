@@ -61,6 +61,7 @@ Maybe you want to think about a [Proof of Concept](poc.md) already?
 
 * Have you really finished your integration work, or do you still have open technical questions?
 * Have you [ensured](checklist.md) that everything is fine?
+  At least the [minimal certification requirements](minimal-requirements.md) must be fulfilled.
 * Please share a Scorecard link. We look into the request and analyze in advance using the
   [request validator](https://docs.acrolinx.com/kb/en/how-to-use-the-request-validator-13730818.html),
   if the most prominent mistakes aren't made.
@@ -68,4 +69,4 @@ Maybe you want to think about a [Proof of Concept](poc.md) already?
 
 ### Minimal Certification Requirements
 
-See the [Minimal Certification Requirements](minimal-requirements.md)
+See the [Minimal Certification Requirements](minimal-requirements.md).
