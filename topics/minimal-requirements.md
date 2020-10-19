@@ -30,16 +30,7 @@
 5) The correct **Acrolinx branding** is used. (Demo)
 6) The integration seems to be **usable**. (Demo / Questions)
 7) To fulfill the use case the best [points for integrating](integration-points.md) are used. (Demo / Questions)
-8) The correct [check type](check-types.md) is set. (Demo / Source / Questions)
-    + How to set the check type?
-      * Sidebar: always `interactive`
-      * Automated: [Platform API](https://acrolinxapi.docs.apiary.io/#reference/checking-api/submit-a-check/submit-a-check),
-      [JS](https://github.com/acrolinx/sdk-js/blob/2d6436f9b994137a646bcaed69ba70e04ec9e765/src/check.ts#L64),
-      [Java (1)](https://github.com/acrolinx/sdk-java/blob/127d42a5247e4e52d72ce829b649befbfb2eeffd/src/test/java/com/acrolinx/client/sdk/integration/CheckTest.java#L237)
-      [(2)](https://acrolinx.github.io/sdk-java/com/acrolinx/client/sdk/check/CheckOptionsBuilder.html#withCheckType-com.acrolinx.client.sdk.check.CheckType-),
-      [.NET](https://github.com/acrolinx/sdk-dotnet/blob/20ca7d1e7d58caf5f60cba33dbca72d7700e39ae/Acrolinx.Net/Acrolinx.Net/Check/CheckOptions.cs#L30),
-      [PHP](https://github.com/acrolinx/sdk-php/blob/21d976471d389f3ea8b9175ce70b26b3588fa4b3/tests/AcrolinxEndpointTest.php#L274)
-9) The right [authentication mode](configuration.md#authentication) is used. (Demo / Source)
+8) The right [authentication mode](configuration.md#authentication) is used. (Demo / Source)
    + How to set/change the sign-in mechanism?
       * Sidebar: All versions of the interactive sign-in like: external authentication, federate authentication, and
         Acrolinx Sign-In work out of the box. [JS (SSO)](https://github.com/acrolinx/acrolinx-sidebar-demo/blob/d49f8e5fc22d6ddaef033ccfacdba30d91ced9e2/samples/config.js#L61)
@@ -58,6 +49,15 @@
            [JS](https://github.com/acrolinx/sdk-js/blob/2d6436f9b994137a646bcaed69ba70e04ec9e765/test/integration-server/acrolinx-endpoint.test.ts#L185),
            [Java](https://github.com/acrolinx/sdk-java/blob/127d42a5247e4e52d72ce829b649befbfb2eeffd/src/test/java/com/acrolinx/client/sdk/integration/CheckTest.java#L193),
            [.NET](https://github.com/acrolinx/sdk-dotnet/blob/2655e198e13fa05e7ba8bd3a15b221223e5f4ce7/Acrolinx.Net/Acrolinx.Net.Tests/EndpointTest.cs#L261),
+9) The correct [check type](check-types.md) is set. (Demo / Source / Questions)
+    + How to set the check type?
+      * Sidebar: always `interactive`
+      * Automated: [Platform API](https://acrolinxapi.docs.apiary.io/#reference/checking-api/submit-a-check/submit-a-check),
+      [JS](https://github.com/acrolinx/sdk-js/blob/2d6436f9b994137a646bcaed69ba70e04ec9e765/src/check.ts#L64),
+      [Java (1)](https://github.com/acrolinx/sdk-java/blob/127d42a5247e4e52d72ce829b649befbfb2eeffd/src/test/java/com/acrolinx/client/sdk/integration/CheckTest.java#L237)
+      [(2)](https://acrolinx.github.io/sdk-java/com/acrolinx/client/sdk/check/CheckOptionsBuilder.html#withCheckType-com.acrolinx.client.sdk.check.CheckType-),
+      [.NET](https://github.com/acrolinx/sdk-dotnet/blob/20ca7d1e7d58caf5f60cba33dbca72d7700e39ae/Acrolinx.Net/Acrolinx.Net/Check/CheckOptions.cs#L30),
+      [PHP](https://github.com/acrolinx/sdk-php/blob/21d976471d389f3ea8b9175ce70b26b3588fa4b3/tests/AcrolinxEndpointTest.php#L274)
 10) The [Acrolinx URL](configuration.md#acrolinx-url) isn't hardcoded and not defaulting to the test URL.
     The URL is ideally configured globally by an admin. (Demo / Source)
     + How to set the Acrolinx URL, and enable or disable the start page?
