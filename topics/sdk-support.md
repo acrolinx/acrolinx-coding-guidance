@@ -38,7 +38,7 @@ Please try to include this information in all requests:
 7. Platform Version
 8. Editor Version
 9. CMS Name and Version
-10. Link to the Scorecard, or information captured using the request validator:
+10. Link to the Scorecard, or information captured using the [Request Validator](https://docs.acrolinx.com/kb/en/how-to-use-the-request-validator-13730818.html):
     + `request.txt`
     + `request.properties`
     + Scorecard
