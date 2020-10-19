@@ -20,7 +20,7 @@
    + How to set the version?
       * Sidebar: [JS](https://github.com/acrolinx/acrolinx-sidebar-demo/blob/d49f8e5fc22d6ddaef033ccfacdba30d91ced9e2/samples/config.js#L67),
       [Java](https://github.com/acrolinx/acrolinx-sidebar-demo-java/blob/c32678dec4cfd849cc9d33e78fab2ace2bb1de0a/demo/swing/src/main/java/com/acrolinx/client/sidebar/demo/swing/AcrolinxDemoClientSwing.java#L38),
-      [.NET](https://github.com/acrolinx/acrolinx-sidebar-demo-dotnet/blob/c32678dec4cfd849cc9d33e78fab2ace2bb1de0a/Acrolinx.Demo.Sidebar/Integration.cs#L52)
+      [.NET](https://github.com/acrolinx/acrolinx-sidebar-demo-dotnet/blob/d7194416157e3661fbce8c5473a7bae14059e041/Acrolinx.Demo.Sidebar/Integration.cs#L52)
       (defaults to assembly version),
       [C++](https://github.com/acrolinx/sidebar-demo-cpp/blob/064939fbfbe2e4b238ab9250b1568a3d91475382/Acrolinx.Adapter.Demo.Sidebar.Cpp/Acrolinx.Adapter.Demo.Sidebar.CppDlg.cpp#L125)
       * Automated: [API](https://acrolinxapi.docs.apiary.io/#introduction/general-headers/signature),
