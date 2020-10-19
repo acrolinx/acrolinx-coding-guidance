@@ -59,7 +59,7 @@
       [.NET](https://github.com/acrolinx/sdk-dotnet/blob/20ca7d1e7d58caf5f60cba33dbca72d7700e39ae/Acrolinx.Net/Acrolinx.Net/Check/CheckOptions.cs#L30),
       [PHP](https://github.com/acrolinx/sdk-php/blob/21d976471d389f3ea8b9175ce70b26b3588fa4b3/tests/AcrolinxEndpointTest.php#L274)
 10) The [Acrolinx URL](configuration.md#acrolinx-url) isn't hardcoded and not defaulting to the test URL.
-    The URL is ideally configured globally by an admin. (Demo / Source)
+    The URL is ideally configured globally by an admin. (Demo / Source / Questions)
     + How to set the Acrolinx URL, and enable or disable the start page?
       * Sidebar: [JS (1)](https://github.com/acrolinx/acrolinx-sidebar-demo/blob/d49f8e5fc22d6ddaef033ccfacdba30d91ced9e2/samples/config.js#L28)
       [(2)](https://github.com/acrolinx/acrolinx-sidebar-demo/blob/d49f8e5fc22d6ddaef033ccfacdba30d91ced9e2/samples/config.js#L57),
