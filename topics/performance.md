@@ -8,3 +8,5 @@ If the code is unreadable and not performant, what do you do?
   If you can't get under that threshold, display some kind of progress status. The application must not hang at any point.
 * Don't perform long-running operations on the main thread blocking the user interface.
 * The code shouldn't have extensive memory consumption.
+
+See also: [Scheduling](scheduling.md)

@@ -4,6 +4,8 @@ Check types typically map to the different [integration points](integration-poin
 Even if two integrations are build to implement a similar user story,
 the choice of check type might differ because of different [authentication](configuration.md#Authentication) modes.
 
+See also: [Scheduling](scheduling.md)
+
 ## Interactive
 
 For integrative integrations with UI.

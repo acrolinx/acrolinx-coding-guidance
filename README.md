@@ -77,6 +77,8 @@ Have a look at the [IDE Settings](ide-settings).
 
 ## [Authentication and Acrolinx URL Configuration](topics/configuration.md)
 
+## [Scheduling](topics/scheduling.md)
+
 ## Checklist
 
 You may want to use the [Review Checklist for Acrolinx Integrations](topics/checklist.md) to ensure the standards.
