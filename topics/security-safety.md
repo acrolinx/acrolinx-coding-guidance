@@ -35,3 +35,18 @@ for example:
 * If you open a URL, that potentially can be entered by a user, make sure that it starts with `https?://`.
   Otherwise it might be feasible to execute programs.
   Often an open URL method is internally mapped to `ShellExecute` and allows a remote code execution.
+
+### TLS
+
+The Acrolinx Platform usually runs on state-of-the-art security standards.
+Out of the box and HTTP clients might not be able to connect.
+Make sure that you configured your VM, operating system, and backend to allow connections with modern TLS versions.
+
+Note: `test-ssl.acrolinx.com` is configured to allow more TLS versions than typical production instances usually do.
+The reasoning behind this is to support older environments and simplify testing.
+Please make sure to test with an appropriate configuration before rollout.
+
+Some helpful links:
+
+* Windows / .NET: [How to enable TLS 1.2 on clients](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
+* Java: [Java HTTPS Tester](https://github.com/acrolinx/java-https-tester)

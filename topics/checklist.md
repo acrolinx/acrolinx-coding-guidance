@@ -402,6 +402,12 @@ In case of certification make sure to minimally fulfill the [minimal certificati
       ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png)
       ![Developer](images/developer.png) ![QA](images/qa.png)
 * [ ] If you open a URL, make sure that it starts with `https?://` (prevent remote code execution).
+      ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png)
+      ![Developer](images/developer.png)
+* [ ] Make sure that the integrations can connect production Acrolinx Platform cloud instances.
+      Support for TLS 1.2, and other security settings.
+      ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png)
+      ![Developer](images/developer.png)
 
 ## [Initialization](initialization.md)
 
@@ -466,4 +472,5 @@ Make sure:
 
 ## [Scheduling](scheduling.md)
 
-* [ ] A good [scheduling](scheduling.md) is implemented.
+* [ ] A good [scheduling](scheduling.md) is implemented. ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png)
+      ![Developer](images/developer.png)
