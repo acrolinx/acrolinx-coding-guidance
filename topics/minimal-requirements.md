@@ -128,6 +128,7 @@
       [.NET](https://github.com/acrolinx/sdk-dotnet/blob/dc346b53ee3b274ecfd40dfe5e4af4855fea4695/Acrolinx.Net/Acrolinx.Net.Tests/EndpointTest.cs#L148),
       [PHP](https://github.com/acrolinx/sdk-php/blob/81d8d6e6f3fa17f53299b2af923f4d86045d5d4b/tests/AcrolinxEndpointTest.php#L280)
 14) No obvious [security issues](security-safety.md) are present. (Demo / Questions)
+15) A good [scheduling](scheduling.md) is implemented.
 
 ## See Also
 

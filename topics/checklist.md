@@ -463,3 +463,7 @@ Make sure:
 * [ ] that no hard-coded username is used for checks from different users.
       ![Acrolinx Integration](images/acrolinx.png)![Custom Integration](images/custom.png)
       ![Developer](images/developer.png) ![QA](images/qa.png)
+
+## [Scheduling](scheduling.md)
+
+* [ ] A good [scheduling](scheduling.md) is implemented.
