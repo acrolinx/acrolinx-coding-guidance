@@ -1,34 +1,34 @@
-# PoC - Proof of Concept
+# Proof of Concept
 
-The idea of a proof of concept is to ensure that a project is feasible.
-It should reduce the risk and give an understanding of the effort.
-Typically it's a good idea to start a new project doing a PoC.
+The goal of a proof of concept (PoC) is to demonstrate whether a product idea can be turned into reality.
+A PoC should aim to reduce risk and help you understand the effort of project. 
+It's usually a good idea to start a new development project with a PoC.
 
-## Questions That Should Be Answered
+## Questions To Answer
 
-* Is it feasible at all?
+* Is the idea viable?
 * Which features are feasible?
-* Which technologies can be used?
-* What's the best technologies for the environment?
-* What's the minimum viable product?
-* Where and how to integrate?
+* Which technology can you use?
+* What's the best technology for the environment?
+* What's the minimum viable product to deliver in the next phase?
+* Where and how should you integrate?
 
-## Essence of a PoC
+## Best Practices
 
-* The elaboration usually takes 2 hours up to 2 days.
-* If there's something that doesn't take longer to do it the proper way, don't hesitate to do it the proper way.
-  You need a place to store your code? [Create a repo.](project-setup.md#git) You have to build a package?
-  [Create a proper package.](packaging.md) You've figured out how to build, debug, or install? [Document it in the Readme.md.](project-setup.md#readme)
-* The goal of a PoC isn't to finish the integration. Don't focus and get suck on solving problems.
-  The main goal is to identify problems, solutions, and the feasibility at all. Recognize when your PoC is finished.
-* Once you reach this point, create separate tickets. It makes it easier to track and QA the work.
-  It also simplifies the life of the project management, and developers starting and driving the project later on.
-* It's OK to have a lower [code quality](coding-style.md) while developing a PoC.
-  Don't forget to document your technical debt and nice it up, once you start the project.
+* Doing a PoC usually takes from 2 hours up to 2 days.
+* If you can do something quickly and properly, then do it the proper way during the PoC.
+  * Do you need a place to store your code? [Create a repo.](project-setup.md#git) 
+  * Do you have to build a package? [Create a proper package.](packaging.md) 
+  * Have you figured out how to build, debug, or install? [Document it in the Readme.md.](project-setup.md#readme)
+* The goal of a PoC isn't to finish the integration, so don't get stuck on solving problems.
+  The main goal is to determine the overall feasibility and identify problems and potential solutions. 
+* Recognize when your PoC is finished. Once you reach this point, create separate tickets. Getting organized makes it easier to track and test your work. It also simplifies the life of the project manager and developers who join the project later on.
+* While doing a PoC, it's OK to have a lower level of [code quality](coding-style.md).
+  Don't forget to document your technical debt so you can clean things up when you start the project.
   Again, using a ticket might be a good idea.
-* Sometimes it's already enough to look at the APIs.
-  In this case, you don't have to try things out, if you're 100% sure it'll work.
+* Sometimes just looking at the APIs of an application is sufficient for a PoC.
+  In this case, you don't have to try things out if you're 100% sure it'll work.
 
 ## Proof of Concept Template
 
-Please use the [proof of concept template](poc-template.md) for documenting your findings in a standardized way.
+Use the [proof of concept template](poc-template.md) for documenting your findings in a standardized way.
