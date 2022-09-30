@@ -46,7 +46,7 @@ that the following sections make sense for getting the most benefit out of the e
 
 * What are the main limitations?
 * Is the host editors API feature complete?
-* Does the integration will have a user interface, or will it just be an embedded integration, or both?
+* Does the integration will have a user interface, or will it just be an automated integration, or both?
   See: [Integration Points](integration-points.md)
 * Is it feasible to show the Sidebar?
 * Is it possible to [extract the text including structure](text-extraction.md)?
