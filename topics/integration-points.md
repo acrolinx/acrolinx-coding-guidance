@@ -1,119 +1,126 @@
-# Integration Points
+# Integration Options
 
-Before integrating Acrolinx into a system it makes sense to decide on the best places to integrate.
-There are two ways to check the produced content by:
+Before you add Acrolinx to your application, you'll need to decide where and how to embed Acrolinx.
 
-* an automated way to ensure certain quality standards.
-* integrating Sidebar in the editor to enable interactive user experience where content gets created.
+Acrolinx checks content in two ways:
 
-![Overview of the different integration types](images/integration-types.png)
+* An Automated Check helps you automate your content creation workflow.
+* The Sidebar gives writers an interactive user experience in the editor where they create content.
 
-Also consider, how to [authenticate](configuration.md#Authentication) users in an integration?
-Authentication will influence the recommendation for the [check type](check-types.md).
+---
+**NOTE**
+How users [authenticate](configuration.md#Authentication) with Acrolinx informs the [check type](check-types.md).
 
-## Interactive Direct (Sidebar)
+---
 
-* Purpose:
-    + That's the simplest way to integrate Acrolinx. It might be used for a proof of concept.
-    + Check content at the creation time
-    + It could also be the only solution in case the CMS can't connect to the Acrolinx Platform.
-    For example the CMS is hosted inside the companies network, but the Acrolinx Platform runs in the cloud.
-* Connection: Direct, the web browser must be able to reach the Acrolinx Platform.
-* Authentication (No special handling is required on the integration side):
-    + Acrolinx authentication,
-    + External Authentication,
-    + Federate Authentication
-* The [Acrolinx URL](configuration.md#Acrolinx-URL) could be prepopulated by the administrator.
+![Overview of Integration Options](images/integration-types.png)
 
-## Interactive SSO (Sidebar)
+## Sidebar (Interactive Direct)
 
 * Purpose:
-    + That's the preferred way and most convenient for the writers who are using Web CMS.
-* Connection: Through a reverse proxy on the CMS backend.
+    + The simplest way to integrate Acrolinx.
+    + The Sidebar is perfect for creating a proof of concept.
+    + Check content at creation time.
+    + If your CMS can't connect to the Acrolinx Platform, the Sidebar might be your only option.
+    For example, the CMS is only available within a company's network, but the Acrolinx Platform runs in the cloud.
+* Connection: Direct
+  Your web browser must be able to reach the Acrolinx Platform.
+* Authentication (No attention is required on the integration side):
+    + Acrolinx
+    + External
+    + Federated
+* The administrator sets the [Acrolinx URL](configuration.md#Acrolinx-URL).
+
+## Sidebar (Interactive SSO)
+
+* Purpose:
+    + The recommended and most convenient way for writers who use a Web CMS.
+* Connection: With a reverse proxy on the CMS backend.
 * Authentication:
     + SSO
-* The [Acrolinx URL](configuration.md#Acrolinx-URL) is configured in the backend of the CMS.
+* Set the [Acrolinx URL](configuration.md#Acrolinx-URL) on the CMS backend.
 
-## Trigger (Automated)
+## Automated Check (with a trigger)
 
 * Purpose:
-    + Every file that is checked in, or saved will be checked automatically.
+    + Acrolinx automatically checks every document that is updated or saved.
       The data in the Acrolinx Analytics is always up to date without manual action.
-* Connection: The CMS backend connects directly to the Acrolinx Platform. One of the Acrolinx Platform SDKs can be used.
+* Connection: The CMS backend connects directly to the Acrolinx Platform. You can use one of the Acrolinx Platform SDKs.
 * Authentication:
-    + SSO: Use either the signed in user, or the last editor of the content. Typically these are identically. (recommended)
+    + SSO: Use either the signed in user or the last editor of the content. Usually it's the same person. (recommended)
     + API token
-* The [Acrolinx URL](configuration.md#Acrolinx-URL) is configured in the backend of the CMS.
+* Set the [Acrolinx URL](configuration.md#Acrolinx-URL) on the CMS backend.
 * The check type depends on the authentication:
-    + Automated (recommended), for SSO,
-    + Baseline, for API token
+    + Automated (recommended) for SSO
+    + Baseline for API token
 
-## Cron Job (Automated)
+## Automated Check (scheduled)
 
 * Purpose:
-    + Sometimes it's not feasible to set up a trigger-based approach.
-    + Even if other integration points are used it makes sense to check the whole content from time to time.
-      It will catch up with changes in terminology or configuration.
+    + Sometimes it's not feasible to set up a trigger-based check.
+    + Even if you have an interactive integration point, it still makes sense to check all of your content from time to time.
+      It will help you stay on top of changes to terminology or configuration.
     + The data in the Acrolinx Analytics is always up to date without manual action.
-* Connection: The CMS backend connects directly to the Acrolinx Platform. One of the Acrolinx Platform SDKs can be used.
+* Connection: The CMS backend connects directly to the Acrolinx Platform. You can use one of the Acrolinx Platform SDKs.
 * Authentication:
     + SSO (recommended)
     + API token
-* The [Acrolinx URL](configuration.md#Acrolinx-URL) is configured in the backend of the CMS.
+* Set the [Acrolinx URL](configuration.md#Acrolinx-URL) on the CMS backend.
 * The check type depends on the authentication:
-    + Automated (recommended), for SSO,
-    + Baseline, for API token
+    + Automated (recommended) for SSO
+    + Baseline for API token
 
 ## View (Semi-Automated)
 
 * Purpose:
     + Check only some documents.
-    + Create a dedicated Content Analysis dashboard for a partition of your content.
+    + Create a dedicated Content Analysis Dashboard for a portion of your content.
     + Manually start a recheck of your content after configuration or terminology has changed.
-* Connection: The CMS backend connects directly to the Acrolinx Platform. On of the Acrolinx Platform SDKs can be used.
+* Connection: The CMS backend connects directly to the Acrolinx Platform. You can use one of the Acrolinx Platform SDKs.
 * Authentication:
     + SSO (recommended)
     + API token
-* The [Acrolinx URL](configuration.md#Acrolinx-URL) is configured in the backend of the CMS.
+* Set the [Acrolinx URL](configuration.md#Acrolinx-URL) on the CMS backend.
 * The check type depends on the authentication:
-    + Baseline (recommended),
-    + Batch, in case in a use case it's clear that the user that checks own the content.
+    + Baseline (recommended)
+    + Batch - if it's clear that the user that starts the check owns the content.
 
-## Integration (Sidebar)
+## Sidebar
 
 * Purpose:
-    + That's the standard for all integrations in stand-alone application.
+    + That's the standard integration in a stand-alone application.
       Technically it's quite similar to [Interactive Direct (Sidebar)](#interactive-direct-sidebar).
-* Connection: Direct, the integration must be able to reach the Acrolinx Platform.
+* Connection: Direct 
+  The integration must be able to reach the Acrolinx Platform.
 * Authentication (No special handling is required on the integration side):
-    + Acrolinx authentication,
-    + External Authentication,
-    + Federate Authentication
-* The [Acrolinx URL](configuration.md#Acrolinx-URL)
-  could be sometimes prepopulated by an installer parameter, or some deployed configuration.
-  Normally it's just entered by the user.
+    + Acrolinx authentication
+    + External Authentication
+    + Federated Authentication
+* You can set the [Acrolinx URL](configuration.md#Acrolinx-URL) with an installer parameter or a deployed configuration.
+  Normally, a user would enter it themselves.
 * The check type is interactive.
 
-Hint: A lightweight alternative to code a full integration is the [Acrolinx Desktop Checker](https://docs.acrolinx.com/desktopchecker/latest/en).
+Hint: A lightweight alternative to a full integration is the [Acrolinx Desktop Checker](https://docs.acrolinx.com/desktopchecker/latest/en).
 
-## Batch Integration
+## Batch
 
 * Purpose:
-    + Check a set of files at a time.
+    + Check a set of documents at a time.
     + Provide a lightweight way of analyzing your content without coding.
     + Proof of concept
-* Connection: Direct, the integration must be able to reach the Acrolinx Platform.
+* Connection: Direct
+  The integration must be able to reach the Acrolinx Platform.
 * Authentication:
-    + Acrolinx authentication,
-    + External Authentication,
-    + Federate Authentication,
+    + Acrolinx authentication
+    + External Authentication
+    + Federated Authentication
     + API token
-* The [Acrolinx URL](configuration.md#Acrolinx-URL) it's just entered by the user.
+* The user enters the [Acrolinx URL](configuration.md#Acrolinx-URL).
   It might also be provided by a script.
 * The check type is:
-    + Batch (default), if the user owns the files,
-    + Baseline, if other users files are checked.
+    + Batch (default) if the user owns the documents
+    + Baseline if other users documents are checked.
 
 Instead of an Acrolinx SDK, use the [Acrolinx Command Line Interface](https://docs.acrolinx.com/cli/latest/en),
-a highly scriptable solution designed for the batch integration.
-The [Content Analyzer 2019](https://docs.acrolinx.com/ca/latest/en) could also be used for manual checking a set of files.
+a highly scriptable solution designed for batch checking.
+You can also use the [Content Analyzer 2019](https://docs.acrolinx.com/ca/latest/en) to manually check a set of documents.
