@@ -45,9 +45,11 @@ The following sections will help you get the most out of the effort spent on a p
 ## Limitations, Findings, & Implications
 
 * What are the main limitations?
+
 * Is the host application API feature-complete?
 * Will the integration have a user interface or will it just be an embedded integration, or both?
-  See: [Integration Points](integration-points.md)
+
+See: [Integration Points](integration-points.md)
 * Is it feasible to show the Sidebar?
 * Is it possible to [extract the text including document structure](text-extraction.md)?
 * Can a text be selected programmatically?
