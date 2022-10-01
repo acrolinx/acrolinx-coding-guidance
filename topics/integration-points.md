@@ -89,7 +89,7 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 
 * Purpose:
     + That's the standard integration in a stand-alone application.
-      Technically it's quite similar to [Interactive Direct (Sidebar)](#interactive-direct-sidebar).
+      Technically it's quite similar to [Sidebar (Interactive Direct)](## sidebar-interacrtive-direct).
 * Connection: Direct 
   The integration must be able to reach the Acrolinx Platform.
 * Authentication (No special handling is required on the integration side):
