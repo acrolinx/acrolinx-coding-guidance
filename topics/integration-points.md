@@ -97,7 +97,7 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 
 * Benefits:
     + Standard way of using Acrolinx in a stand-alone application.
-    + Technically similar to [Sidebar (Interactive Direct)](integration-points.md#interactive-direct-sidebar).
+    + Technically similar to [Interactive Direct (Sidebar)](#sidebar---interactive-direct).
 * Connection:
     + Direct
     + Integration must be able to reach the Acrolinx Platform.
