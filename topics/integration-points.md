@@ -17,12 +17,12 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 
 ## Sidebar - Interactive Direct
 
-* Benefits:
+* Uses:
     + Simplest way to integrate Acrolinx.
-    + The Sidebar is perfect for creating a proof of concept.
-    + Writers check content at creation time.
+    + Perfect for creating a proof of concept.
+    + For writers checking content at creation time.
     + If your CMS can't connect to the Acrolinx Platform, the Sidebar might be your only option.
-    + For example, the CMS is only available within your company's network, but the Acrolinx Platform runs in the cloud.
+    + If the CMS is only available within your company's network and the Acrolinx Platform runs in the cloud.
 * Connection:
     + Direct
     + Your web browser must be able to reach the Acrolinx Platform.
@@ -34,8 +34,8 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 
 ## Sidebar - Interactive SSO
 
-* Benefits:
-    + Recommended and most convenient way for writers who use a Web CMS.
+* Uses:
+    + Most convenient way and recommended for writers who use a Web CMS.
 * Connection:
     + Use a reverse proxy on the CMS backend.
 * Authentication:
@@ -44,9 +44,9 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 
 ## Automated Check on an Event
 
-* Benefits:
+* Uses:
     + Automatically check every document on update or save.
-    + Use Acrolinx Analytics dashboards to assess performance and optimize your content operation.
+    + A suite of dashboards helps you assess performance, pinpoint problems, and improve your content operation.
 * Connection:
     + CMS backend connects directly to the Acrolinx Platform.
     + Use one of the Acrolinx Platform SDKs.
@@ -60,11 +60,11 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 
 ## Automated Check - Scheduled
 
-* Benefits:
-    + Sometimes it's not feasible to set up a check on an event.
-    + Even if you have an interactive integration point, it still makes sense to check all of your content from time to time.
+* Uses:
+    + Sometimes it's not feasible to automate a check on an event.
+    + Even if you use an interactive integration option, you should still occasionally check your content as a whole.
     + Automatically check your content after updating terminology or guidelines.
-    + Use Acrolinx Analytics dashboards to assess performance and optimize your content operation.
+    + A suite of dashboards helps you assess performance, pinpoint problems, and improve your content operation.
 * Connection:
     + CMS backend connects directly to the Acrolinx Platform.
     + Use one of the Acrolinx Platform SDKs.
@@ -78,9 +78,9 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 
 ## View - Semiautomated
 
-* Benefits:
-    + Check only some documents.
-    + Create a dedicated Content Analysis Dashboard for a portion of your content.
+* Uses:
+    + Check a batch of documents.
+    + Create a dedicated Content Analysis Dashboard for that subset of content.
     + Manually check your content after updating terminology or guidelines.
 * Connection:
     + CMS backend connects directly to the Acrolinx Platform.
@@ -95,28 +95,28 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 
 ## Sidebar
 
-* Benefits:
+* Uses:
     + Standard way of using Acrolinx in a stand-alone application.
     + Technically similar to [Interactive Direct (Sidebar)](#sidebar---interactive-direct).
 * Connection:
     + Direct
     + Integration must be able to reach the Acrolinx Platform.
-* Authentication (No attention required on the integration side):
-    + Acrolinx authentication
-    + External Authentication
-    + Federated Authentication
+* Authentication (no attention required on the integration side):
+    + Acrolinx
+    + External
+    + Federated
 * You can set the [Acrolinx URL](configuration.md#Acrolinx-URL) with an installer parameter or a deployed configuration.
-  Normally, a user would enter it themselves.
+    + Users normally enter the Acrolinx URL themselves.
 * Check type is interactive.
 
-Hint: A lightweight alternative to a full integration is the [Acrolinx Desktop Checker](https://docs.acrolinx.com/desktopchecker/latest/en).
+Hint: A lightweight alternative to a full-featured integration is the [Acrolinx Desktop Checker](https://docs.acrolinx.com/desktopchecker/latest/en).
 
 ## Batch
 
-* Benefits:
-    + Check a set of documents at a time.
-    + Provide a lightweight way of analyzing your content without coding.
-    + Proof of concept
+* Uses:
+    + Check a set of documents at one time.
+    + An easy way of analyzing your content without coding.
+    + Proof of concept.
 * Connection:
     + Direct
     + Integration must be able to reach the Acrolinx Platform.
@@ -125,12 +125,12 @@ Hint: A lightweight alternative to a full integration is the [Acrolinx Desktop C
     + External
     + Federated
     + API token
-* User enters the [Acrolinx URL](configuration.md#Acrolinx-URL).
-    + You can also set it with a script.
-* Check type is:
+* Users enter the [Acrolinx URL](configuration.md#Acrolinx-URL).
+    + You can also set the Acrolinx URL with a script.
+* Check type:
     + Batch (default) if the user owns the documents.
     + Baseline if checking other users' documents.
 
 Instead of using an Acrolinx SDK, consider the [Acrolinx Command Line Interface](https://docs.acrolinx.com/cli/latest/en).
 It's a highly scriptable solution designed for batch checking.
-Or you can use the [Content Analyzer 2019](https://docs.acrolinx.com/ca/latest/en) to manually check a set of documents.
+You can also use the [Content Analyzer](https://docs.acrolinx.com/ca/latest/en) to manually check a set of documents.
