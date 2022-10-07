@@ -4,7 +4,7 @@ Before you add Acrolinx to your application, you'll need to decide where and how
 
 Acrolinx checks content in two ways:
 
-* Automated Check helps you automate your content creation workflow.
+* An Automated Check helps you automate your content creation workflow.
 * The Sidebar gives writers an interactive user experience in the editor where they create content.
 
 ---
@@ -25,7 +25,7 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
     + If the CMS is only available within your company's network and the Acrolinx Platform runs in the cloud.
 * Connection:
     + Direct
-    + Your web browser must be able to reach the Acrolinx Platform.
+    + Make sure your web browser can reach the Acrolinx Platform.
 * Authentication (no attention required on the integration side):
     + Acrolinx
     + External
@@ -100,7 +100,7 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
     + Technically similar to [Interactive Direct (Sidebar)](#sidebar---interactive-direct).
 * Connection:
     + Direct
-    + Integration must be able to reach the Acrolinx Platform.
+    + Make sure your integration can reach the Acrolinx Platform.
 * Authentication (no attention required on the integration side):
     + Acrolinx
     + External
@@ -119,7 +119,7 @@ Hint: A lightweight alternative to a full-featured integration is the [Acrolinx 
     + Proof of concept.
 * Connection:
     + Direct
-    + Integration must be able to reach the Acrolinx Platform.
+    + Make sure your integration can reach the Acrolinx Platform.
 * Authentication:
     + Acrolinx
     + External
