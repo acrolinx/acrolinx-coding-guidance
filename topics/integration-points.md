@@ -61,8 +61,8 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 ## Automated Check - Scheduled
 
 * Uses:
-    + Sometimes it's not feasible to automate a check on an event.
-    + Even if you use an interactive integration option, you should still occasionally check your content as a whole.
+    + It's not always feasible to automate a check on an event.
+    + If you use an interactive integration option, you still might want to occasionally check your content as a whole.
     + Automatically check your content after updating terminology or guidelines.
     + A suite of dashboards helps you assess performance, pinpoint problems, and improve your content operation.
 * Connection:
@@ -80,7 +80,7 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 
 * Uses:
     + Check a batch of documents.
-    + Create a dedicated Content Analysis Dashboard for that subset of content.
+    + Create a dedicated Content Analysis Dashboard for a subset of content.
     + Manually check your content after updating terminology or guidelines.
 * Connection:
     + CMS backend connects directly to the Acrolinx Platform.
@@ -96,7 +96,7 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 ## Sidebar
 
 * Uses:
-    + Standard way of using Acrolinx in a stand-alone application.
+    + Standard way of using Acrolinx in a standalone application.
     + Technically similar to [Interactive Direct (Sidebar)](#sidebar---interactive-direct).
 * Connection:
     + Direct
@@ -105,16 +105,17 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
     + Acrolinx
     + External
     + Federated
-* You can set the [Acrolinx URL](configuration.md#Acrolinx-URL) with an installer parameter or a deployed configuration.
+* Set the [Acrolinx URL](configuration.md#Acrolinx-URL) with an installer parameter or a deployed configuration.
     + Users normally enter the Acrolinx URL themselves.
 * Check type is interactive.
 
-Hint: A lightweight alternative to a full-featured integration is the [Acrolinx Desktop Checker](https://docs.acrolinx.com/desktopchecker/latest/en).
+Hint: The [Acrolinx Desktop Checker](https://docs.acrolinx.com/desktopchecker/latest/en) is an alternative to building
+a full-featured integration.
 
 ## Batch
 
 * Uses:
-    + Check a set of documents at one time.
+    + Check a set of documents at the same time.
     + An easy way of analyzing your content without coding.
     + Proof of concept.
 * Connection:
