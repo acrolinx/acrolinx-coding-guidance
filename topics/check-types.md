@@ -1,39 +1,40 @@
 # Check Types
 
-Check types typically map to the different [integration points](integration-points.md).
-Even if two integrations are build to implement a similar user story,
-the choice of check type might differ because of different [authentication](configuration.md#Authentication) modes.
+Check types are usually associated with specific [integration options](integration-points.md).
+Even if you build two different integrations to implement a similar use case,
+each integration might use a different check type because of the different mode of [authentication](configuration.md#Authentication).
 
 See also: [Scheduling](scheduling.md)
 
 ## Interactive
 
-For integrative integrations with UI.
+Interactive integrations with a UI (user interface).
 
-* Document Custom Fields: User gets prompted to fill them out, if mandatory
+* Custom User and Document Information Fields: If required users enter custom user or document information when
+  they run checks.
 * Priority: High
 * Analytics Document Assignment: Assign
 
 ## Automated
 
-For automated integrations, if the authentication information for the last editing user of the content is available.
+Automated integrations if the authentication information for the last user who edited the content is available.
 
-* Document Custom Fields: Optional
+* Custom Document Information Fields: Optional
 * Priority: Low
 * Analytics Document Assignment: Assign
 
 ## Baseline
 
-For integrations, where the user performing a check isn't the owner of the content.
+Integrations in which the user running a check isn't the owner of the content.
 
-* Document Custom Fields: Optional
+* Custom Document Information Fields: Optional
 * Priority: Low
 * Analytics Document Assignment: Don't assign
 
 ## Batch
 
-For integrations, where the user performing a check on multiple files is the owner of the content.
+Integrations in which the user running a check on several files is the owner of the content.
 
-* Document Custom Fields: Optional
+* Custom Document Information Fields: Optional
 * Priority: Low
 * Analytics Document Assignment: Assign
