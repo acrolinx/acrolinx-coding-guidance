@@ -1,69 +1,68 @@
 # Scheduling and Scaling
 
-Acrolinx allows large-scale deployments.
+You can use Acrolinx with large-scale deployments.
 
-If your integration is communicating with the Acrolinx Platform cloud you usually don't have to worry much about scaling.
+If you use your integration with the Acrolinx Platform in the cloud, you usually don't have to worry about scaling.
 
-If you’re planning to increase the load to the Acrolinx Platform significantly, talk to the Acrolinx Support in advance.
-That allows Acrolinx to fine-tune the scaling for your instance in advance.
+If you’re planning to significantly increase the load on the Acrolinx Platform, talk to Acrolinx Support in advance.
+Acrolinx can fine-tune the scaling of your instance.
 
-See Also: [How Do I set up Acrolinx to scale to a large number of users?](https://docs.acrolinx.com/kb/en/how-do-i-set-up-acrolinx-to-scale-to-a-large-number-of-users-13730796.html)
+See Also: [How Do I set up Acrolinx to scale for a large number of users?](https://docs.acrolinx.com/kb/en/how-do-i-set-up-acrolinx-to-scale-to-a-large-number-of-users-13730796.html)
 
-Acrolinx expects integrations to communicate to the Core Platform in a cooperative way.
-Nevertheless, unsuitable requests will be blocked by the Acrolinx Platform.
+Acrolinx expects integrations to follow our best practices when communicating with the Acrolinx Platform.
+The Acrolinx Platform will block any unsuitable requests.
 
-Here are some guidelines, about the way to implement integrations in order to minimize issues and maximize the user experience.
+Use the following guidelines when implementing your integration to minimize issues and maximize the user experience.
 
-See also: [Performance](performance.md)
+See also [Performance](performance.md).
 
-## Integration Development Test Instance `test-ssl.acrolnx.com`
+## Integration Development Test Instance `partner-dev.internal.acrolinx.sh`
 
-[`Test-ssl`](https://test-ssl.acrolnx.com) can be used for integration development.
-Test-ssl is a shared resource with fixed resource allocation.
-The assigned resources are high enough to run integration tests as well as batch checks.
-However since it's a shared resource please be respectful of others. Use it in a cooperative mode.
-If possible, submit check requests in a sequential order and avoid too many parallel requests.
+You can use [`partner-dev`](https://partner-dev.internal.acrolinx.sh/) for developing an integration.
+Partner-dev is a shared instance of the Acrolinx developer community.
+The instance has a fixed allocation of resources and can handle both integration tests and batch checks.
+However, since it's a shared instance, please be respectful of other developers. Use it in the spirit of goodwill.
+If possible, submit your check requests in sequential order and avoid too many parallel requests.
 
 ## Sidebar
 
-The `check`-function should be only called after a `requestCheck` function has been called (See: [Sidebar API Reference](https://acrolinx.github.io/sidebar-interface/)).
-This way the Sidebar controls the frequence of checks.
-Usually a check is started by a user action.
+Only call the `check` function after you call a `requestCheck` function (see the [Sidebar API Reference](https://acrolinx.github.io/sidebar-interface/)).
+This way the Sidebar controls the frequency of checks.
+A user action usually starts a check.
 
-Checks started by the Sidebar are scheduled with high priority (See [Check Types](check-types.md)).
-This allows for quick feedback and guidance about the content to the user.
+The Acrolinx Platform schedules checks started by the Sidebar with high priority (see [Check Types](check-types.md)).
+Giving Sidebar checks priority means that users get quick feedback and guidance on their content.
 
-### Lazy Sidebar Loading
+### Lazy Loading of Sidebar
 
-The Sidebar itself should be loaded in a lazy manner.
-This is especially important in cases where each document has its own Sidebar instance.
+Use lazy loading to reduce the initial load time of the Sidebar.
+Efficiency is especially important when each document has its own Sidebar.
 
-Usually the environment in which integrations run is limiting the number of simultaneous requests.
+The integration environment usually limits the number of simultaneous requests.
 
-If a large number of documents are loaded simultaneously loading of the Sidebar might fail.
-The root cause might be a combination of maximum request, and connection timeout on the integration-side.
+If you open a large number of documents simultaneously, the Sidebar might fail to load.
+The root cause might be a combination of maximum requests and connection timeout on the integration side.
 
-To avoid this situation, load the Sidebar in a lazy manner once the user switches to the document.
+To avoid this situation, use a lazy load method to load the Sidebar when the user switches to the document.
 
-## Automated / Batch Processing
+## Automated and Batch Processing
 
-Acrolinx Integrations should be designed to run smoothly both in a cloud environment as well as on premise.
-Cloud environments can usually deal with high load and additional resources can be allocated.
-On-premise set ups are often installed on real hardware that can't be easily scaled.
+Design your Acrolinx Integration to run smoothly both in the cloud and on premise.
+Cloud environments can usually handle high loads and Acrolinx Support can allocate additional resources if needed.
+On-premise setups often use physical hardware that admins can’t scale easily.
 
-By default batch checking integrations should submit one check after the other.
-A [Check Type](check-types.md) with a priority smaller than high should be used.
+By default, batch checking integrations should submit one check after the other.
+Set a [Check Type](check-types.md) with a priority below high.
 
 Each integration has its own performance requirements.
-If sequential processing is too slow, configure as an admin the number of parallel check requests.
-Please keep in mind that you shouldn't try to maximize the load to 100%.
-Even if you know the exact resource allocation of an Acrolinx Core Platform instance.
-If multiple integrations maximize the load, it could easily lead a slow overall performance and negative user experience.
+If sequential processing is too slow, the admin can configure the number of parallel check requests.
+Don't maximize the load to 100%. Even if you know the exact resource allocation of an Acrolinx Platform instance.
+Overall performance and user experience can suffer if multiple integrations exceed the maximum load.
 
-While implementing consider the number of parallel users of the integration,
-and the [points where your integration integrates to](integration-points.md). How many parallel checks do you expect?
+In the development phase, consider the number of parallel users the integration will have
+and [the integration options you implement](integration-points.md). How many parallel checks do you expect?
 
-Usually it's sufficient, if you:
+Usually it's sufficient if you limit the:
 
-* Limit the maximum parallel checks per user.
-* Take care to limit the number of cron based checks that are executed in parallel.
+* Maximum parallel checks per user.
+* Number of cron-based scheduled checks that are executed in parallel.
