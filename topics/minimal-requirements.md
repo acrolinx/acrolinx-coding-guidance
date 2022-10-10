@@ -1,9 +1,9 @@
 # Minimal Certification Requirements
 
-1) The **partner contract** was **signed**. See: [Steps for Building an Integration](https://docs.acrolinx.com/customintegrations/steps-for-building-an-integration)
+1) The **partner signed** the **contract**. See [Steps for Building an Integration](https://docs.acrolinx.com/customintegrations/steps-for-building-an-integration)
 2) The integration doesn't violate the **Acrolinx license model**. (Demo / Questions)
-3) The correct **signature** is **hard-coded**. (Demo / Source)
-   + How to set the signature?
+3) Did you **hard-code** the correct **signature**? (Demo / Source)
+   + How to set the signature:
       * Sidebar: [JS](https://github.com/acrolinx/acrolinx-sidebar-demo/blob/d49f8e5fc22d6ddaef033ccfacdba30d91ced9e2/samples/config.js#L29),
       [Java](https://github.com/acrolinx/acrolinx-sidebar-demo-java/blob/c32678dec4cfd849cc9d33e78fab2ace2bb1de0a/demo/swing/src/main/java/com/acrolinx/client/sidebar/demo/swing/AcrolinxDemoClientSwing.java#L40),
       [.NET (1)](https://github.com/acrolinx/acrolinx-sidebar-demo-dotnet#configuration)
@@ -14,8 +14,8 @@
       [Java](https://github.com/acrolinx/sdk-java/blob/127d42a5247e4e52d72ce829b649befbfb2eeffd/src/test/java/com/acrolinx/client/sdk/integration/CheckTest.java#L191),
       [.NET](https://github.com/acrolinx/sdk-dotnet/blob/dc346b53ee3b274ecfd40dfe5e4af4855fea4695/Acrolinx.Net/Acrolinx.Net.Tests/TestEnvironment.cs#L26),
       [PHP](https://github.com/acrolinx/sdk-php/blob/21d976471d389f3ea8b9175ce70b26b3588fa4b3/tests/AcrolinxEndpointTest.php#L60)
-4) The [version information](project-setup.md#version-information) is set to enable support. (Demo / Source)
-   + How to set the version?
+4) [Version information](project-setup.md#version-information) is in place to enable Acrolinx Support. (Demo / Source)
+   + How to set the version:
       * Sidebar: [JS](https://github.com/acrolinx/acrolinx-sidebar-demo/blob/d49f8e5fc22d6ddaef033ccfacdba30d91ced9e2/samples/config.js#L67),
       [Java](https://github.com/acrolinx/acrolinx-sidebar-demo-java/blob/c32678dec4cfd849cc9d33e78fab2ace2bb1de0a/demo/swing/src/main/java/com/acrolinx/client/sidebar/demo/swing/AcrolinxDemoClientSwing.java#L38),
       [.NET](https://github.com/acrolinx/acrolinx-sidebar-demo-dotnet/blob/d7194416157e3661fbce8c5473a7bae14059e041/Acrolinx.Demo.Sidebar/Integration.cs#L52)
@@ -27,13 +27,13 @@
       [.NET](https://github.com/acrolinx/sdk-dotnet/blob/2655e198e13fa05e7ba8bd3a15b221223e5f4ce7/Acrolinx.Net/Acrolinx.Net/AcrolinxEndpoint.cs#L61)
       (defaults to assembly version),
       [PHP](https://github.com/acrolinx/sdk-php/blob/21d976471d389f3ea8b9175ce70b26b3588fa4b3/src/AcrolinxEndpoint.php#L96)
-5) The correct **Acrolinx branding** is used. (Demo)
+5) Did you use the correct **Acrolinx branding**? (Demo)
 6) The integration seems to be **usable**. (Demo / Questions)
-7) To fulfill the use case the best [points for integrating](integration-points.md) are used. (Demo / Questions)
-8) The right [authentication mode](configuration.md#authentication) is used. (Demo / Source)
-   + How to set/change the sign-in mechanism?
-      * Sidebar: All versions of the interactive sign-in like: external authentication, federate authentication, and
-        Acrolinx Sign-In work out of the box. [JS (SSO)](https://github.com/acrolinx/acrolinx-sidebar-demo/blob/d49f8e5fc22d6ddaef033ccfacdba30d91ced9e2/samples/config.js#L61)
+7) The integration uses the best [integration options](integration-points.md) to satisfy the use case. (Demo / Questions)
+8) Did you use the correct [authentication mode](configuration.md#authentication)? (Demo / Source)
+   + How can the customer set or change the sign-in mechanism?
+      * Sidebar: All versions of interactive sign-in: external authentication, Enterprise Federated Authentication, and
+        Acrolinx Sign-In work out-of-the-box. [JS (SSO)](https://github.com/acrolinx/acrolinx-sidebar-demo/blob/d49f8e5fc22d6ddaef033ccfacdba30d91ced9e2/samples/config.js#L61)
       * Automated:
          + Interactive: [Platform API](https://github.com/acrolinx/platform-api#getting-an-access-token-with-acrolinx-sign-in),
            [JS](https://github.com/acrolinx/sdk-js/blob/217ea70387d8f20f74b3fff1e61addd97699f3ac/test/unit/signin.test.ts#L108),
@@ -49,8 +49,8 @@
            [JS](https://github.com/acrolinx/sdk-js/blob/2d6436f9b994137a646bcaed69ba70e04ec9e765/test/integration-server/acrolinx-endpoint.test.ts#L185),
            [Java](https://github.com/acrolinx/sdk-java/blob/127d42a5247e4e52d72ce829b649befbfb2eeffd/src/test/java/com/acrolinx/client/sdk/integration/CheckTest.java#L193),
            [.NET](https://github.com/acrolinx/sdk-dotnet/blob/2655e198e13fa05e7ba8bd3a15b221223e5f4ce7/Acrolinx.Net/Acrolinx.Net.Tests/EndpointTest.cs#L261),
-9) The correct [check type](check-types.md) is set. (Demo / Source / Questions)
-    + How to set the check type?
+9) Did you set the correct [check type](check-types.md)? (Demo / Source / Questions)
+    + How to set the check type:
       * Sidebar: always `interactive`
       * Automated: [Platform API](https://acrolinxapi.docs.apiary.io/#reference/checking-api/submit-a-check/submit-a-check),
       [JS](https://github.com/acrolinx/sdk-js/blob/2d6436f9b994137a646bcaed69ba70e04ec9e765/src/check.ts#L64),
@@ -58,9 +58,9 @@
       [(2)](https://acrolinx.github.io/sdk-java/com/acrolinx/client/sdk/check/CheckOptionsBuilder.html#withCheckType-com.acrolinx.client.sdk.check.CheckType-),
       [.NET](https://github.com/acrolinx/sdk-dotnet/blob/20ca7d1e7d58caf5f60cba33dbca72d7700e39ae/Acrolinx.Net/Acrolinx.Net/Check/CheckOptions.cs#L30),
       [PHP](https://github.com/acrolinx/sdk-php/blob/21d976471d389f3ea8b9175ce70b26b3588fa4b3/tests/AcrolinxEndpointTest.php#L274)
-10) The [Acrolinx URL](configuration.md#acrolinx-url) isn't hardcoded and not defaulting to the test URL.
-    The URL is ideally configured globally by an admin. (Demo / Source / Questions)
-    + How to set the Acrolinx URL, and enable or disable the start page?
+10) The [Acrolinx URL](configuration.md#acrolinx-url) isn't hardcoded or doesn't default to the partner-dev URL.
+    Ideally, an admin can globally configure the Acrolinx URL. (Demo / Source / Questions)
+    + How to set the Acrolinx URL, and enable or disable the start page:
       * Sidebar: [JS (1)](https://github.com/acrolinx/acrolinx-sidebar-demo/blob/d49f8e5fc22d6ddaef033ccfacdba30d91ced9e2/samples/config.js#L28)
       [(2)](https://github.com/acrolinx/acrolinx-sidebar-demo/blob/d49f8e5fc22d6ddaef033ccfacdba30d91ced9e2/samples/config.js#L57),
       [Java (1)](https://acrolinx.github.io/sidebar-sdk-java/com/acrolinx/sidebar/pojo/settings/AcrolinxSidebarInitParameter.AcrolinxSidebarInitParameterBuilder.html#withServerAddress-java.lang.String-)
@@ -80,7 +80,7 @@
   Ideally it's set to `auto`.
   Typically everything that is displayed in the UI.
   Sometimes additional custom fields. (Demo / Source)
-    + How to set the content format?
+    + How to set the content format:
       * Sidebar: [JS (1)](https://acrolinx.github.io/sidebar-sdk-js/pluginDoc/interfaces/adapterinterface.html#getformat),
       [Java (1)](https://github.com/acrolinx/acrolinx-sidebar-demo-java/blob/c32678dec4cfd849cc9d33e78fab2ace2bb1de0a/demo/jfx/src/main/java/com/acrolinx/client/sidebar/demo/jfx/AcrolinxJFXIntegration.java#L34)
       [(2)](https://acrolinx.github.io/sidebar-sdk-java/com/acrolinx/sidebar/InputAdapterInterface.html#getInputFormat--),
@@ -92,9 +92,9 @@
       [Java](https://acrolinx.github.io/sdk-java/com/acrolinx/client/sdk/check/CheckOptionsBuilder.html#withContentFormat-java.lang.String-),
       [.NET](https://github.com/acrolinx/sdk-dotnet/blob/dc346b53ee3b274ecfd40dfe5e4af4855fea4695/Acrolinx.Net/Acrolinx.Net.Tests/EndpointTest.cs#L151),
       [PHP](https://github.com/acrolinx/sdk-php/blob/21d976471d389f3ea8b9175ce70b26b3588fa4b3/tests/AcrolinxEndpointTest.php#L275)
-12) A good [reference](text-extraction.md#Enable-Acrolinx-Providing-Guidance-and-Analytics) is provided.
+12) A recognizable [reference](text-extraction.md#Enable-Acrolinx-Providing-Guidance-and-Analytics) is provided.
     (Demo / Source / Questions)
-    + How to set the content reference?
+    + How to set the content reference:
       * Sidebar: [JS (1)](https://github.com/acrolinx/acrolinx-sidebar-demo/blob/d49f8e5fc22d6ddaef033ccfacdba30d91ced9e2/samples/config.js#L33)
       (defaults to window location)
       [(2)](https://acrolinx.github.io/sidebar-sdk-js/pluginDoc/interfaces/successfulcontentextractionresult.html#documentreference),
@@ -110,9 +110,9 @@
       [(2)](https://acrolinx.github.io/sdk-java/com/acrolinx/client/sdk/check/CheckRequestBuilder.html#withContentReference-java.lang.String-),
       [.NET](https://github.com/acrolinx/sdk-demo-dotnet/blob/17b73231e7f3e1fc6286ab8b6549281f1f0ee70c/Acrolinx.Net.Demo/Program.cs#L41),
       [PHP](https://github.com/acrolinx/sdk-php/blob/21d976471d389f3ea8b9175ce70b26b3588fa4b3/tests/AcrolinxEndpointTest.php#L282)
-13) The [content](text-extraction.md#structure) is well structured and all required content is sent.
-  Typically everything that is displayed in the UI. Sometimes additional custom fields. (Demo / Source)
-    + How to set the structure of the content?
+13) The [content](text-extraction.md#structure) is well-structured and all required content is included.
+  Usually everything that is displayed in the UI. Sometimes additional custom fields. (Demo / Source)
+    + How to set the structure of the content:
       * Sidebar: [JS (1)](https://github.com/acrolinx/acrolinx-sidebar-demo/blob/d49f8e5fc22d6ddaef033ccfacdba30d91ced9e2/samples/multi-editor.html#L80)
       [(2)](https://github.com/acrolinx/acrolinx-sidebar-demo/blob/d49f8e5fc22d6ddaef033ccfacdba30d91ced9e2/samples/multi-editor.html#L93),
       [Java (1)](https://github.com/acrolinx/acrolinx-sidebar-demo-java/blob/c32678dec4cfd849cc9d33e78fab2ace2bb1de0a/demo/jfx/src/main/java/com/acrolinx/client/sidebar/demo/jfx/AcrolinxJFXIntegration.java#L34)
@@ -128,13 +128,13 @@
       [.NET](https://github.com/acrolinx/sdk-dotnet/blob/dc346b53ee3b274ecfd40dfe5e4af4855fea4695/Acrolinx.Net/Acrolinx.Net.Tests/EndpointTest.cs#L148),
       [PHP](https://github.com/acrolinx/sdk-php/blob/81d8d6e6f3fa17f53299b2af923f4d86045d5d4b/tests/AcrolinxEndpointTest.php#L280)
 14) No obvious [security issues](security-safety.md) are present. (Demo / Questions)
-15) The integration is able to connect to state of the art secured Platform instances,
+15) The integration is able to connect to Platform instances with the latest security configurations,
     especially [TLS 1.2](security-safety.md#tls). (Demo / Questions)
-16) A good [scheduling](scheduling.md) is implemented. (Questions)
+16) A good [scheduling](scheduling.md) method is implemented. (Questions)
 
 ## See Also
 
 * [Certification Meeting](sdk-support.md#Certification-Meeting)
-* [Full Review Checklist for Acrolinx Integrations](checklist.md)
+* [Full Checklist for Acrolinx Integrations](checklist.md)
 * [Request Validator](https://docs.acrolinx.com/kb/en/how-to-use-the-request-validator-13730818.html)
 * [Test Sidebar for Developers](test-sidebar.md)
