@@ -1,36 +1,36 @@
 # Scheduling and Scaling
 
-You can use Acrolinx with large-scale deployments.
+Acrolinx work for both small and large teams or writers.
 
-If you use your integration with the Acrolinx Platform in the cloud, you usually don't have to worry about scaling.
+If you connect your integration to the Acrolinx Platform in the cloud, you shouldn't have to worry about scaling problems.
 
 If you’re planning to significantly increase the load on the Acrolinx Platform, talk to Acrolinx Support in advance.
-Acrolinx can fine-tune the scaling of your instance.
+Acrolinx can fine-tune the scalability of your instance.
 
-See Also: [How Do I set up Acrolinx to scale for a large number of users?](https://docs.acrolinx.com/kb/en/how-do-i-set-up-acrolinx-to-scale-to-a-large-number-of-users-13730796.html)
+See also [How Do I set up Acrolinx to scale for a large number of users?](https://docs.acrolinx.com/kb/en/how-do-i-set-up-acrolinx-to-scale-to-a-large-number-of-users-13730796.html)
 
-Acrolinx expects integrations to follow our best practices when communicating with the Acrolinx Platform.
-The Acrolinx Platform will block any unsuitable requests.
+Build your integration according to our best practices on communicating with the Acrolinx Platform.
+The Acrolinx Platform will block any unreasonable requests.
 
-Use the following guidelines when implementing your integration to minimize issues and maximize the user experience.
+Use the following guidelines to minimize issues and maximize the user experience.
 
 See also [Performance](performance.md).
 
 ## Integration Development Test Instance `partner-dev.internal.acrolinx.sh`
 
-You can use [`partner-dev`](https://partner-dev.internal.acrolinx.sh/) for developing an integration.
+Use [`partner-dev`](https://partner-dev.internal.acrolinx.sh/) to develop an integration.
 Partner-dev is a shared instance of the Acrolinx developer community.
 The instance has a fixed allocation of resources and can handle both integration tests and batch checks.
-However, since it's a shared instance, please be respectful of other developers. Use it in the spirit of goodwill.
+However, since it's a shared instance, use it in the spirit of goodwill to other developers.
 If possible, submit your check requests in sequential order and avoid too many parallel requests.
 
 ## Sidebar
 
-Only call the `check` function after you call a `requestCheck` function (see the [Sidebar API Reference](https://acrolinx.github.io/sidebar-interface/)).
+Always call a `requestCheck` function first and then call the `check` function (see the [Sidebar API Reference](https://acrolinx.github.io/sidebar-interface/)).
 This way the Sidebar controls the frequency of checks.
 A user action usually starts a check.
 
-The Acrolinx Platform schedules checks started by the Sidebar with high priority (see [Check Types](check-types.md)).
+The Acrolinx Platform schedules checks from the Sidebar with a high priority (see [Check Types](check-types.md)).
 Giving Sidebar checks priority means that users get quick feedback and guidance on their content.
 
 ### Lazy Loading of Sidebar
@@ -40,8 +40,8 @@ Efficiency is especially important when each document has its own Sidebar.
 
 The integration environment usually limits the number of simultaneous requests.
 
-If you open a large number of documents simultaneously, the Sidebar might fail to load.
-The root cause might be a combination of maximum requests and connection timeout on the integration side.
+If you open many documents at once, the Sidebar might fail to load.
+The root cause may be a combination of too many requests and a connection timeout on the integration side.
 
 To avoid this situation, use a lazy load method to load the Sidebar when the user switches to the document.
 
@@ -49,7 +49,7 @@ To avoid this situation, use a lazy load method to load the Sidebar when the use
 
 Design your Acrolinx Integration to run smoothly both in the cloud and on premise.
 Cloud environments can usually handle high loads and Acrolinx Support can allocate additional resources if needed.
-On-premise setups often use physical hardware that admins can’t scale easily.
+On-premise setups often use physical hardware that admins can’t easily scale.
 
 By default, batch checking integrations should submit one check after the other.
 Set a [Check Type](check-types.md) with a priority below high.
@@ -60,7 +60,7 @@ Don't maximize the load to 100%. Even if you know the exact resource allocation 
 Overall performance and user experience can suffer if multiple integrations exceed the maximum load.
 
 In the development phase, consider the number of parallel users the integration will have
-and [the integration options you implement](integration-points.md). How many parallel checks do you expect?
+and the [integration options](integration-points.md) you implement. How many parallel checks do you expect?
 
 Usually it's sufficient if you limit the:
 
