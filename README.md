@@ -1,39 +1,45 @@
-# Guidance for the Development of Acrolinx Integrations
+# How to Develop Acrolinx Integrations
 
 ## About This Document
 
-The goal of this document is to have some kind of standard for developing code at Acrolinx.
+This document provides the standards for developing integrations at Acrolinx.
 
-This document is a collection of answers to questions that popped up in previous projects.
-It's not complete. If you find something that should be added, please contribute. Please read this document carefully.
-Even if you're keen to [start your new project](https://docs.acrolinx.com/customintegrations),
-take the time to read it.
-The Coding Guidance might save you a lot of trouble and time later.
-That said, this document is no replacement for good education,
-a stack of [good coding books](topics/coding-style.md),
-or the experience and intuition that a good developer has.
+It includes answers to questions that developers had during previous projects.
+But it's not comprehensive. If you'd like to add something, please contribute.
 
-You don't need to agree with all the points in this document,
-and you might find exceptions where it makes sense to implement something differently.
-Remember: There are good reasons to not do good things.
-Make sure that your reasons are good enough. You're able to explain them, and
-it's not just a personal attitude ;-).
+Even if you're eager to [start your new project](https://docs.acrolinx.com/customintegrations),
+first take the time to read this document carefully. The Coding Guidance might save you a lot of trouble and time later.
 
-This document is written primarily for developing Sidebar integrations at
-Acrolinx. They interact with a writer and communicate with the
-Acrolinx Platform. Some parts also apply for our Platform development as well as embedded integration development.
+This document is no replacement for:
+
+- a good education,
+- a stack of [good coding books](topics/coding-style.md), or
+- the experience and intuition of a *good* developer.
+
+You don't have to agree with all the recommendations.
+And you might find exceptions where it makes sense to implement something differently.
+Sometimes there are good reasons *not* to do good things.
+
+Make sure that:
+
+- your reasons are good enough,
+- you can explain them, and
+- it's not just your personal attitude ;-).
+
+The audience of this document is primarily developers of Acrolinx Sidebar integrations.
+Some sections also address development of the Acrolinx Platform and embedded integrations.
 
 ## Before You Start
 
-Please contact [Acrolinx SDK support](topics/sdk-support.md) for consulting and getting your integration certified.
+Contact [Acrolinx SDK support](topics/sdk-support.md) for consulting and requesting certification of your integration.
 
-Make sure that your IDE and system are properly configured.
+Make sure you properly configure your IDE (integrated developer environment).
 
-The Acrolinx default settings and templates can be found in this repository:
+You can find the default Acrolinx settings and templates in this repository:
 
     git clone https://github.com/acrolinx/acrolinx-coding-guidance.git
 
-Have a look at the [IDE Settings](ide-settings).
+Review the [IDE Settings](ide-settings).
 
 ## [Proof of Concept](topics/poc.md)
 
@@ -81,7 +87,7 @@ Have a look at the [IDE Settings](ide-settings).
 
 ## Checklist
 
-You may want to use the [Review Checklist for Acrolinx Integrations](topics/checklist.md) to ensure the standards.
+Reference the [Checklist for Acrolinx Integrations](topics/checklist.md) to follow the Acrolinx standards.
 
 ## [Minimal Certification Requirements](topics/minimal-requirements.md)
 
