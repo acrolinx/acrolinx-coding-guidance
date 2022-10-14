@@ -133,9 +133,9 @@ at this level.
 
 ### Debug
 
-Customers will not enable the debug level in production. Acrolinx Support might as
-customers to turn it on to analyze an issue. Almost all sensitive information
-can be logged at the Debug level.
+Customers will not enable the debug level in production. Acrolinx Support might ask
+customers to enable it to analyze an issue. You can safely log most sensitive information
+at the Debug level.
 
 Don't log credentials and other secrets at the Debug level.
 
@@ -143,6 +143,5 @@ Don't log credentials and other secrets at the Debug level.
 
 Trace is the final frontier. The Trace log level is useful for analyzing
 unusual scenarios. Its purpose is diagnostic. Include as much information
-as possible. You can even log complete objects and decrypted traffic
-that went over the wire encrypted like HTTPS requests. No special
-care must be taken to protect credentials or other secrets.
+as possible. You can even log complete objects and decrypted traffic like HTTPS requests
+that went over the wire encrypted. You don't have to hide credentials or other secrets.
