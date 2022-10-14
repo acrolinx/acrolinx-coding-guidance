@@ -31,11 +31,11 @@ You can't check because:
 * The Acrolinx Platform is unavailable: Show the Sidebar **Options** tab → *Warning*
 * Acrolinx can't parse your document. → *Error*
 
-## UI Options and Defaults
+## Default Logging
 
 Consider for integrations:
 
-* **Info** is the default logging mode. An integration doesn't usually have a UI option to change the log level.
+* **Info** is the default logging level. Integrations don't usually have a UI option to change the log level.
 * The path of the logging directory appears in the Sidebar start page.
 * Users can click a button to navigate to the logging directory in a file explorer.
 * (Make it easy for users to enable logging in the registry or a configuration file.)
