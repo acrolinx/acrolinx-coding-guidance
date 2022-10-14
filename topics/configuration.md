@@ -29,13 +29,13 @@ If users are already authenticated in a CMS, then you ideally use Acrolinx singl
 The Sidebar and Acrolinx Platform support different authentication options:
 
 1. **Acrolinx Authentication** works with a user database on the Acrolinx Platform.
-   - You can create and manage users in the Acrolinx Dashboard.
+   - Create and manage users in the Acrolinx Dashboard.
    - The Sidebar opens a browser window where users sign in to Acrolinx.
-   - This option only requires configuration on the Acrolinx Platform. You don't have to do any coding in the integration.
+   - This option only requires managing users on the Acrolinx Platform. You don't have to do any coding in the integration.
    - You cannot use this option if Acrolinx traffic is tunneled through a
    [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy) and provided as a subpath like
    `https://myserver/acrolinx/proxy/`
-   - If the Acrolinx services are provided on the top level, then you can use a reverse proxy like `https://myserver/`.
+   - If the Acrolinx services are provided on the top-level domain name, then you can use a reverse proxy like `https://myserver/`.
 
 2. The Acrolinx Platform uses **External Authentication** like LDAP (Lightweight Directory Access Protocol) or Active Directory.
    - The sign-in user experience is the same as in option 1, but you don't configure users in the Acrolinx Dashboard.
@@ -43,7 +43,7 @@ The Sidebar and Acrolinx Platform support different authentication options:
    - This option only requires configuration to the external directory on the Acrolinx Platform.
    - You don't have to do any coding in the integration.
 \
-3. The Acrolinx Platform uses **Federated Authentication**.
+3. The Acrolinx Platform uses **Enterprise Federated Authentication**.
    - The user experience will be similar to option 1 and 2.
    - Instead of signing in to the Acrolinx Platform, the user will see a Sign-in page of a **3rd-party system**.
    - You can also use this option when traffic is tunneled through a reverse proxy.
@@ -56,7 +56,7 @@ The Sidebar and Acrolinx Platform support different authentication options:
    - A proxy built in to the CMS knows the username of the current session.
    - The Acrolinx Platform and the CMS share a secret. The Acrolinx Platform trusts all requests sent with this secret.
    - For security reasons, prevent the Acrolinx Integration from having access to the secret.
-   - This option is currently only available in JavaScript-based integrations.
+   - This option is currently only available for JavaScript-based integrations.
 
 5. For embedded integrations, you can use the same approach as in option 4.
    - You can use the secret directly instead of tunneling all traffic through a proxy.
