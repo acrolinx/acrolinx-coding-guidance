@@ -84,8 +84,7 @@ Store log files in the following locations:
 * `ISODATE` is a YYYY-MM-DD format of `2016-04-30`
 * `INTEGRATIONNAME` is the name of the integration
 
-If another process locks the log file without an ID (`ISODATE-INTEGRATIONNAME.log`),
-then `INSTANCEID` is used to resolve the conflict.
+If another process locks the log file without an ID (`ISODATE-INTEGRATIONNAME.log`), use `INSTANCEID` to resolve the conflict.
 
 ## Exclude Sensitive Information
 
