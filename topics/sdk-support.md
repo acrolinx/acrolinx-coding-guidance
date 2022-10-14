@@ -1,13 +1,13 @@
 # Submitting an SDK Support Ticket
 
-Acrolinx tries to provide the best possible consulting for your integration project.
-To help aid in efficient communication, we ask you to provide some contextual information.
+Acrolinx strives to provide you with the best possible consulting for your integration project.
+To ensure efficient communication, always include some contextual information with your support requests.
 
 ## Email Address
 
 * [Acrolinx SDK Support](sdk-support@acrolinx.com): sdk-support@acrolinx.com
 
-Don't use an Acrolinx employee's email address.
+Don't write directly to an Acrolinx employee's email address.
 They might be on vacation and you won't receive a response.
 Instead, always use an email address that goes to the Acrolinx Support ticket system.
 If you use the wrong address, we'll forward the email to the right person or system, but it might take some time.
