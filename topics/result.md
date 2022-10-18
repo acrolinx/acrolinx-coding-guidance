@@ -1,22 +1,24 @@
-# Result Processing
+# Getting a Check Result
 
 ## Sidebar
 
-If you use the Sidebar, then the processing of the result is almost done.
-You might only have to implement the [lookup](text-lookup.md) and the Embed Check Data feature.
+If you use the Sidebar, then you're almost done processing the result.
+You might only have to implement [lookup](text-lookup.md) and the Embed Check Data feature.
 
 ## Embed Check Data
 
-Note: *Only use Embed Check Data in case an [automated integration](integration-points.md) isn't feasible.*
-*In all other cases we highly recommend building an automated integration.*
+Note: *Only use Embed Check Data if an [automated integration](integration-points.md) isn't feasible.*
+*Otherwise, we highly recommend building an automated integration.*
 
-If enabled on the server side then the Sidebar will tell the Acrolinx Integration to Embed Check Data.
-The idea of embedded check data is to enable easy integration or CMS side reporting.
-Use, if you want to know:
+If Embed Check Data is enabled on the Platform, then the Sidebar will tell the Acrolinx Integration to embed the check
+data in a document.
+The purpose of embedding check data is to ahieve an easy workflow integration or reporting in a CMS.
 
-* when the document was checked,
-* which Acrolinx Score it had,
-* or if it hasn't been checked at all.
+Use Embed Check Data if you want to know:
+
+* when the document was checked
+* the Acrolinx Score for each document
+* if a document hasn't been checked at all.
 
 Before implementing client-side reporting, check out the Acrolinx Analytics.
 Acrolinx Analytics might already solve your use case.
@@ -30,11 +32,11 @@ Depending on your [source document format](text-extraction.md), different strate
 3. XML processing instructions
 4. Comments
 
-The chosen strategy should depend on the document type.
+Choose a strategy depending on the document type.
 Probably there are already other editors and Acrolinx Integrations dealing with the same format?
 If yes, do it the same way, they do.
 
-Make sure that:
+Make sure:
 
 * A new check overrides the last embedded check data, to be always up to date.
 * You don't use a fixed list of keys and values. The Acrolinx Platform decides which keys should be embedded.
