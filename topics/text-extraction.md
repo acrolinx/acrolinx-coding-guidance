@@ -2,24 +2,22 @@
 
 ## How Acrolinx Reads Your Content
 
-Before implementing the extraction, it makes sense to understand how Acrolinx reads your content.
+Before implementing extraction, you'll first need to understand how Acrolinx reads your content.
 
 ![How Acrolinx Reads Your Content With Content Profiles](images/how-acrolinx-read-content.png)
 
-The idea of this diagram is to provide a complete example starting at the extraction.
-It demonstrates almost all feasible extraction settings.
-Sorry, the diagram got a bit huge.
+This diagram starts with extraction and shows almost all feasible extraction settings.
+The diagram is a bit unwieldy.
 Try to zoom in and out and follow the lines and the numbers from 1 to 5.
 
 ## Check Format and Supporting Multiformat Editors
 
-If the host application provides a format that is natively supported by Acrolinx, like:
+Send all content to the Acrolinx Platform if the host application provides a format that Acrolinx supports:
 
-* XML, or
-* HTML format,
-then you should send the entire content to the Acrolinx Platform.
+* XML
+* HTML
 
-The Acrolinx Platform supports different check formats natively:
+The Acrolinx Platform supports different check formats:
 
 | Format                    | API Setting  | Default Extension | Notes             |
 | ------------------------- | ------------ | ----------------- | ----------------- |
@@ -35,27 +33,27 @@ The Acrolinx Platform supports different check formats natively:
 Check out the [supported input types documentation](https://docs.acrolinx.com/coreplatform/latest/en/compatibility/supported-input-types)
 for a complete list.
 
-The format for these types can be directly set when submitting a check using the API, or at the `sidebar.checkGlobal()` call.
-It's also possible to set the format to `AUTO`.
-In this case, the platform will decide the format based on a pattern matching the given reference.
-Many formats, like DITA, or resx, are a subset of the supported formats with a different extension.
+Set the format for these input types when you submit a check using the API or the `sidebar.checkGlobal()` call.
+You can also set the format to `AUTO`.
+The platform then decides the format based on a pattern that matches the reference.
+Some formats, like DITA or resx, are a subset of the supported formats but have a different file extension.
 
-For multiformat editors, our recommendation is to let the Platform decide.
-If we don't support the format yet, an upcoming platform release might make it work without any integration change.
+For multiformat editors, we recommend letting the Platform decide.
+If Acrolinx doesn't support a specific format, an upcoming platform release might make it work without any integration change.
 
-*Note: A [mapping](https://docs.acrolinx.com/coreplatform/latest/en/advanced/core-platform-configurations/configure-acrolinx-to-recognize-your-file-type)
-and a [Content Profile](https://docs.acrolinx.com/coreplatform/latest/en/guidance/content-profiles/get-started-with-content-profiles)
-might be already in place. Otherwise you need to create one. The Acrolinx Solutions Team can help you create one.*
+*Note: You can use a default [mapping](https://docs.acrolinx.com/coreplatform/latest/en/advanced/core-platform-configurations/configure-acrolinx-to-recognize-your-file-type)
+and [Content Profile](https://docs.acrolinx.com/coreplatform/latest/en/guidance/content-profiles/get-started-with-content-profiles).
+If you need a custom one, write to Acrolinx Support and ask for help!*
 
 ## Host Application API with Object Model
 
-If the host application doesn't provide natively supported representation of the content,
+If the host application doesn't provide a natively supported representation of the content,
 then you must implement the text extraction as part of the Acrolinx Integration.
 
-The extracted text should be as similar as possible to the object model and reflect what the user sees on the screen.
+The extracted text and object model should be as similar as possible and correspond to what the user sees on the screen.
 It would be nice to have a DTD or XML schema that defines the representation.
 
-An extraction can look like this:
+Extraction can look like this:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -87,24 +85,26 @@ The aim is to include all information that Acrolinx needs to analyze the content
 
 ## What's Important for Text Processing
 
-### Structure
+### Document Structure
 
-The structure of the document:
 If an element is inside another element or in a group of elements,
-this structure should be represented in the converted document.
-For an image, figure, or other nontextual element, you must create a placeholder with its type name.
-Acrolinx doesn't need the actual image for text processing and
-therefore you should send the image to the server with the document.
+show this structure in the converted document.
+For an image, figure, or other nontextual element, create a placeholder with its type name.
+Acrolinx doesn't need the actual image for text processing. So, you shouldn't send the image
+to the Platform with the document.
 
-The order of the elements matters. The position of the elements `<text>This <image /> is nice</text>`
-is different from `<text>This is nice</text><image />`.
-The server can treat an image as a “joker” so that, for example,
-Acrolinx won't falsely flag the guideline “use ‘this' with noun”.
-Each element should include information about visibility (some content is hidden to the user), styles used, and so on.
+The order of the elements matters. The position of the elements in these examples is different:
+
+* `<text>This <image /> is nice</text>`
+* `<text>This is nice</text><image />`
+
+Acrolinx can treat an image as a “joker” so that Acrolinx won't falsely highlight the guideline
+"Could you use a noun after "this/that/these/those"?"
+Each element should include information about styles and visibility (some content is hidden to the user).
 
 Acrolinx relies on this structural and contextual information to know which parts of a document belong together.
 
-#### Example
+#### Example of Structural Information
 
 Depending on the structural information included with the content, a sentence like "This is a text." may be correct or incorrect:
 
@@ -120,17 +120,16 @@ Correct:
 <p>This is a text.</p>
 ```
 
-It's important to maintain as much of the structure of the original document as possible.
-Otherwise Acrolinx isn't able to detect this kind of issues.
+It's important to maintain as much structure of the original document as possible.
+Otherwise, Acrolinx can’t detect these kinds of issues.
 
 ### Contexts
 
-The document needs to include information about the tags, styles, or, fonts in which a text span is written.
-Acrolinx decides filtering, segmentation, and which guidelines to apply based on this contextual information.
-The configuration can be done based on element names, attribute, or attribute values.
+The document needs to include information about the tags, styles, or fonts in which a text span is written.
+Acrolinx uses contextual information to filter and extract content and decide which guidelines to apply.
+You can configure context information with element names, attributes, or attribute values.
 
-See: [Content Profiles Reference Guide](https://docs.acrolinx.com/coreplatform/latest/en/guidance/content-profiles/content-profiles-reference-guide)
-    for a detailed description of the different filter and segmentation capabilities of Acrolinx.
+Learn more about the filter and extraction settings in the [Content Profiles Reference Guide](https://docs.acrolinx.com/coreplatform/latest/en/guidance/content-profiles/content-profiles-reference-guide).
 
 #### Filter
 
@@ -160,7 +159,7 @@ read only.
 
 Attribute values can be extracted, but won't have full lookup support.
 
-#### Example
+#### Example of Contextual Information
 
 Titles must be written in uppercase:
 
