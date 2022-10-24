@@ -22,7 +22,7 @@ The following sections will help you get the most out of the effort spent on a p
 * Screenshot of the PoC in action
 * A short screen cast showing the main functionality, issues, and limitations
 
-*The demo can still look a bit broken. It should be in a format that you can share with others to enable demonstration and further discussion.*
+*The demo can still be a bit broken. It should be in a format that you can share with others to demonstrate and further discussion.*
 *It must [not show sensitive information](security-safety.md).*
 
 ## Installation
@@ -50,6 +50,7 @@ The following sections will help you get the most out of the effort spent on a p
 * Will the integration have a user interface or will it just be an embedded integration, or both?
 
 See: [Checking Features](checking-features.md)
+
 * Is it feasible to show the Sidebar?
 * Is it possible to [extract the text including document structure](text-extraction.md)?
 * Can a text be selected programmatically?
