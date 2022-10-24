@@ -60,7 +60,7 @@ Don't maximize the load to 100%. Even if you know the exact resource allocation 
 Overall performance and user experience can suffer if multiple integrations exceed the maximum load.
 
 In the development phase, consider the number of parallel users the integration will have
-and the [integration options](integration-points.md) you implement. How many parallel checks do you expect?
+and the [checking features](checking-features.md) you implement. How many parallel checks do you expect?
 
 Usually it's sufficient if you limit the:
 

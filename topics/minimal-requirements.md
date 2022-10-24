@@ -29,7 +29,7 @@
       [PHP](https://github.com/acrolinx/sdk-php/blob/21d976471d389f3ea8b9175ce70b26b3588fa4b3/src/AcrolinxEndpoint.php#L96)
 5) Did you use the correct **Acrolinx branding**? (Demo)
 6) The integration seems to be **usable**. (Demo / Questions)
-7) The integration uses the best [checking features](integration-points.md) to satisfy the use case. (Demo / Questions)
+7) The integration uses the best [checking features](checking-features.md) to satisfy the use case. (Demo / Questions)
 8) Did you use the correct [authentication mode](configuration.md#authentication)? (Demo / Source)
    + How can the customer set or change the sign-in option?
       * Sidebar: All versions of interactive sign-in: Enterprise Federated Authentication, external authentication, and

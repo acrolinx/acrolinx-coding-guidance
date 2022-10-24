@@ -1,6 +1,6 @@
 # Check Types
 
-Check types are usually associated with specific [integration options](integration-points.md).
+Check types are usually associated with specific [checking features](checking-features.md).
 Even if you build two different integrations to implement a similar use case,
 each integration might use a different check type because of the different mode of [authentication](configuration.md#Authentication).
 

@@ -39,9 +39,9 @@ In case of certification make sure to minimally fulfill the [minimal certificati
 
 ![QA](images/qa.png) A **QA** person validates the functionality.
 
-## [Integration Points](integration-points.md)
+## [Checking Features](checking-features.md)
 
-* [ ] The integration integrates at the correct points.
+* [ ] The integration supports the relevant checking features.
 * [ ] The correct [check type](check-types.md) is used.
 
 ## [Project Setup](project-setup.md)

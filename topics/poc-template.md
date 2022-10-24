@@ -49,7 +49,7 @@ The following sections will help you get the most out of the effort spent on a p
 * Is the host application API feature-complete?
 * Will the integration have a user interface or will it just be an embedded integration, or both?
 
-See: [Integration Points](integration-points.md)
+See: [Checking Features](checking-features.md)
 * Is it feasible to show the Sidebar?
 * Is it possible to [extract the text including document structure](text-extraction.md)?
 * Can a text be selected programmatically?

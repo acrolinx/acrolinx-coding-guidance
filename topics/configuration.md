@@ -70,4 +70,4 @@ The Sidebar and Acrolinx Platform support different authentication options:
 
 Do not hard-code any usernames for checks run by different users.
 
-The authentication you use often influences the recommended [check type](check-types.md). See [integration options](integration-points.md).
+The authentication you use often influences the recommended [check type](check-types.md). See [checking features](checking-features.md).

@@ -7,7 +7,7 @@ You might only have to implement [lookup](text-lookup.md) and the Embed Check Da
 
 ## Embed Check Data
 
-Note: *Only use Embed Check Data if an [automated integration](integration-points.md) isn't feasible.*
+Note: *Only use Embed Check Data if an [automated integration](checking-features.md) isn't feasible.*
 *Otherwise, we highly recommend building an automated integration.*
 
 If Embed Check Data is enabled on the Platform, then the Sidebar will tell the Acrolinx Integration to embed the check
