@@ -42,10 +42,6 @@ certification of your integration.
 
 ## [Scheduling](topics/scheduling.md)
 
-## Checklist
-
-Reference the [Checklist for Acrolinx Integrations](topics/checklist.md) to follow the Acrolinx standards.
-
 ## [Minimal Certification Requirements](topics/minimal-requirements.md)
 
 ## License

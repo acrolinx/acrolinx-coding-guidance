@@ -129,14 +129,13 @@
       [Java](https://github.com/acrolinx/sdk-java/blob/127d42a5247e4e52d72ce829b649befbfb2eeffd/src/test/java/com/acrolinx/client/sdk/integration/CheckTest.java#L118),
       [.NET](https://github.com/acrolinx/sdk-dotnet/blob/dc346b53ee3b274ecfd40dfe5e4af4855fea4695/Acrolinx.Net/Acrolinx.Net.Tests/EndpointTest.cs#L148),
       [PHP](https://github.com/acrolinx/sdk-php/blob/81d8d6e6f3fa17f53299b2af923f4d86045d5d4b/tests/AcrolinxEndpointTest.php#L280)
-14) No obvious [security issues](security-safety.md) are present. (Demo / Questions)
+14) No obvious security issues are present. (Demo / Questions)
 15) The integration can connect to Platform instances with the latest security configurations,
-    especially [TLS 1.2](security-safety.md#tls). (Demo / Questions)
+    especially TLS 1.2. (Demo / Questions)
 16) Did the developer implement a good [scheduling](scheduling.md) mechanism? (Questions)
 
 ## See Also
 
 * [Certification Meeting](sdk-support.md#Certification-Meeting)
-* [Full Checklist for Acrolinx Integrations](checklist.md)
 * [Request Validator](https://docs.acrolinx.com/kb/en/how-to-use-the-request-validator-13730818.html)
 * [Test Sidebar for Developers](test-sidebar.md)

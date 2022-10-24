@@ -60,7 +60,7 @@ Have you already thought about a [Proof of Concept](poc.md)?
 ## Certification Meeting
 
 * Have you completely finished the integration? Or do you still have open technical questions?
-* Have you [verified](checklist.md) that everything is done?
+* Have you verified that everything is done?
   Complete the [minimal certification requirements](minimal-requirements.md).
 * Share a link to a Scorecard. We'll use the
   [request validator](https://docs.acrolinx.com/kb/en/how-to-use-the-request-validator-13730818.html)

@@ -14,8 +14,6 @@ The Acrolinx Platform will block any unreasonable requests.
 
 Use the following guidelines to minimize issues and maximize the user experience.
 
-See also [Performance](performance.md).
-
 ## Integration Development Test Instance `partner-dev.internal.acrolinx.sh`
 
 Use [`partner-dev`](https://partner-dev.internal.acrolinx.sh/) to develop an integration.
