@@ -50,8 +50,8 @@ If you need a custom one, write to Acrolinx Support and ask for help!*
 If the host application doesn't provide a natively supported representation of the content,
 then you must implement the text extraction as part of the Acrolinx Integration.
 
-The extracted text and object model should be as similar as possible and correspond to what the user sees on the screen.
-It would be nice to have a DTD or XML schema that defines the representation.
+The extracted text should be as similar as possible to the object model and correspond to what the user sees on screen.
+Provide a DTD or XML schema that defines the representation.
 
 Extraction can look like this:
 
@@ -90,17 +90,16 @@ The aim is to include all information that Acrolinx needs to analyze the content
 If an element is inside another element or in a group of elements,
 show this structure in the converted document.
 For an image, figure, or other nontextual element, create a placeholder with its type name.
-Acrolinx doesn't need the actual image for text processing. So, you shouldn't send the image
-to the Platform with the document.
+Don't send the image to the Platform with the document. Acrolinx doesn't need the actual image for text processing.
 
 The order of the elements matters. The position of the elements in these examples is different:
 
 * `<text>This <image /> is nice</text>`
 * `<text>This is nice</text><image />`
 
-Acrolinx can treat an image as a “joker” so that Acrolinx won't falsely highlight the guideline
-"Could you use a noun after "this/that/these/those"?"
-Each element should include information about styles and visibility (some content is hidden to the user).
+Acrolinx can treat an image as a “wildcard” so that Acrolinx won't falsely highlight the guideline:
+Could you use a noun after "this/that/these/those"?
+Each element should include information about styles and visibility (users can't see all content).
 
 Acrolinx relies on this structural and contextual information to know which parts of a document belong together.
 
@@ -125,92 +124,96 @@ Otherwise, Acrolinx can’t detect these kinds of issues.
 
 ### Contexts
 
-The document needs to include information about the tags, styles, or fonts in which a text span is written.
+The document should include information about the tags, styles, or fonts in which text appears.
 Acrolinx uses contextual information to filter and extract content and decide which guidelines to apply.
 You can configure context information with element names, attributes, or attribute values.
 
-Learn more about the filter and extraction settings in the [Content Profiles Reference Guide](https://docs.acrolinx.com/coreplatform/latest/en/guidance/content-profiles/content-profiles-reference-guide).
+Learn more about the extraction settings in the [Content Profiles Reference Guide](https://docs.acrolinx.com/coreplatform/latest/en/guidance/content-profiles/content-profiles-reference-guide).
 
-#### Filter
+#### Extraction Settings
 
-It's feasible to filter (`exclude`) or explicitly `include` elements.
+Setting the Starting Element to `include` works for most cases. This means that Acrolinx will read everything.
 
-Further you can define elements as `empty`.
-That means that they're filtered out, but Acrolinx assumes that the right word is at this place.
-That's often the only choice if includes, or references can't be resolved.
+If you set the starting element to `exclude`, Acrolinx won’t read anything.
 
-#### Segmentation
+Filter Mode:
 
-Possible segmentations are:
+You can also define elements as `empty`.
+Acrolinx will filter out empty elements but Acrolinx assumes that the correct word is at this position.
+Defining an empty element is often the only choice if includes or references are non-resolvable.
 
-* `none`, to ignore the context change,
-* `token`, to treat it like a word boundary, or
-* `sentence`, to have the same effect as a new paragraph would start.
-* `prenthetic` elements will be checked individually and not in the context of where they are in the submitted text.
+Break Level:
+
+* `sentence`: has the same effect as if it's the beginning of a new paragraph
+* `none`: ignores the context change
+* `token`: treats it like a word boundary
+* `parenthetic`: Acrolinx checks parenthetic elements separately and not in the context where they occur in the request text.
 
 #### Read Only
 
 It's also feasible to define contexts as `read-only`.
-If a part of an issue is in a ready only area, then the corresponding Sidebar card will be read only too.
-In case includes, references, locked, or write protected text is used in an integration, cards often need to be marked
-read only.
+If an issue occurs in a ready-only part of a document, then the corresponding Sidebar card will also appear as read-only.
+If an integration uses includes, references, locked, or write-protected text, you'll want the Sidebar cards to appear
+as read-only.
 
 #### Attributes
 
-Attribute values can be extracted, but won't have full lookup support.
+Acrolinx reads attribute values, but Sidebar integrations can't always provide full lookup support. This means the Sidebar
+can't navigate to the issue text or automatically replace suggestions.
 
 #### Example of Contextual Information
 
-Titles must be written in uppercase:
+Write title text in AP (Associated Press) style:
 
 ```xml
 <title>Nice Title to Show how Relevant the Style Name is</title>
 ```
 
-Normal text must be written in lowercase:
+Sentence case calls for lowercase:
 
 ```html
 <p>This normal text requires a dot at the end of the sentence.</p>
 ```
 
-## Enable Acrolinx Providing Guidance and Analytics
+## Acrolinx Guidance and Analytics
 
-1. Make sure that you send the file name, URI, or a unique reference to your source document.
-   It helps Acrolinx to identify the document later.
-   It'll also help Acrolinx users finding the content later inside the CMS, on the hard drive, or where ever it came from.
-2. Set a DOCTYPE and/or root element so that Acrolinx is able to choose the right extraction.
-3. Make sure that the recommended [check type](check-types.md) is used.
+1. Make sure that you send the file name, URI, or a unique reference to the source document.
+   - This information helps Acrolinx uniquely identify each document.
+   - A unique reference helps Acrolinx users find their content in the CMS, on the hard drive, or wherever it came from.
+2. Set a DOCTYPE, a root element, or both so that Acrolinx can apply the right extraction.
+3. Be sure to use the recommended [check type](check-types.md).
 
 ## What's a Document
 
-Often it's unclear how much data should be included in one check request.
-Acrolinx calculates scores for documents, provides guidance and reports to analytics.
+It's not always obvious what information developers should in include in a check request.
+Acrolinx calculates scores for documents, provides guidance, and visualizes Analytics dashboards.
 For all of these cases, it's important to submit the right chunk of content.
 
-Many CMS systems include several sources and generate one or more documents out of it.
-For example, in DITA (XML) different topics are referenced in one map.
-Based on this map one PDF manual or several web pages might be generated.
-So the same content might be differently assembled.
+A CCMS uses several sources and generates one or more documents from the same content.
+For example, an XML DITA map references different topics that create a larger document.
+Customers might use this same DITA map to generate one PDF manual or several web pages.
+In this way, they assemble the same content differently for different purposes.
 
-* In case the published file is one document (for example PDF), the whole content should be submitted as one request.
-* In case several web pages are created, each page should be checked and scored individually.
+* If the published content is one document (for example PDF), then you should submit the entire content as one request.
+* If the published content is several web pages, then you should submit the content as separate requests so Acrolinx
+  checks and scores each page individually.
 
 ### Document Scope Hints
 
 * The content has a unique reference.
 * The reference is stable.
-* The amount of data is exactly what gets published later on.
-* All topics, or paragraphs of the content have the same target audience (group of readers).
+* The size of the content is exactly what gets published later.
+* All content topics, or paragraphs, have the same target audience (group of readers).
 
 ## Check Selection
 
-The Acrolinx Sidebar is capable of showing cards only for the text that was selected at check time.
-The check selection feature can be enabled by setting the property `InitParameters.supported.checkSelection: true`.
-While text extraction, the selected range offsets of the extracted text must be set using the property
-`CheckOptions.selection.ranges:[[0,5], [400,500]]`.
+The Acrolinx Sidebar can show issue cards only for the text that a writer selects at check time.
+To enable the check selection feature, set the property `InitParameters.supported.checkSelection: true`.
+During text extraction, use the property `CheckOptions.selection.ranges:[[0,5], [400,500]]` to set the selected range
+offsets of the extracted text.
 
-To figure out the range offsets, a mapping between the application offsets and extraction offsets might have to be done.
+To figure out the range offsets, you might need to do a mapping between the application offsets and extraction offsets.
 This might be a reverse [implementation of the lookup](text-lookup.md).
 
-*Note: If you use one of the Acrolinx SDK, then you might get the check selection feature more or less for free.*
-*Check the SDK API for how to enable.*
+*Note: If you use an Acrolinx SDK, then you might get the check selection feature without having to implement anything.*
+*Read the SDK API to learn more about check selection.*
