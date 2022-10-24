@@ -43,7 +43,7 @@ Review the [IDE Settings](ide-settings).
 
 ## [Proof of Concept](topics/poc.md)
 
-## [Integration Points](topics/integration-points.md)
+## [Checking Features](topics/checking-features.md)
 
 ## [Project Setup](topics/project-setup.md)
 
