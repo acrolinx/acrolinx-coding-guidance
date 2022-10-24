@@ -8,18 +8,17 @@ In this case, you just have to ensure that all information propagated properly.
 
 The provided information is used in:
 
-* about,
-* [logging](logging.md),
-* requests send to server,
+* About
+* [logging](logging.md)
+* requests send to server
 * [identification of Content Profile](text-extraction.md#how-acrolinx-reads-your-content),
-* Scorecards,
-* Content Groups,
-* analytics,
-* etc.
+* Scorecards
+* Content Groups
+* Analytics
 
 Make sure:
 
-* All components have unique ids in the list.
+* All components have unique IDs in the list.
 * Exactly one main component is set.
 * No category (default), or `"category": "DETAIL"` can be added as much as useful.
   Keep in mind that this could blow up about or [logging](logging.md).
