@@ -2,82 +2,39 @@
 
 ## About This Document
 
-This document provides the standards for developing integrations at Acrolinx.
+This document includes instructions for developing Acrolinx checking integrations.
 
-It includes answers to questions that developers had during previous projects.
-But it's not comprehensive. If you'd like to add something, please contribute.
+The target audience is developers who are integrating one of the following Acrolinx checking features:
+
+- Sidebar
+- automated check
+- batch check.
 
 Even if you're eager to [start your new project](https://docs.acrolinx.com/customintegrations),
-first take the time to read this document carefully. The Coding Guidance might save you a lot of trouble and time later.
-
-This document is no replacement for:
-
-- a good education,
-- a stack of [good coding books](topics/coding-style.md), or
-- the experience and intuition of a *good* developer.
-
-You don't have to agree with all the recommendations.
-And you might find exceptions where it makes sense to implement something differently.
-Sometimes there are good reasons *not* to do good things.
-
-Make sure that:
-
-- your reasons are good enough,
-- you can explain them, and
-- it's not just your personal attitude ;-).
-
-The audience of this document is primarily developers of Acrolinx Sidebar integrations.
-Some sections also address development of the Acrolinx Platform and embedded integrations.
+first take the time to browse this document.
 
 ## Before You Start
 
-Contact [Acrolinx SDK support](topics/sdk-support.md) for consulting and requesting certification of your integration.
-
-Make sure you properly configure your IDE (integrated developer environment).
-
-You can find the default Acrolinx settings and templates in this repository:
-
-    git clone https://github.com/acrolinx/acrolinx-coding-guidance.git
-
-Review the [IDE Settings](ide-settings).
+Contact [Acrolinx SDK support](topics/sdk-support.md) to access to a test platform, get consulting, and request
+certification of your integration.
 
 ## [Proof of Concept](topics/poc.md)
 
 ## [Checking Features](topics/checking-features.md)
 
-## [Project Setup](topics/project-setup.md)
-
 ## [Packaging](topics/packaging.md)
-
-## [Coding Style](topics/coding-style.md)
-
-## [Formatting](topics/formatting.md)
-
-## [Interoperability](topics/interoperability.md)
-
-## [Performance](topics/performance.md)
-
-## [Design](topics/design.md)
 
 ## [Libraries](topics/libraries.md)
 
 ## [Logging](topics/logging.md)
 
-## [Exception Handling](topics/exception-handling.md)
-
 ## [Localization L10N](topics/l10n.md)
-
-## [Testing / Assertions](topics/testing.md)
-
-## [Security and Safety](topics/security-safety.md)
 
 ## [Storing Data](topics/store-data.md)
 
 ## [Initialization](topics/initialization.md)
 
 ## [Text Extraction](topics/text-extraction.md)
-
-## [Result Processing](topics/result.md)
 
 ## [Lookup](topics/text-lookup.md)
 
