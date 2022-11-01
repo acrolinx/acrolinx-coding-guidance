@@ -1,33 +1,16 @@
-# Submitting an SDK Support Ticket
+# Submit a Request to Support
 
-Acrolinx strives to provide you with the best possible consulting for your integration project.
-To ensure efficient communication, always include some contextual information with your support requests.
+If you need help with an existing or new integration, [submit a request](https://support.acrolinx.com/hc/en-us/requests/new)
+to the Acrolinx Support team.
 
-## Email Address
+To enjoy a more integrated experience with the Acrolinx Help Center, you can also:
 
-* [Acrolinx SDK Support](sdk-support@acrolinx.com): sdk-support@acrolinx.com
-
-Don't write directly to an Acrolinx employee's email address.
-They might be on vacation and you won't receive a response.
-Instead, always use an email address that goes to the Acrolinx Support ticket system.
-If you use the wrong address, we'll forward the email to the right person or system, but it might take some time.
-
-If you're a customer and a certified integration is causing a problem, create a normal support ticket.
-The vendor who owns the integration should contact SDK support. We'll link the tickets.
-While the integration developers investigate the root cause, Acrolinx Support can provide a solution.
-
-| Topic                                                                    | Action                                                                                                                                                                                                                                                                                                                                                                        | Address                                       |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| I'm a customer and a third-party integration isn't working as expected. | Contact vendor support                                                                                                                                                                                                                                                                                                                                                        | Vendor support address + support@acrolinx.com |
-| I'm a partner and a customer has filed a support ticket.                 | If the solution isn't obvious or you identified an issue on the Acrolinx side, contact SDK support.                                                                                                                                                                                                                                                                          | sdk-support@acrolinx.com                      |
-| The Acrolinx URL that I'm using seems to be down.                        |                                                                                                                                                                                                                                                                                                                                                                               | support@acrolinx.com                          |
-| I want to start a new integration project.                               | See [First Contact](#first-contact)                                                                                                                                                                                                                                                                                                                                           | sdk-support@acrolinx.com                      |
-| I finished my development work.                                          | See [Certification Meeting](#certification-meeting)                                                                                                                                                                                                                                                                                                                           | sdk-support@acrolinx.com                      |
-| While coding, I ran into some problems.                                  | Check for answers to your question in the [Coding Guidance](../README.md), [samples on GitHub](https://github.com/acrolinx?q=demo), [log files](https://github.com/acrolinx/acrolinx-coding-guidance/blob/master/topics/logging.md#path-and-filename), or [FAQ](https://support.acrolinx.com/hc/en-us/sections/201158052-Integrations-FAQs-and-Troubleshooting). | sdk-support@acrolinx.com                      |
+* [register an account](https://docs.acrolinx.com/kb/en/how-do-i-register-an-account-for-the-acrolinx-help-center-13730654.html)
+* [get a password](https://docs.acrolinx.com/kb/en/how-do-i-get-a-password-for-the-acrolinx-help-center-13730665.html)
 
 ## Required Information
 
-Try to include this information with all inquiries:
+Try to include this information with all requests:
 
 1. Integration name and version
 2. Urgency
@@ -49,7 +32,7 @@ Try to include this information with all inquiries:
 14. Can you reproduce the issue using one of our GitHub samples?
 15. Can you share a minimal code example that is sufficient to reproduce the issue?
 
-## First Contact
+## Initial Contact
 
 Before you start an integration project, we prefer to schedule a kick-off meeting to provide consulting.
 [Getting Started with Custom Integrations](https://docs.acrolinx.com/customintegrations)
