@@ -15,8 +15,11 @@ first take the time to browse this document.
 
 ## Before You Start
 
-Contact [Acrolinx SDK support](topics/sdk-support.md) to access to a test platform, get consulting, and request
-certification of your integration.
+[Contact Acrolinx Support](https://support.acrolinx.com/hc/en-us/requests/new) to get:
+
+- access to a test platform
+- consulting
+- request certification of your integration.
 
 ## [Proof of Concept](topics/poc.md)
 
