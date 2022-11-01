@@ -15,11 +15,11 @@ first take the time to browse this document.
 
 ## Before You Start
 
-[Contact Acrolinx Support](https://support.acrolinx.com/hc/en-us/requests/new) to get:
+[Contact Acrolinx Support](https://support.acrolinx.com/hc/en-us/requests/new) to request:
 
 - access to a test platform
 - consulting
-- request certification of your integration.
+- certification of your integration.
 
 ## [Proof of Concept](topics/poc.md)
 
