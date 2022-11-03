@@ -1,4 +1,4 @@
-# Integration Options
+# Checking Features
 
 Before you add Acrolinx to your application, you'll need to decide where and how to embed Acrolinx.
 
@@ -21,11 +21,11 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
     + Simplest way to integrate Acrolinx.
     + Perfect for creating a proof of concept.
     + For writers checking content at creation time.
-    + If your CMS can't connect to the Acrolinx Platform, the Sidebar might be your only option.
+    + If the CMS can't connect to the Acrolinx Platform, the Sidebar might be your only option.
     + If the CMS is only available within your company's network and the Acrolinx Platform runs in the cloud.
 * Connection:
     + Direct
-    + Make sure your web browser can reach the Acrolinx Platform.
+    + Make sure that your web browser can reach the Acrolinx Platform.
 * Authentication (no attention required on the integration side):
     + Acrolinx
     + External
@@ -100,7 +100,7 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
     + Technically similar to [Interactive Direct (Sidebar)](#sidebar---interactive-direct).
 * Connection:
     + Direct
-    + Make sure your integration can reach the Acrolinx Platform.
+    + Make sure that your integration can reach the Acrolinx Platform.
 * Authentication (no attention required on the integration side):
     + Acrolinx
     + External
@@ -120,7 +120,7 @@ a full-featured integration.
     + Proof of concept.
 * Connection:
     + Direct
-    + Make sure your integration can reach the Acrolinx Platform.
+    + Make sure that your integration can reach the Acrolinx Platform.
 * Authentication:
     + Acrolinx
     + External
