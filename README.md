@@ -45,7 +45,7 @@ first take the time to browse this document.
 
 ## [Scheduling](topics/scheduling.md)
 
-## [Minimal Certification Requirements](topics/minimal-requirements.md)
+## [Minimum Certification Requirements](topics/minimum-requirements.md)
 
 ## License
 
