@@ -1,4 +1,10 @@
-# Checking Features
+---
+title: Acrolinx Checking Features
+description: Learn about the checking features for integrating Acrolinx.
+keywords: Acrolinx checking features, automation, Sidebar, 
+---
+
+# Acrolinx Checking Features
 
 Before you add Acrolinx to your application, you'll need to decide where and how to embed Acrolinx.
 
