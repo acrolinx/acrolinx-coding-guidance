@@ -1,16 +1,16 @@
-# How to Develop Acrolinx Integrations
+# How to Integrate with Acrolinx
 
 ## About This Document
 
 This document includes instructions for developing Acrolinx checking integrations.
 
-The target audience is developers who are integrating one of the following Acrolinx checking features:
+This documentation targets developers who want to integrate one of the following Acrolinx checking features:
 
 - Sidebar
 - automated check
-- batch check.
+- batch check
 
-Even if you're eager to [start your new project](https://docs.acrolinx.com/customintegrations),
+Before you [start a new project](https://docs.acrolinx.com/customintegrations),
 first take the time to browse this document.
 
 ## Before You Start
