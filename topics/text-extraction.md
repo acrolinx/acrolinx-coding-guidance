@@ -2,24 +2,24 @@
 
 ## How Acrolinx Reads Your Content
 
-Before implementing extraction, you'll first need to understand how Acrolinx reads your content.
+Before you implement extraction, you'll first need to understand how Acrolinx reads your content.
 
 ![How Acrolinx Reads Your Content With Content Profiles](images/how-acrolinx-read-content.png)
 
-This diagram starts with extraction and shows almost all feasible extraction settings.
-The diagram is a bit unwieldy.
-Try to zoom in and out and follow the lines and the numbers from 1 to 5.
+This diagram covers the extraction process step-by-step and shows most of the available extraction settings.
 
-## Check Format and Supporting Multiformat Editors
+Try to zoom in and out and follow the lines and the numbers from 1 to 6.
 
-Send all content to the Acrolinx Platform if the host application provides a format that Acrolinx supports:
+## Input Types and Integrating with Multiformat Editors
+
+Does your application provide the document in a format that Acrolinx supports?
 
 * XML
 * HTML
 
-The Acrolinx Platform supports different check formats:
+The Acrolinx supports different input types:
 
-| Format                    | API Setting  | Default Extension | Notes             |
+| Input Type                | API Setting  | Default Extension | Notes             |
 | ------------------------- | ------------ | ----------------- | ----------------- |
 | Text                      | `TEXT`       | `.txt`            |                   |
 | XML                       | `XML`        | `.xml`            |                   |
@@ -30,28 +30,35 @@ The Acrolinx Platform supports different check formats:
 | Java Source files         | `JAVA`       | `.java`           | Comments, Javadoc |
 | Base64 encoded binary PDF | `PDF`        | `.pdf`            | no offsets        |
 
-Check out the [supported input types documentation](https://docs.acrolinx.com/coreplatform/latest/en/compatibility/supported-input-types)
-for a complete list.
+See the complete list of [supported input types](https://docs.acrolinx.com/acrolinxplatform/latest/en/compatibility/supported-input-types).
 
-Set the format for these input types when you submit a check using the API or the `sidebar.checkGlobal()` call.
-You can also set the format to `AUTO`.
+When you submit a check using the API or the `sidebar.checkGlobal()` call, set the format to let Acrolinx know the input
+type of the document. You can also set the format to `AUTO`.
 The platform then decides the format based on a pattern that matches the reference.
-Some formats, like DITA or resx, are a subset of the supported formats but have a different file extension.
+Some input types, like DITA or resx, are a subset of the supported input types but have a different file extension.
 
-For multiformat editors, we recommend letting the Platform decide.
-If Acrolinx doesn't support a specific format, an upcoming platform release might make it work without any integration change.
+For multiformat editors, we recommend letting the platform.
 
-*Note: You can use a default [mapping](https://docs.acrolinx.com/coreplatform/latest/en/advanced/core-platform-configurations/configure-acrolinx-to-recognize-your-file-type)
-and [Content Profile](https://docs.acrolinx.com/coreplatform/latest/en/guidance/content-profiles/get-started-with-content-profiles).
-If you need a custom one, write to Acrolinx Support and ask for help!*
+*Note: If possible, use the default
+[mapping](https://docs.acrolinx.com/acrolinxplatform/latest/en/advanced/acrolinx-platform-configurations/configure-acrolinx-to-recognize-your-file-type)
+and [content profiles](https://docs.acrolinx.com/acrolinxplatform/latest/en/guidance/content-profiles/get-started-with-content-profiles).
+If you need a custom one, contact [Acrolinx Support](https://support.acrolinx.com/hc/en-us/requests/new) and ask for help!*
 
-## Host Application API with Object Model
+## Application API with Object Model
 
-If the host application doesn't provide a natively supported representation of the content,
-then you must implement the text extraction as part of the Acrolinx Integration.
+If your application doesn't provide the content in a format that Acrolinx supports,
+then you have to implement the text extraction as part of the Acrolinx integration.
 
 The extracted text should be as similar as possible to the object model and correspond to what the user sees on screen.
-Provide a DTD or XML schema that defines the representation.
+
+Acrolinx needs to identify the document type to select the right content profile. To help Acrolinx, follow these best practices:
+
+* Include a schema or a DTD
+  
+<!DOCTYPE integrationname PUBLIC "-//acrolinx integrationname-v1" "integrationname-v1.dtd">
+
+* If you define a schema or a DTD, include the reference in the XML
+* If you are able to define a schema or a DTD, then you specified your format well.
 
 Extraction can look like this:
 
