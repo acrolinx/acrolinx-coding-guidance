@@ -1,7 +1,7 @@
 ---
 title: Acrolinx Checking Features
 description: Learn about the checking features for integrating Acrolinx.
-keywords: Acrolinx checking features, automation, Sidebar, 
+keywords: Acrolinx checking features, automated check, Sidebar, batch check 
 ---
 
 # Acrolinx Checking Features
@@ -10,7 +10,7 @@ Before you add Acrolinx to your application, you'll need to decide where and how
 
 Acrolinx checks content in two ways:
 
-* An Automated Check helps you automate your content creation workflow.
+* An automated check helps you automate your content creation workflow.
 * The Sidebar gives writers an interactive user experience in the editor where they create content.
 
 ---
