@@ -8,11 +8,7 @@ Enter the Test Sidebar URL as the Acrolinx URL in the start page:
 
 ### Https (Recommended)
 
-`https://acrolinx-sidebar-mock.s3.amazonaws.com`
-
-### Http
-
-`http://acrolinx-sidebar-mock.s3-website-eu-west-1.amazonaws.com/`
+`https://acrolinx-test-sidebar.s3.amazonaws.com/`
 
 ### Direct Reference
 
