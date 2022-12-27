@@ -14,7 +14,7 @@ Enter the Test Sidebar URL as the Acrolinx URL in the start page:
 
 In some cases, it might be necessary to reference the Sidebar directly in the code. That should be the exception.
 In case you need to do, here is the URL:
-`https://acrolinx-sidebar-mock.s3.amazonaws.com/sidebar/v14/index.html`
+`https://acrolinx-test-sidebar.s3.amazonaws.com/sidebar/v15/index.html`
 
 ## Sections of the Test Sidebar
 
