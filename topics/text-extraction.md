@@ -30,7 +30,7 @@ The Acrolinx supports different input types:
 | Java Source files         | `JAVA`       | `.java`           | Comments, Javadoc |
 | Base64 encoded binary PDF | `PDF`        | `.pdf`            | no offsets        |
 
-See the complete list of [supported input types](https://docs.acrolinx.com/acrolinxplatform/latest/en/compatibility/supported-input-types).
+See the complete list of [supported input types](https://support.acrolinx.com/hc/en-us/articles/10211264846482-Supported-Input-Types).
 
 When you submit a check using the API or the `sidebar.checkGlobal()` call, set the format to let Acrolinx know the input
 type of the document. You can also set the format to `AUTO`.
@@ -40,8 +40,8 @@ Some input types, like DITA or resx, are a subset of the supported input types b
 For multiformat editors, we recommend letting the platform.
 
 *Note: If possible, use the default
-[mapping](https://docs.acrolinx.com/acrolinxplatform/latest/en/advanced/acrolinx-platform-configurations/configure-acrolinx-to-recognize-your-file-type)
-and [content profiles](https://docs.acrolinx.com/acrolinxplatform/latest/en/guidance/content-profiles/get-started-with-content-profiles).
+[mapping](https://support.acrolinx.com/hc/en-us/articles/10211141076882-Configure-Acrolinx-to-Recognize-Your-File-Type)
+and [content profiles](https://support.acrolinx.com/hc/en-us/sections/10210965667474-Content-Profiles).
 If you need a custom one, contact [Acrolinx Support](https://support.acrolinx.com/hc/en-us/requests/new) and ask for help!*
 
 ## Application API with Object Model
@@ -135,7 +135,7 @@ The document should include information about the tags, styles, or fonts in whic
 Acrolinx uses contextual information to filter and extract content and decide which guidelines to apply.
 You can configure context information with element names, attributes, or attribute values.
 
-Learn more about the extraction settings in the [Content Profiles Reference Guide](https://docs.acrolinx.com/coreplatform/latest/en/guidance/content-profiles/content-profiles-reference-guide).
+Learn more about the extraction settings in the [Content Profiles Reference Guide](https://support.acrolinx.com/hc/en-us/sections/10210965667474-Content-Profiles).
 
 #### Extraction Settings
 

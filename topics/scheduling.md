@@ -7,7 +7,7 @@ If you connect your integration to the Acrolinx Platform in the cloud, you shoul
 If you’re planning to significantly increase the load on the Acrolinx Platform, talk to Acrolinx Support in advance.
 Acrolinx can fine-tune the scalability of your instance.
 
-See also [How Do I set up Acrolinx to scale for a large number of users?](https://docs.acrolinx.com/kb/en/how-do-i-set-up-acrolinx-to-scale-to-a-large-number-of-users-13730796.html)
+See also [How Do I set up Acrolinx to scale for a large number of users?](https://support.acrolinx.com/hc/en-us/articles/10219975979154-How-Do-I-set-up-Acrolinx-to-scale-to-a-large-number-of-users-)
 
 Build your integration according to our best practices on communicating with the Acrolinx Platform.
 The Acrolinx Platform will block any unreasonable requests.
