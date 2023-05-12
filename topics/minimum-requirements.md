@@ -1,6 +1,6 @@
 # Minimum Requirements to Pass Certification
 
-1) The **customer or partner signed** the **contract**. See [Steps for Building an Integration](https://docs.acrolinx.com/customintegrations/steps-for-building-an-integration)
+1) The **customer or partner signed** the **contract**. See [Steps for Building an Integration](https://support.acrolinx.com/hc/en-us/articles/10210859042066-Process-for-Building-an-Integration)
 2) The integration doesn't violate the **Acrolinx license model**. (Demo / Questions)
 3) Did you **hard-code** the correct **signature**? (Demo / Source)
    + How to set the signature:
@@ -137,5 +137,5 @@
 ## See Also
 
 * [Certification Meeting](sdk-support.md#Certification-Meeting)
-* [Request Validator](https://docs.acrolinx.com/kb/en/how-to-use-the-request-validator-13730818.html)
+* [Request Validator](https://support.acrolinx.com/hc/en-us/articles/10220886837522-How-To-Use-the-Request-Validator)
 * [Test Sidebar for Developers](test-sidebar.md)

@@ -10,7 +10,7 @@ This documentation targets developers who want to integrate one of the following
 - automated check
 - batch check
 
-Before you [start a new project](https://docs.acrolinx.com/customintegrations),
+Before you [start a new project](https://support.acrolinx.com/hc/en-us/categories/10209837818770-Build-With-Acrolinx),
 first take the time to browse this document.
 
 ## Before You Start

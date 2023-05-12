@@ -115,7 +115,7 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
     + Users normally enter the Acrolinx URL themselves.
 * Check type is interactive.
 
-Hint: The [Acrolinx Desktop Checker](https://docs.acrolinx.com/desktopchecker/latest/en) is an alternative to building
+Hint: The [Acrolinx Desktop Checker](https://support.acrolinx.com/hc/en-us/sections/10211381688466-Desktop-Checker) is an alternative to building
 a full-featured integration.
 
 ## Batch
@@ -138,6 +138,6 @@ a full-featured integration.
     + Batch (default) if the user owns the documents.
     + Baseline if checking other users' documents.
 
-Instead of using an Acrolinx SDK, consider the [Acrolinx Command Line Interface](https://docs.acrolinx.com/cli/latest/en).
+Instead of using an Acrolinx SDK, consider the [Acrolinx Command Line Interface](https://support.acrolinx.com/hc/en-us/sections/10210853773970-Command-Line-Interface-CLI-).
 It's a highly scriptable solution designed for batch checking.
-You can also use the [Content Analyzer](https://docs.acrolinx.com/ca/latest/en) to manually check a set of documents.
+You can also use the [Content Analyzer](https://support.acrolinx.com/hc/en-us/sections/10210712471442-Content-Analyzer) to manually check a set of documents.

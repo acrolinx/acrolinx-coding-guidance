@@ -87,7 +87,7 @@ Use the programming language that best suits the host editor and operating syste
 If you can choose the language without any restrictions, we recommend JavaScript for its interoperability.
 But we prefer TypeScript.
 
-See the [Developer Tools](https://docs.acrolinx.com/customintegrations/api-sdks-and-samples)
+See the [Developer Tools](https://support.acrolinx.com/hc/en-us/articles/10210854524178-API-SDKs-and-Samples)
 for an overview of the supported technologies.
 
 ## Build System
