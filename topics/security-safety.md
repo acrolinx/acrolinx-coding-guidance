@@ -45,4 +45,3 @@ Make sure that you configured your VM, operating system, and backend to allow co
 Some helpful links:
 
 * Windows / .NET: [How to enable TLS 1.2 on clients](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
-* Java: [Java HTTPS Tester](https://github.com/acrolinx/java-https-tester)

@@ -1,8 +1,0 @@
-#Organize Import Order
-#Mon May 07 15:18:56 CEST 2018
-5=
-4=com
-3=org
-2=javax
-1=javafx
-0=java
