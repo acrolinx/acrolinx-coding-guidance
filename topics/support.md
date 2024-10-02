@@ -17,8 +17,8 @@ Try to include this information with all requests:
 4. Error message
 5. Log files
 6. Platform URL
-7. Editor Version
-8. CMS Name and Version
+7. Editor version
+8. CMS name and version
 9. Link to the Scorecard or information captured using the [Request Validator](https://support.acrolinx.com/hc/en-us/articles/10220886837522-How-To-Use-the-Request-Validator):
     + `request.txt`
     + `request.properties`
@@ -49,4 +49,4 @@ This information will help you ask the right questions during the kick-off.
 
 ### Minimal Certification Requirements
 
-See the [Minimum Certification Requirements](minimum-requirements.md).
+See the [Minimum Requirements](minimum-requirements.md).
