@@ -136,5 +136,5 @@
 
 ## See Also
 
-* [Certification Meeting](sdk-support.md#Certification-Meeting)
+* [Certification Meeting](support.md#Certification-Meeting)
 * [Request Validator](https://support.acrolinx.com/hc/en-us/articles/10220886837522-How-To-Use-the-Request-Validator)
