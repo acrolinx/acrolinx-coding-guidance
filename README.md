@@ -2,16 +2,14 @@
 
 ## About this Documentation
 
-This documentation aims to help you build Acrolinx checking integrations.
-
-It targets developers who want to build Acrolinx checking features:
+This documentation helps developers you want to build Acrolinx checking features:
 
 - Sidebar
 - automated check
 - batch check
 
 Before you [start a new project](https://support.acrolinx.com/hc/en-us/categories/10209837818770-Build-With-Acrolinx),
-take the time to browse this document.
+browse this document.
 
 ## Before You Start
 
