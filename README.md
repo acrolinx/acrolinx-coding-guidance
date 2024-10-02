@@ -1,17 +1,17 @@
-# How to Integrate with Acrolinx
+# How to Build with Acrolinx
 
-## About This Document
+## About this Documentation
 
-This document includes instructions for developing Acrolinx checking integrations.
+This documentation aims to help you build Acrolinx checking integrations.
 
-This documentation targets developers who want to integrate one of the following Acrolinx checking features:
+It targets developers who want to build Acrolinx checking features:
 
 - Sidebar
 - automated check
 - batch check
 
 Before you [start a new project](https://support.acrolinx.com/hc/en-us/categories/10209837818770-Build-With-Acrolinx),
-first take the time to browse this document.
+take the time to browse this document.
 
 ## Before You Start
 
@@ -21,15 +21,7 @@ first take the time to browse this document.
 - consulting
 - certification of your integration.
 
-## [Proof of Concept](topics/poc.md)
-
 ## [Checking Features](topics/checking-features.md)
-
-## [Packaging](topics/packaging.md)
-
-## [Localization L10N](topics/l10n.md)
-
-## [Storing Data](topics/store-data.md)
 
 ## [Initialization](topics/initialization.md)
 
