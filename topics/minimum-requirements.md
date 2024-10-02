@@ -79,7 +79,7 @@
       [Java](https://github.com/acrolinx/sdk-java/blob/127d42a5247e4e52d72ce829b649befbfb2eeffd/src/test/java/com/acrolinx/client/sdk/integration/CheckTest.java#L191),
       [.NET](https://github.com/acrolinx/sdk-dotnet/blob/dc346b53ee3b274ecfd40dfe5e4af4855fea4695/Acrolinx.Net/Acrolinx.Net.Tests/TestEnvironment.cs#L27),
       [PHP](https://github.com/acrolinx/sdk-php/blob/21d976471d389f3ea8b9175ce70b26b3588fa4b3/tests/AcrolinxEndpointTest.php#L53)
-11) Developer set the correct [format](text-extraction.md#check-format-and-supporting-multiformat-editors).
+11) You set the correct [format](text-extraction.md#check-format-and-supporting-multiformat-editors).
   Ideally, use the `auto` setting.
   Usually, everything that is displayed in the UI. Sometimes additional custom fields. (Demo / Source)
     + How to set the content format:
@@ -94,7 +94,7 @@
       [Java](https://acrolinx.github.io/sdk-java/com/acrolinx/client/sdk/check/CheckOptionsBuilder.html#withContentFormat-java.lang.String-),
       [.NET](https://github.com/acrolinx/sdk-dotnet/blob/dc346b53ee3b274ecfd40dfe5e4af4855fea4695/Acrolinx.Net/Acrolinx.Net.Tests/EndpointTest.cs#L151),
       [PHP](https://github.com/acrolinx/sdk-php/blob/21d976471d389f3ea8b9175ce70b26b3588fa4b3/tests/AcrolinxEndpointTest.php#L275)
-12) Developer provided a recognizable [reference](text-extraction.md#Enable-Acrolinx-Providing-Guidance-and-Analytics).
+12) You provided a recognizable [reference](text-extraction.md#Enable-Acrolinx-Providing-Guidance-and-Analytics).
     (Demo / Source / Questions)
     + How to set the content reference:
       * Sidebar: [JS (1)](https://github.com/acrolinx/acrolinx-sidebar-demo/blob/d49f8e5fc22d6ddaef033ccfacdba30d91ced9e2/samples/config.js#L33)
@@ -113,7 +113,7 @@
       [.NET](https://github.com/acrolinx/sdk-demo-dotnet/blob/17b73231e7f3e1fc6286ab8b6549281f1f0ee70c/Acrolinx.Net.Demo/Program.cs#L41),
       [PHP](https://github.com/acrolinx/sdk-php/blob/21d976471d389f3ea8b9175ce70b26b3588fa4b3/tests/AcrolinxEndpointTest.php#L282)
 13) The [content](text-extraction.md#structure) is well structured and includes all necessary content.
-  Usually, everything that is displayed in the UI. Sometimes additional custom fields. (Demo / Source)
+  Usually, everything that's displayed in the UI. Sometimes additional custom fields. (Demo / Source)
     + How to set the structure of the content:
       * Sidebar: [JS (1)](https://github.com/acrolinx/acrolinx-sidebar-demo/blob/d49f8e5fc22d6ddaef033ccfacdba30d91ced9e2/samples/multi-editor.html#L80)
       [(2)](https://github.com/acrolinx/acrolinx-sidebar-demo/blob/d49f8e5fc22d6ddaef033ccfacdba30d91ced9e2/samples/multi-editor.html#L93),
@@ -130,12 +130,11 @@
       [.NET](https://github.com/acrolinx/sdk-dotnet/blob/dc346b53ee3b274ecfd40dfe5e4af4855fea4695/Acrolinx.Net/Acrolinx.Net.Tests/EndpointTest.cs#L148),
       [PHP](https://github.com/acrolinx/sdk-php/blob/81d8d6e6f3fa17f53299b2af923f4d86045d5d4b/tests/AcrolinxEndpointTest.php#L280)
 14) No obvious security issues are present. (Demo / Questions)
-15) The integration can connect to an Acrolinx cloud instance such as `https://partner-dev.internal.acrolinx.sh/`.
+15) The integration can connect to an Acrolinx instance such as `https://partner-dev.internal.acrolinx.sh/`.
     (Demo / Questions)
-16) Did the developer implement a good [scheduling](scheduling.md) mechanism? (Questions)
+16) Did you implement a good [scheduling](scheduling.md) mechanism? (Questions)
 
 ## See Also
 
 * [Certification Meeting](sdk-support.md#Certification-Meeting)
 * [Request Validator](https://support.acrolinx.com/hc/en-us/articles/10220886837522-How-To-Use-the-Request-Validator)
-* [Test Sidebar for Developers](test-sidebar.md)
