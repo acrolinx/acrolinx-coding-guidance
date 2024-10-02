@@ -49,8 +49,8 @@ By default, batch checking integrations should submit one check after the other.
 Set a [Check Type](check-types.md) with a priority below high.
 
 Each integration has its own performance requirements.
-If sequential processing is too slow, your admin can configure the number of parallel check requests.
-Even if you know the exact resource allocation of an Acrolinx instance, Don't maximize the load to 100%.
+If sequential processing is too slow, contact Acrolinx support who can configure the number of parallel check requests.
+Even if you know the exact resource allocation of an Acrolinx instance, don't maximize the load to 100%.
 Overall performance and user experience can suffer if multiple integrations exceed the maximum load.
 
 In the development phase, consider the number of parallel users the integration will have
