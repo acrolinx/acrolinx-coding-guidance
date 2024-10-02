@@ -33,7 +33,7 @@ Try to include this information with all requests:
 ## Initial Contact
 
 Before you start an integration project, we prefer to schedule a kick-off meeting to provide consulting.
-[Getting Started with Custom Integrations](https://support.acrolinx.com/hc/en-us/categories/10209837818770-Build-With-Acrolinx)
+[Build with Acrolinx](https://support.acrolinx.com/hc/en-us/categories/10209837818770-Build-With-Acrolinx)
 summarizes integration options and the process of developing an integration.
 This information will help you ask the right questions during the kick-off.
 
