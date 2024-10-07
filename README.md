@@ -19,6 +19,8 @@ browse this document.
 - consulting
 - certification of your integration.
 
+## [Authentication and Acrolinx URL Configuration](topics/authentication.md)
+
 ## [Checking features](topics/checking-features.md)
 
 ## [Initialization](topics/initialization.md)
@@ -26,8 +28,6 @@ browse this document.
 ## [Text extraction](topics/text-extraction.md)
 
 ## [Lookup](topics/text-lookup.md)
-
-## [Authentication and Acrolinx URL Configuration](topics/authentication.md)
 
 ## [Scheduling](topics/scheduling.md)
 
