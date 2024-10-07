@@ -1,4 +1,4 @@
-# Contact Support
+# Contact support
 
 If you need help with an existing or new integration, [contact Acrolinx Support](https://support.acrolinx.com/hc/en-us/requests/new).
 
