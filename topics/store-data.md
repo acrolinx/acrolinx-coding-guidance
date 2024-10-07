@@ -1,15 +1,15 @@
-# Storing Data
+# Storing data
 
-Integration stores data in the LocalStorage.
-In-case accessing LocalStorage isn't possible then a custom settings store could be used.
+Your integration stores data in the LocalStorage.
+If it's not possible to access LocalStorage, then you can use a custom settings store.
 
-## Types and Location
+## Types and location
 
 1. Windows Registry
 2. .properties file
 3. Host editor data store
 
-In multiplatform integrations, where no built-in store is available it's preferred to write data to the user directory.
+In multiplatform integrations, where no built-in store is available, then write data to the user directory.
 
 See also:
-Acrolinx Storage in .NET [SDK](https://github.com/acrolinx/sidebar-sdk-dotnet/blob/master/README.md#sdk-features)
+Acrolinx storage in .NET [SDK](https://github.com/acrolinx/sidebar-sdk-dotnet/blob/master/README.md#sdk-features)
