@@ -2,35 +2,35 @@
 
 ## `clientComponents`
 
-While initializing SDKs, make sure that information about the integration and its environment is set properly.
-Some of the SDKs use reflection to do that job for you in case all your libraries provide the right information.
-In this case, you just have to ensure that all information propagated properly.
+When you initialize SDKs, properly set the information about the integration and its environment.
+If all your libraries provide the right information, some of the SDKs pass on the details for you.
+Then, you just have to check that all information correctly propagates to the different places.
 
-The provided information is used in:
+The information appears in:
 
 * About
 * [logging](logging.md)
-* requests send to server
+* requests sent to Acrolinx
 * [identification of Content Profile](text-extraction.md#how-acrolinx-reads-your-content),
 * Scorecards
 * Content Groups
 * Analytics
 
-Make sure:
+Make sure you:
 
-* All components have unique IDs in the list.
-* Exactly one main component is set.
-* No category (default), or `"category": "DETAIL"` can be added as much as useful.
-  Keep in mind that this could blow up about or [logging](logging.md).
-* The main component is the Acrolinx Integration.
-* The Integration is [named correctly](project-setup.md#naming-of-the-integration).
-* The list of `clientComponents` contains the host editor, and its version, and has no `category`.
-* An id should contain the company name.
-  It should be structured similar to [java package naming](formatting.md#java) like `<TOP_LEVEL_DOMAIN>.<DOMAIN>.<PRODUCT>`.
-* Suggestion: Define ids with at least two sub part (split by '.').
-* Add important libraries that might influence the behavior of the integration significantly as `"category": "DETAIL"`.
-* Same components should get the same ids in all integrations.
-* The [version](project-setup.md#version-information)) uses the standardized format.
+* Give all components unique IDs.
+* Set exactly one main component.
+* Only add a category (default) or `"category": "DETAIL"` to the extent useful.
+  Keep in mind that this could mess up the About or [logging](logging.md) information.
+* Define the Acrolinx integration as the main component.
+* [Correctly name](project-setup.md#naming-of-the-integration) the integration.
+* Include the host editor and its version in the list of `clientComponents`, but don't define a `category`.
+* Define the company name with an ID.
+  Structure it similar to the [java package naming](formatting.md#java), such as `<TOP_LEVEL_DOMAIN>.<DOMAIN>.<PRODUCT>`.
+* Define IDs with at least two subparts (split by '.'). (suggestion)
+* Add important libraries as `"category": "DETAIL"` if they might significantly influence the behavior of the integration.
+* Give the same components the same IDs in all integrations.
+* Use the standard format for the [version](project-setup.md#version-information)).
 
 ### Example
 
