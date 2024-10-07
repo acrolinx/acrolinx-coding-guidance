@@ -1,6 +1,6 @@
-# How to build with Acrolinx
+# Build with Acrolinx
 
-## About this documentation
+## About
 
 This documentation helps you build Acrolinx checking features:
 
