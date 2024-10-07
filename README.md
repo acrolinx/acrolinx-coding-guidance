@@ -1,6 +1,6 @@
-# How to Build with Acrolinx
+# How to build with Acrolinx
 
-## About this Documentation
+## About this documentation
 
 This documentation helps developers you want to build Acrolinx checking features:
 
@@ -11,7 +11,7 @@ This documentation helps developers you want to build Acrolinx checking features
 Before you [start a new project](https://support.acrolinx.com/hc/en-us/categories/10209837818770-Build-With-Acrolinx),
 browse this document.
 
-## Before You Start
+## Before you start
 
 [Contact Acrolinx Support](https://support.acrolinx.com/hc/en-us/requests/new) to request:
 
@@ -19,19 +19,19 @@ browse this document.
 - consulting
 - certification of your integration.
 
-## [Checking Features](topics/checking-features.md)
+## [Checking features](topics/checking-features.md)
 
 ## [Initialization](topics/initialization.md)
 
-## [Text Extraction](topics/text-extraction.md)
+## [Text extraction](topics/text-extraction.md)
 
 ## [Lookup](topics/text-lookup.md)
 
-## [Authentication and Acrolinx URL Configuration](topics/configuration.md)
+## [Authentication and Acrolinx URL Configuration](topics/authentication.md)
 
 ## [Scheduling](topics/scheduling.md)
 
-## [Minimum Certification Requirements](topics/minimum-requirements.md)
+## [Minimum certification requirements](topics/minimum-requirements.md)
 
 ## License
 
