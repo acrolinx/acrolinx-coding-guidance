@@ -8,9 +8,7 @@ Some scenarios might require an admin to set the Acrolinx URL for all users:
 1. CMS administrator sets the Acrolinx URL for all users.
 
    - Make sure that you properly validate the Acrolinx URL.
-   - To validate an Acrolinx URL, check if `<SERVER:PORT>/sidebar/v15/index.html`
-   exists and a `meta` tag with the name `sidebar-version` is present, for example: `<meta name="sidebar-version" content="15.5.0">`.
-   - Each Acrolinx version has a different Sidebar version.
+   - To validate an Acrolinx URL, check if you can connect an integration to an Acrolinx instance.
 
 2. You're a customer and you're building an integration only for your company's use.
    You can hard-code the Acrolinx URL.
