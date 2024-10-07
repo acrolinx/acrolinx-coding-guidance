@@ -63,7 +63,7 @@ The Sidebar and Acrolinx platform support different authentication options:
 6. For automated integrations, you might want to use an **API token**.
    - To create an API token, go to the Settings of the relevant user.
    - All checks will be associated with the user whose API token you're using.
-   - Some parts of Analytics Dashboards expecting usernames might not work as expected.
+   - Some parts of Analytics dashboards that show usernames might not work as expected.
    - Consult with your CSM or account manager to confirm whether your license includes this kind of usage.
 
 Do not hard-code any usernames for checks run by different users.
