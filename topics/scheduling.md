@@ -45,10 +45,10 @@ To avoid this situation, use a lazy load method to load the Sidebar when the use
 Design your Acrolinx integration to run smoothly.
 
 By default, batch checking integrations should submit one check after the other.
-Set a [Check type](check-types.md) with a priority less than high.
+Set a [check type](check-types.md) with a priority less than 'high'.
 
 Each integration has its own performance requirements.
-If sequential processing is too slow, contact Acrolinx support who can configure the number of parallel check requests.
+If sequential processing is too slow, contact Acrolinx support to configure the number of parallel check requests.
 Even if you know the exact resource allocation of an Acrolinx instance, don't maximize the load to 100%.
 Overall performance and user experience can suffer if multiple integrations exceed the maximum load.
 
