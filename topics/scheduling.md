@@ -2,14 +2,14 @@
 
 Acrolinx works for both small and large teams of writers.
 
-In general, you shouldn't have to worry about scaling problems. Acrolinx takes care of this for you.
+You shouldn't have to worry about scaling problems. Acrolinx takes care of this for you.
 
-If you’re planning to significantly increase the checking load, talk to Acrolinx Support in advance.
+But if you’re planning to significantly increase the checking load, talk to Acrolinx Support.
 We can fine-tune the scalability of your instance.
 
-When you buil your integration, follow the best practices for communication with Acrolinx.
+When you build your integration, follow the best practices for communication with Acrolinx.
 
-Use the following guidelines to minimize issues and maximize the user experience.
+Use the following guidelines to minimize issues and maximize your user experience.
 
 ## Integration development instance `partner-dev.acrolinx.sh`
 
