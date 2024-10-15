@@ -26,7 +26,7 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 * Uses:
     + Simplest way to integrate Acrolinx.
     + Perfect for creating a proof of concept.
-    + For writers checking content at creation time.
+    + For writers to check content at creation time.
     + If the CMS can't connect to Acrolinx, the Sidebar might be your only option.
     + If the CMS is only available within your company's network.
 * Connection:
@@ -52,7 +52,7 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 
 * Uses:
     + Automatically check every document on update or save.
-    + A suite of dashboards helps you assess performance, pinpoint problems, and improve your content.
+    + A suite of dashboards helps you assess performance, identify problems, and improve your content.
 * Connection:
     + CMS backend connects directly to Acrolinx.
     + Use an automation SDK.
@@ -68,9 +68,9 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 
 * Uses:
     + It's not always feasible to automate a check on an event.
-    + If you use an interactive integration option, you still might want to occasionally check your content as a whole.
-    + Automatically check your content after updating terminology or guidelines.
-    + A suite of dashboards helps you assess performance, pinpoint problems, and improve your content.
+    + If you use an interactive integration, you still might want to occasionally check your content as a whole.
+    + Automatically check your content after you update terminology or guidelines.
+    + A suite of dashboards helps you assess performance, identify problems, and improve your content.
 * Connection:
     + CMS backend connects directly to Acrolinx.
     + Use an automation SDK.
@@ -87,10 +87,10 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 * Uses:
     + Check a batch of documents.
     + Create a dedicated Content Analysis Dashboard for a subset of content.
-    + Manually check your content after updating terminology or guidelines.
+    + Manually check your content after you update terminology or guidelines.
 * Connection:
     + CMS backend connects directly to Acrolinx.
-    + Use an automated SDK.
+    + Use an automation SDK.
 * Authentication:
     + SSO (recommended)
     + API token
