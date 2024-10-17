@@ -19,7 +19,8 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 
 ---
 
-![Overview of integration options](images/integration-types.png)
+![Overview of integration options](images/checking-features.png)
+
 
 ## Sidebar - interactive direct
 
