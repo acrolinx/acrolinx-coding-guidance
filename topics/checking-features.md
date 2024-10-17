@@ -15,11 +15,11 @@ Acrolinx checks content in two ways:
 
 ---
 **NOTE**
-How users [authenticate](configuration.md#Authentication) with Acrolinx informs the [check type](check-types.md).
+How users [authenticate](authentication.md#Authentication) with Acrolinx informs the [check type](check-types.md).
 
 ---
 
-![Overview of integration options](images/checking-features.png)
+![Overview of checking features](images/checking-features.png)
 
 
 ## Sidebar - interactive direct
@@ -37,7 +37,7 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
     + Acrolinx
     + External
     + Federated
-* Administrator sets the [Acrolinx URL](configuration.md#Acrolinx-URL).
+* Administrator sets the [Acrolinx URL](authentication.md#Acrolinx-URL).
 
 ## Sidebar - interactive SSO
 
@@ -47,7 +47,7 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
     + Use a reverse proxy on the CMS backend.
 * Authentication:
     + SSO
-* Set the [Acrolinx URL](configuration.md#Acrolinx-URL) on the CMS backend.
+* Set the [Acrolinx URL](authentication.md#Acrolinx-URL) on the CMS backend.
 
 ## Automated check on an event
 
@@ -60,7 +60,7 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 * Authentication:
     + SSO: Use the signed in user or the last user who edited the content. Usually it's the same person. (recommended)
     + API token
-* Set the [Acrolinx URL](configuration.md#Acrolinx-URL) on the CMS backend.
+* Set the [Acrolinx URL](authentication.md#Acrolinx-URL) on the CMS backend.
 * Check type depends on the authentication:
     + Automated (recommended) for SSO
     + Baseline for API token
@@ -78,7 +78,7 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 * Authentication:
     + SSO (recommended)
     + API token
-* Set the [Acrolinx URL](configuration.md#Acrolinx-URL) on the CMS backend.
+* Set the [Acrolinx URL](authentication.md#Acrolinx-URL) on the CMS backend.
 * Check type depends on the authentication:
     + Automated (recommended) for SSO
     + Baseline for API token
@@ -95,7 +95,7 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
 * Authentication:
     + SSO (recommended)
     + API token
-* Set the [Acrolinx URL](configuration.md#Acrolinx-URL) on the CMS backend.
+* Set the [Acrolinx URL](authentication.md#Acrolinx-URL) on the CMS backend.
 * Check type depends on the authentication:
     + Baseline (recommended)
     + Batch - if the user that starts the check owns the content.
@@ -112,7 +112,7 @@ How users [authenticate](configuration.md#Authentication) with Acrolinx informs 
     + Acrolinx
     + External
     + Federated
-* Set the [Acrolinx URL](configuration.md#Acrolinx-URL) with an installer parameter or a deployed configuration.
+* Set the [Acrolinx URL](authentication.md#Acrolinx-URL) with an installer parameter or a deployed configuration.
     + Users normally enter the Acrolinx URL themselves.
 * Check type is interactive.
 
@@ -133,7 +133,7 @@ a full-featured integration.
     + External
     + Federated
     + API token
-* Users enter the [Acrolinx URL](configuration.md#Acrolinx-URL).
+* Users enter the [Acrolinx URL](authentication.md#Acrolinx-URL).
     + You can also use a script to set the Acrolinx URL.
 * Check type:
     + Batch (default) if the user owns the documents.
