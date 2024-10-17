@@ -104,7 +104,7 @@ How users [authenticate](authentication.md#Authentication) with Acrolinx informs
 
 * Uses:
     + Standard way of using Acrolinx in a standalone application.
-    + Technically similar to [Sidebar - interactive direct](## Sidebar - interactive direct).
+    + Technically similar to [Sidebar - interactive direct](#sidebar-interactive-direct).
 * Connection:
     + Direct
     + Make sure your integration can reach Acrolinx.
