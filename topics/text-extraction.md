@@ -1,10 +1,10 @@
-# Text Extraction
+# Text extraction
 
 ## How Acrolinx reads your content
 
 Before you implement extraction, you'll first need to understand how Acrolinx reads your content.
 
-![How Acrolinx reads your content with content profiles](images/how-acrolinx-read-content.png)
+![How Acrolinx reads your content with content profiles](images/how-acrolinx-reads-content.png)
 
 This diagram shows the extraction process step-by-step and most of the available extraction settings.
 
