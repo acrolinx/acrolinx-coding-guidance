@@ -22,8 +22,6 @@ Read up on how to [start a new project](https://support.acrolinx.com/hc/en-us/ca
 
 ## [Checking features](topics/checking-features.md)
 
-## [Initialization](topics/initialization.md)
-
 ## [Text extraction](topics/text-extraction.md)
 
 ## [Lookup](topics/text-lookup.md)
