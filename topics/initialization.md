@@ -9,8 +9,8 @@ Then, you just have to check that all information correctly propagates to the di
 The information appears in:
 
 * About
-* requests sent to Acrolinx
-* [content profile selection](text-extraction.md#how-acrolinx-reads-your-content),
+* Requests sent to Acrolinx
+* [Content profile selection](text-extraction.md#how-acrolinx-reads-your-content),
 * Scorecards
 * Content groups
 * Reporting
