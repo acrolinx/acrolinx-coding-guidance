@@ -1,6 +1,6 @@
 ---
 title: Acrolinx checking features
-description: Learn about the checking features for integrating Acrolinx.
+description: Learn about checking features for integrating Acrolinx.
 keywords: checking features, automated check, Sidebar, batch check 
 ---
 
