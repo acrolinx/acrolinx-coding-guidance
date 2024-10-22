@@ -1,6 +1,6 @@
 # Minimum requirements to pass certification
 
-1) The **customer or partner signed** the **contract**. See [Process for building an integration](https://support.acrolinx.com/hc/en-us/articles/10210859042066-Process-for-Building-an-Integration)
+1) The **customer or partner signed** the **contract**. See the [process for building an integration](https://support.acrolinx.com/hc/en-us/articles/10210859042066-Process-for-Building-an-Integration)
 2) The integration doesn't violate the **Acrolinx license model**. (Demo / Questions)
 3) Did you **hard-code** the correct **signature**? (Demo / Source)
    + How to set the signature:
