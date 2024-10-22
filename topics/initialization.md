@@ -10,7 +10,7 @@ The information appears in:
 
 * About
 * Requests sent to Acrolinx
-* [Content profile selection](text-extraction.md#how-acrolinx-reads-your-content),
+* [Content profile selection](text-extraction.md#how-acrolinx-reads-your-content)
 * Scorecards
 * Content groups
 * Reporting
