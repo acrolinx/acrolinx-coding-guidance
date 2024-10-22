@@ -2,14 +2,14 @@
 
 ## Safety
 
-* Acrolinx Integrations shouldn't cause the host application to crash.
+* Acrolinx integrations shouldn't cause the host application to crash.
 * Ensure that you correctly implement:
     + multithreading and dispatching.
     + memory management. Do you use Automatic Reference Counting (ARC)?
 
 ## Security
 
-Make sure that you avoid typical security issues like the [OWASP Top Ten](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project).
+Avoid typical security issues like the [OWASP Top Ten](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project).
 
 For example, avoid:
 
