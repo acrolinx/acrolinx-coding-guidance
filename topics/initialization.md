@@ -9,12 +9,11 @@ Then, you just have to check that all information correctly propagates to the di
 The information appears in:
 
 * About
-* [logging](logging.md)
 * requests sent to Acrolinx
-* [identification of Content Profile](text-extraction.md#how-acrolinx-reads-your-content),
+* [content profile selection](text-extraction.md#how-acrolinx-reads-your-content),
 * Scorecards
-* Content Groups
-* Analytics
+* Content groups
+* Reporting
 
 Make sure you:
 
