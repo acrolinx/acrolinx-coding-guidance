@@ -25,7 +25,7 @@ Always first call a `requestCheck` and then call the `check` function (see the [
 This way the Sidebar controls the frequency of checks.
 A user action usually starts a check.
 
-Acrolinx schedules checks from the Sidebar with a high priority (see [Check types](check-types.md)).
+Acrolinx schedules checks from the Sidebar with a high priority (see [check types](check-types.md)).
 Giving Sidebar checks priority means that users get quick feedback and guidance on their content.
 
 ### Lazy loading of Sidebar
