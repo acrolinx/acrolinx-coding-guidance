@@ -31,9 +31,10 @@ Some input types, like DITA or resx, are a subset of the supported input types b
 For multiformat editors, we recommend letting Acrolinx identify the format.
 
 *Note: If possible, use the default
-[mapping](https://support.acrolinx.com/hc/en-us/articles/10211141076882-Configure-Acrolinx-to-Recognize-Your-File-Type)
-and [content profiles](https://support.acrolinx.com/hc/en-us/sections/10210965667474-Content-Profiles).
-If you need a custom content profile, contact [Acrolinx Support](https://support.acrolinx.com/hc/en-us/requests/new) and ask for help!*
+[file mapping](https://support.acrolinx.com/hc/en-us/articles/10211141076882-Configure-Acrolinx-to-Recognize-Your-File-Type)
+and content profiles. Content profiles let you configure how Acrolinx reads your content. 
+
+If you need a custom content profile, contact [Acrolinx Support](https://support.acrolinx.com/hc/en-us/requests/new)!*
 
 ## Application API with object model
 
@@ -125,8 +126,6 @@ Otherwise, Acrolinx can’t detect these kinds of issues.
 The document should include information about the tags, styles, or fonts in which the text appears.
 Acrolinx uses contextual information to filter and extract content and decide which guidelines to apply.
 You can configure context information with element names, attributes, or attribute values.
-
-Learn more about the extraction settings in the [Content profiles reference guide](https://support.acrolinx.com/hc/en-us/sections/10210965667474-Content-Profiles).
 
 #### Extraction settings
 
