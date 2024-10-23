@@ -1,16 +1,7 @@
 # Text extraction
 
-## How Acrolinx reads your content
-
-Before you implement extraction, you'll first need to understand how Acrolinx reads your content.
-
-![How Acrolinx reads your content with content profiles](images/how-acrolinx-reads-content.png)
-
-This diagram shows the extraction process step-by-step and most of the available extraction settings.
-
-Try to zoom in and out and follow the lines and the numbers from 1 to 6.
-
 ## Input types and integrating with multiformat editors
+Before you build an integration, you'll need to understand what input types Acrolinx supports.
 
 Does your application provide the document in a format that Acrolinx supports?
 
