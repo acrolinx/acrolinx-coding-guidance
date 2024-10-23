@@ -32,9 +32,8 @@ For multiformat editors, we recommend letting Acrolinx identify the format.
 
 *Note: If possible, use the default
 [file mapping](https://support.acrolinx.com/hc/en-us/articles/10211141076882-Configure-Acrolinx-to-Recognize-Your-File-Type)
-and content profiles. Content profiles let you configure how Acrolinx reads your content. 
-
-If you need a custom content profile, contact [Acrolinx Support](https://support.acrolinx.com/hc/en-us/requests/new)!*
+and content profiles. Content profiles let you configure how Acrolinx reads your content. If you need a custom content profile, 
+contact [Acrolinx Support](https://support.acrolinx.com/hc/en-us/requests/new)!*
 
 ## Application API with object model
 
