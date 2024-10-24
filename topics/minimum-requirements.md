@@ -73,7 +73,7 @@
       [C++ (1)](https://github.com/acrolinx/sidebar-demo-cpp/blob/064939fbfbe2e4b238ab9250b1568a3d91475382/Acrolinx.Adapter.Demo.Sidebar.Cpp/Acrolinx.Adapter.Demo.Sidebar.CppDlg.cpp#L108)
       [(2)](https://github.com/acrolinx/sidebar-demo-cpp/blob/064939fbfbe2e4b238ab9250b1568a3d91475382/Acrolinx.Adapter.Demo.Sidebar.Cpp/Acrolinx.Adapter.Demo.Sidebar.CppDlg.cpp#L109)
       * Automated:
-      [API (1)](https://github.com/acrolinx/platform-api#getting-started)
+      [API (1)](https://github.com/acrolinx/platform-api#acrolinx-platform-api)
       [(2)](https://acrolinxapi.docs.apiary.io/#introduction/general-headers/base-url),
       [JS](https://github.com/acrolinx/sdk-js/blob/2d6436f9b994137a646bcaed69ba70e04ec9e765/test/integration-server/acrolinx-endpoint.test.ts#L62),
       [Java](https://github.com/acrolinx/sdk-java/blob/127d42a5247e4e52d72ce829b649befbfb2eeffd/src/test/java/com/acrolinx/client/sdk/integration/CheckTest.java#L191),
